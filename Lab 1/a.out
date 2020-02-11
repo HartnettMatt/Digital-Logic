@@ -1,0 +1,56 @@
+#! /usr/local/bin/vvp
+:ivl_version "10.3 (stable)" "(v10_3-19-gfc7d604e)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 10;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x560f47d16fb0 .scope module, "tb" "tb" 2 2;
+ .timescale -9 -10;
+v0x560f47d27030_0 .var "a", 0 0;
+v0x560f47d27100_0 .var "b", 0 0;
+v0x560f47d271d0_0 .net "c", 0 0, L_0x560f47d272d0;  1 drivers
+S_0x560f47d17130 .scope module, "U1" "top" 2 7, 3 1 0, S_0x560f47d16fb0;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 1 "ain"
+    .port_info 1 /INPUT 1 "bin"
+    .port_info 2 /OUTPUT 1 "cout"
+L_0x560f47d272d0 .functor AND 1, v0x560f47d27030_0, v0x560f47d27100_0, C4<1>, C4<1>;
+v0x560f47ce00f0_0 .net "ain", 0 0, v0x560f47d27030_0;  1 drivers
+v0x560f47d26e50_0 .net "bin", 0 0, v0x560f47d27100_0;  1 drivers
+v0x560f47d26f10_0 .net "cout", 0 0, L_0x560f47d272d0;  alias, 1 drivers
+    .scope S_0x560f47d16fb0;
+T_0 ;
+    %vpi_call 2 11 "$dumpfile", "output.vcd" {0 0 0};
+    %vpi_call 2 12 "$dumpvars" {0 0 0};
+    %vpi_call 2 13 "$display", "Starting simulation" {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x560f47d27030_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x560f47d27100_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x560f47d27030_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x560f47d27100_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x560f47d27030_0, 0, 1;
+    %delay 100, 0;
+    %vpi_call 2 19 "$display", "Simulation ended." {0 0 0};
+    %vpi_call 2 20 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x560f47d16fb0;
+T_1 ;
+    %vpi_call 2 24 "$monitor", $time, " a = %b, b = %b, c = %b", v0x560f47d27030_0, v0x560f47d27100_0, v0x560f47d271d0_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb.v";
+    "top.v";

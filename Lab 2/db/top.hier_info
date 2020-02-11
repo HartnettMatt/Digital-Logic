@@ -1,0 +1,16 @@
+|top
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+LEDR[0] <= week2:U0.f
+
+
+|top|week2:U0
+a => Decoder0.IN0
+b => Decoder0.IN1
+c => Decoder0.IN2
+d => Decoder0.IN3
+f <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

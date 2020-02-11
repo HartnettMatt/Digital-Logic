@@ -1,0 +1,84 @@
+$date
+	Thu Jan 23 15:06:17 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module tb $end
+$var wire 1 ! f $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$var reg 1 $ c $end
+$var reg 1 % d $end
+$scope module DUT $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 $ c $end
+$var wire 1 % d $end
+$var reg 1 ! f $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0%
+0$
+0#
+0"
+1!
+$end
+#100
+0!
+1%
+#200
+0%
+1$
+#300
+1!
+1%
+#400
+0!
+0%
+0$
+1#
+#500
+1!
+1%
+#600
+0%
+1$
+#700
+0!
+1%
+#800
+0%
+0$
+0#
+1"
+#900
+1!
+1%
+#1000
+0%
+1$
+#1100
+0!
+1%
+#1200
+1!
+0%
+0$
+1#
+#1300
+0!
+1%
+#1400
+0%
+1$
+#1500
+1!
+1%
+#1600
