@@ -1,7 +1,7 @@
 //The purpose of this design is to have LEDR[7:0] to be controlled by SW[7:0], and have KEY[0] invert the values. Additionally, HEX[5:0] are used to display lab partners birthday, and when KEY[1] is high, change to my birthday
 module design1 (switch,key,leds,hex0,hex1,hex2,hex3,hex4,hex5);
 
-input [7:0] switch;
+input [9:0] switch;
 input [1:0] key;
 output reg [9:0] leds;
 output [7:0] hex0;
