@@ -30,7 +30,7 @@ design1 U0(.switch(SW), .key(KEY), .leds(ledsa),.hex0(hex0a),.hex1(hex1a),.hex2(
 design2 U1(.switches(SW), .leds(ledsb),.hex0(hex0b),.hex1(hex1b),.hex2(hex2b),.hex3(hex3b),.hex4(hex4b),.hex5(hex5b));
 
 always @(SW[9]) begin
-  if(SW[9])
+  if(~SW[9])
   begin
     LEDR = ledsa;
     HEX0 = hex0a;
