@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Thu Feb  6 17:06:10 2020
+Thu Feb 13 08:36:00 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -20,10 +20,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  12. Port Connectivity Checks: "design1:U0|sevenSeg:S2"
  13. Port Connectivity Checks: "design1:U0|sevenSeg:S1"
  14. Port Connectivity Checks: "design1:U0|sevenSeg:S0"
- 15. Port Connectivity Checks: "design1:U0"
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -49,16 +48,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb  6 17:06:10 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 13 08:36:00 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
+; Total logic elements               ; 8                                           ;
+;     Total combinational functions  ; 8                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 66                                          ;
+; Total pins                         ; 68                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -181,35 +180,36 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-;                                             ;        ;
-; Total combinational functions               ; 0      ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 0      ;
-;     -- 3 input functions                    ; 0      ;
-;     -- <=2 input functions                  ; 0      ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 0      ;
-;     -- arithmetic mode                      ; 0      ;
-;                                             ;        ;
-; Total registers                             ; 0      ;
-;     -- Dedicated logic registers            ; 0      ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 66     ;
-;                                             ;        ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-;                                             ;        ;
-; Maximum fan-out node                        ; KEY[0] ;
-; Maximum fan-out                             ; 1      ;
-; Total fan-out                               ; 74     ;
-; Average fan-out                             ; 0.56   ;
-+---------------------------------------------+--------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 8            ;
+;                                             ;              ;
+; Total combinational functions               ; 8            ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 0            ;
+;     -- 3 input functions                    ; 0            ;
+;     -- <=2 input functions                  ; 8            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 8            ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 68           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; KEY[0]~input ;
+; Maximum fan-out                             ; 8            ;
+; Total fan-out                               ; 95           ;
+; Average fan-out                             ; 0.66         ;
++---------------------------------------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -217,7 +217,8 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |top                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 66   ; 0            ; 0          ; |top                ; top         ; work         ;
+; |top                       ; 8 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 68   ; 0            ; 0          ; |top                ; top         ; work         ;
+;    |design1:U0|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|design1:U0     ; design1     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -269,12 +270,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +----------------------------------------------------+
 ; Port Connectivity Checks: "design1:U0|sevenSeg:S2" ;
-+-----------+-------+----------+---------------------+
-; Port      ; Type  ; Severity ; Details             ;
-+-----------+-------+----------+---------------------+
-; val[1..0] ; Input ; Info     ; Stuck at VCC        ;
-; val[3..2] ; Input ; Info     ; Stuck at GND        ;
-+-----------+-------+----------+---------------------+
++--------+-------+----------+------------------------+
+; Port   ; Type  ; Severity ; Details                ;
++--------+-------+----------+------------------------+
+; val[3] ; Input ; Info     ; Stuck at GND           ;
++--------+-------+----------+------------------------+
 
 
 +----------------------------------------------------+
@@ -296,28 +296,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------+-------+----------+---------------------+
 
 
-+----------------------------------------+
-; Port Connectivity Checks: "design1:U0" ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; y    ; Input ; Info     ; Stuck at VCC ;
-+------+-------+----------+--------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 66                          ;
-; cycloneiii_lcell_comb ; 10                          ;
-;     normal            ; 10                          ;
+; boundary_port         ; 68                          ;
+; cycloneiii_lcell_comb ; 19                          ;
+;     normal            ; 19                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 8                           ;
+;         1 data inputs ; 9                           ;
+;         2 data inputs ; 8                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.89                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.79                        ;
 +-----------------------+-----------------------------+
 
 
@@ -336,7 +328,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Feb  6 17:06:01 2020
+    Info: Processing started: Thu Feb 13 08:35:50 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -345,71 +337,72 @@ Warning (12125): Using design file top.v, which is not specified as a design fil
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Warning (12125): Using design file design1.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: design1 File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 1
-Info (12128): Elaborating entity "design1" for hierarchy "design1:U0" File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 10
+Info (12128): Elaborating entity "design1" for hierarchy "design1:U0" File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 21
+Warning (10235): Verilog HDL Always Construct warning at design1.v(7): variable "switch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 7
+Warning (10235): Verilog HDL Always Construct warning at design1.v(11): variable "switch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 11
+Warning (10034): Output port "leds[9..8]" at design1.v(1) has no driver File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 1
 Warning (12125): Using design file sevenSeg.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: sevenSeg File: /home/matt/Documents/Digital Logic/Project 1/sevenSeg.v Line: 1
-Info (12128): Elaborating entity "sevenSeg" for hierarchy "design1:U0|sevenSeg:S0" File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 5
+Info (12128): Elaborating entity "sevenSeg" for hierarchy "design1:U0|sevenSeg:S0" File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 17
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX0[4]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX0[5]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX2[4]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX2[5]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX2[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX3[2]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX3[5]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX3[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 5
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 5
+    Warning (13410): Pin "HEX0[0]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 6
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 6
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 6
+    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 6
+    Warning (13410): Pin "HEX0[4]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 6
+    Warning (13410): Pin "HEX0[5]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 6
+    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 6
+    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 6
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 7
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 7
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 7
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 7
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 7
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 7
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 7
+    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 7
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 8
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 8
+    Warning (13410): Pin "HEX2[4]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 8
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 8
+    Warning (13410): Pin "HEX2[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 8
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 9
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 9
+    Warning (13410): Pin "HEX3[2]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 9
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 9
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 9
+    Warning (13410): Pin "HEX3[5]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 9
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 9
+    Warning (13410): Pin "HEX3[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 9
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 10
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 10
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 10
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 10
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 10
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 10
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 10
+    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 10
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 11
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 11
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 11
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 11
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 11
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 11
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 11
+    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 11
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[0]" File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 1
-Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 76 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 56 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 56 warnings
-    Info: Peak virtual memory: 950 megabytes
-    Info: Processing ended: Thu Feb  6 17:06:10 2020
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:23
+    Info (21059): Implemented 58 output pins
+    Info (21061): Implemented 8 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 55 warnings
+    Info: Peak virtual memory: 984 megabytes
+    Info: Processing ended: Thu Feb 13 08:36:00 2020
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:25
 
 

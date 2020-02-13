@@ -36,7 +36,23 @@
 					"strict" : false
 				},
 				{
+					"name" : "HEX2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2[5]",
+					"strict" : false
+				},
+				{
 					"name" : "SW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
 					"strict" : false
 				},
 				{
@@ -65,6 +81,10 @@
 				},
 				{
 					"name" : "SW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[1]",
 					"strict" : false
 				}
 			]
