@@ -4399,3 +4399,8 @@ VCD info: dumpfile test.vcd opened for output.
                 2550testSW = 0011111101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
                 2560testSW = 0011111110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
                 2570testSW = 0011111111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 0000000000, testKEY = 00, testLED = xxxxxxxxxx, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10110000, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  10testSW = 1000000000, testKEY = 00, testLED = 00xxxxx100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                  20testSW = 0000000000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
