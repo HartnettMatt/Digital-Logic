@@ -10,7 +10,7 @@ test DUT (.data_in(in), .parity_out(out));
 
 initial
   begin
-    $dumpfile("test.vcd");
+  $dumpfile("test.vcd");
 	$dumpvars;
   $display($time, "Starting simulation");
   in = 8'b00000000;
