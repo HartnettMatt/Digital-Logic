@@ -26,6 +26,7 @@ initial begin
 
   // Test birthday switch:
   #10 testKEY = 2'b10;
+  #10 testKEY = 2'b00;
 
   // Test LED switching:
   while(testSW < 10'b1111_1111) begin

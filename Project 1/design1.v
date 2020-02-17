@@ -3,7 +3,7 @@ module design1 (switch,key,leds,hex0,hex1,hex2,hex3,hex4,hex5);
 
 input [9:0] switch;
 input [1:0] key;
-output reg [9:0] leds;
+output [9:0] leds;
 output [7:0] hex0;
 output [7:0] hex1;
 output [7:0] hex2;
@@ -12,16 +12,19 @@ output [7:0] hex4;
 output [7:0] hex5;
 
 //Light the leds based on the switch positions, and invert the leds when key0 is high
+reg [9:0] leds1;
+assign leds = leds1;
 always @(key[0])
 begin
-  leds[7:0] = 8'b00000000;
+  leds1[9:8] = 2'b00;
+  leds1[7:0] = 8'b00000000;
   if(key[0])
   begin
-    leds[7:0] = switch;
+    leds1[7:0] = switch[7:0];
   end
   else
   begin
-    leds[7:0] = ~switch;
+    leds1[7:0] = ~switch[7:0];
   end
 end
 
