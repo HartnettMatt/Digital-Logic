@@ -2,7 +2,7 @@
 
 module tb1();
 
-reg [9:0] testSW;
+reg [7:0] testSW;
 reg [1:0] testKEY;
 wire [9:0] testLED;
 wire [7:0] testHEX0;
@@ -21,16 +21,20 @@ initial begin
   $display($time, "Starting simulation");
 
   //Initialize inputs:
-  testSW = 10'b0000000000;
+  testSW = 8'b00000000;
   testKEY = 2'b00;
 
   // Test birthday switch:
   #10 testKEY = 2'b10;
   #10 testKEY = 2'b00;
 
+  //Test LED inversion:
+  #10 testKEY = 2'b01;
+  #10 testKEY = 2'b00;
+
   // Test LED switching:
-  while(testSW < 10'b1111_1111) begin
-    #10 testSW = testSW + 10'b00000001;
+  while(testSW < 8'b1111_1111) begin
+    #10 testSW = testSW + 8'b0000_0001;
   end
 
   // End testing

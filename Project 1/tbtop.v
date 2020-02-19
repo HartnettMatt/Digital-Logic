@@ -25,8 +25,8 @@ initial begin
   testKEY = 2'b00;
 
   // Test different outputs:
-#10 testSW[9] = 1'b1;
-#10 testSW[9] = 1'b0;
+  #10 testSW[9] = 1'b1;
+  #10 testSW[9] = 1'b0;
 
   // End testing
   #10 $finish;

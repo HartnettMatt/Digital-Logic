@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Thu Feb 13 16:31:22 2020
+Tue Feb 18 15:45:54 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 13 16:31:22 2020       ;
+; Analysis & Synthesis Status        ; Successful - Tue Feb 18 15:45:54 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top                                         ;
@@ -315,16 +315,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 70                          ;
-; cycloneiii_lcell_comb ; 61                          ;
-;     normal            ; 61                          ;
+; cycloneiii_lcell_comb ; 59                          ;
+;     normal            ; 59                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 8                           ;
+;         1 data inputs ; 6                           ;
 ;         2 data inputs ; 16                          ;
 ;         3 data inputs ; 10                          ;
 ;         4 data inputs ; 25                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.75                        ;
+; Average LUT depth     ; 2.74                        ;
 +-----------------------+-----------------------------+
 
 
@@ -343,7 +343,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Feb 13 16:31:12 2020
+    Info: Processing started: Tue Feb 18 15:45:43 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -367,14 +367,11 @@ Warning (10235): Verilog HDL Always Construct warning at top.v(51): variable "he
 Warning (12125): Using design file design1.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: design1 File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 2
 Info (12128): Elaborating entity "design1" for hierarchy "design1:U0" File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 29
-Warning (10235): Verilog HDL Always Construct warning at design1.v(19): variable "switch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 19
-Warning (10230): Verilog HDL assignment warning at design1.v(19): truncated value with size 10 to match size of target (8) File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 19
 Warning (10235): Verilog HDL Always Construct warning at design1.v(23): variable "switch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 23
-Warning (10230): Verilog HDL assignment warning at design1.v(23): truncated value with size 10 to match size of target (8) File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 23
-Warning (10034): Output port "leds[9..8]" at design1.v(6) has no driver File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 6
+Warning (10235): Verilog HDL Always Construct warning at design1.v(27): variable "switch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 27
 Warning (12125): Using design file sevenSeg.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: sevenSeg File: /home/matt/Documents/Digital Logic/Project 1/sevenSeg.v Line: 1
-Info (12128): Elaborating entity "sevenSeg" for hierarchy "design1:U0|sevenSeg:S2" File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 29
+Info (12128): Elaborating entity "sevenSeg" for hierarchy "design1:U0|sevenSeg:S2" File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 33
 Warning (12125): Using design file design2.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: design2 File: /home/matt/Documents/Digital Logic/Project 1/design2.v Line: 1
 Info (12128): Elaborating entity "design2" for hierarchy "design2:U1" File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 30
@@ -398,10 +395,10 @@ Info (21057): Implemented 121 device resources after synthesis - the final resou
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 58 output pins
     Info (21061): Implemented 51 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 982 megabytes
-    Info: Processing ended: Thu Feb 13 16:31:22 2020
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:24
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 985 megabytes
+    Info: Processing ended: Tue Feb 18 15:45:54 2020
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:27
 
 
