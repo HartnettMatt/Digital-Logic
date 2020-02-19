@@ -14,7 +14,7 @@ output [7:0] hex5;
 //Light the leds based on the switch positions, and invert the leds when key0 is high
 reg [9:0] leds1;
 assign leds = leds1;
-always @(key[0])
+always @(key[0] or switch)
 begin
   leds1[9:8] = 2'b00;
   leds1[7:0] = 8'b00000000;

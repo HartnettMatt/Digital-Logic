@@ -5966,3 +5966,710 @@ VCD info: dumpfile test.vcd opened for output.
                 2570testSW = 11111101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
                 2580testSW = 11111110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
                 2590testSW = 11111111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+VCD warning: tbtop.v:19: $dumpfile called after $dumpvars started,
+                         using existing file (test.vcd).
+VCD warning: ignoring signals in previously scanned scope tb1.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S0.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S1.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S2.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S3.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S4.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S5.
+VCD warning: ignoring signals in previously scanned scope tbtop.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S0.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S1.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S2.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S3.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S4.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S5.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U1.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U1.U0.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U1.U1.
+                   0Starting simulation
+                   0testSW = 0000000000, testKEY = 00, testLED = xxxxxxxxxx, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10110000, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  10testSW = 1000000000, testKEY = 00, testLED = 00xxxxx100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                  20testSW = 0000000000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 00000000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  10testSW = 00000000, testKEY = 10, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10110000, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  20testSW = 00000000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  30testSW = 00000000, testKEY = 01, testLED = 0000000000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  40testSW = 00000000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  50testSW = 00000001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  60testSW = 00000010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  70testSW = 00000011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  80testSW = 00000100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  90testSW = 00000101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 100testSW = 00000110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 110testSW = 00000111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 120testSW = 00001000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 130testSW = 00001001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 140testSW = 00001010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 150testSW = 00001011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 160testSW = 00001100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 170testSW = 00001101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 180testSW = 00001110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 190testSW = 00001111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 200testSW = 00010000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 210testSW = 00010001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 220testSW = 00010010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 230testSW = 00010011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 240testSW = 00010100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 250testSW = 00010101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 260testSW = 00010110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 270testSW = 00010111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 280testSW = 00011000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 290testSW = 00011001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 300testSW = 00011010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 310testSW = 00011011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 320testSW = 00011100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 330testSW = 00011101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 340testSW = 00011110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 350testSW = 00011111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 360testSW = 00100000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 370testSW = 00100001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 380testSW = 00100010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 390testSW = 00100011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 400testSW = 00100100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 410testSW = 00100101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 420testSW = 00100110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 430testSW = 00100111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 440testSW = 00101000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 450testSW = 00101001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 460testSW = 00101010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 470testSW = 00101011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 480testSW = 00101100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 490testSW = 00101101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 500testSW = 00101110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 510testSW = 00101111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 520testSW = 00110000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 530testSW = 00110001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 540testSW = 00110010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 550testSW = 00110011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 560testSW = 00110100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 570testSW = 00110101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 580testSW = 00110110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 590testSW = 00110111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 600testSW = 00111000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 610testSW = 00111001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 620testSW = 00111010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 630testSW = 00111011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 640testSW = 00111100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 650testSW = 00111101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 660testSW = 00111110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 670testSW = 00111111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 680testSW = 01000000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 690testSW = 01000001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 700testSW = 01000010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 710testSW = 01000011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 720testSW = 01000100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 730testSW = 01000101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 740testSW = 01000110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 750testSW = 01000111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 760testSW = 01001000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 770testSW = 01001001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 780testSW = 01001010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 790testSW = 01001011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 800testSW = 01001100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 810testSW = 01001101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 820testSW = 01001110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 830testSW = 01001111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 840testSW = 01010000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 850testSW = 01010001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 860testSW = 01010010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 870testSW = 01010011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 880testSW = 01010100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 890testSW = 01010101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 900testSW = 01010110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 910testSW = 01010111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 920testSW = 01011000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 930testSW = 01011001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 940testSW = 01011010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 950testSW = 01011011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 960testSW = 01011100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 970testSW = 01011101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 980testSW = 01011110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 990testSW = 01011111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1000testSW = 01100000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1010testSW = 01100001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1020testSW = 01100010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1030testSW = 01100011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1040testSW = 01100100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1050testSW = 01100101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1060testSW = 01100110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1070testSW = 01100111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1080testSW = 01101000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1090testSW = 01101001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1100testSW = 01101010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1110testSW = 01101011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1120testSW = 01101100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1130testSW = 01101101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1140testSW = 01101110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1150testSW = 01101111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1160testSW = 01110000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1170testSW = 01110001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1180testSW = 01110010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1190testSW = 01110011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1200testSW = 01110100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1210testSW = 01110101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1220testSW = 01110110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1230testSW = 01110111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1240testSW = 01111000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1250testSW = 01111001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1260testSW = 01111010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1270testSW = 01111011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1280testSW = 01111100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1290testSW = 01111101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1300testSW = 01111110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1310testSW = 01111111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1320testSW = 10000000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1330testSW = 10000001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1340testSW = 10000010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1350testSW = 10000011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1360testSW = 10000100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1370testSW = 10000101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1380testSW = 10000110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1390testSW = 10000111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1400testSW = 10001000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1410testSW = 10001001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1420testSW = 10001010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1430testSW = 10001011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1440testSW = 10001100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1450testSW = 10001101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1460testSW = 10001110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1470testSW = 10001111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1480testSW = 10010000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1490testSW = 10010001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1500testSW = 10010010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1510testSW = 10010011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1520testSW = 10010100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1530testSW = 10010101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1540testSW = 10010110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1550testSW = 10010111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1560testSW = 10011000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1570testSW = 10011001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1580testSW = 10011010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1590testSW = 10011011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1600testSW = 10011100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1610testSW = 10011101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1620testSW = 10011110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1630testSW = 10011111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1640testSW = 10100000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1650testSW = 10100001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1660testSW = 10100010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1670testSW = 10100011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1680testSW = 10100100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1690testSW = 10100101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1700testSW = 10100110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1710testSW = 10100111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1720testSW = 10101000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1730testSW = 10101001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1740testSW = 10101010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1750testSW = 10101011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1760testSW = 10101100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1770testSW = 10101101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1780testSW = 10101110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1790testSW = 10101111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1800testSW = 10110000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1810testSW = 10110001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1820testSW = 10110010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1830testSW = 10110011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1840testSW = 10110100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1850testSW = 10110101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1860testSW = 10110110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1870testSW = 10110111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1880testSW = 10111000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1890testSW = 10111001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1900testSW = 10111010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1910testSW = 10111011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1920testSW = 10111100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1930testSW = 10111101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1940testSW = 10111110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1950testSW = 10111111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1960testSW = 11000000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1970testSW = 11000001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1980testSW = 11000010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1990testSW = 11000011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2000testSW = 11000100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2010testSW = 11000101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2020testSW = 11000110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2030testSW = 11000111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2040testSW = 11001000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2050testSW = 11001001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2060testSW = 11001010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2070testSW = 11001011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2080testSW = 11001100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2090testSW = 11001101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2100testSW = 11001110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2110testSW = 11001111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2120testSW = 11010000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2130testSW = 11010001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2140testSW = 11010010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2150testSW = 11010011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2160testSW = 11010100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2170testSW = 11010101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2180testSW = 11010110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2190testSW = 11010111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2200testSW = 11011000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2210testSW = 11011001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2220testSW = 11011010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2230testSW = 11011011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2240testSW = 11011100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2250testSW = 11011101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2260testSW = 11011110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2270testSW = 11011111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2280testSW = 11100000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2290testSW = 11100001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2300testSW = 11100010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2310testSW = 11100011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2320testSW = 11100100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2330testSW = 11100101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2340testSW = 11100110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2350testSW = 11100111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2360testSW = 11101000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2370testSW = 11101001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2380testSW = 11101010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2390testSW = 11101011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2400testSW = 11101100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2410testSW = 11101101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2420testSW = 11101110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2430testSW = 11101111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2440testSW = 11110000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2450testSW = 11110001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2460testSW = 11110010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2470testSW = 11110011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2480testSW = 11110100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2490testSW = 11110101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2500testSW = 11110110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2510testSW = 11110111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2520testSW = 11111000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2530testSW = 11111001, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2540testSW = 11111010, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2550testSW = 11111011, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2560testSW = 11111100, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2570testSW = 11111101, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2580testSW = 11111110, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2590testSW = 11111111, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 00000000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  10testSW = 00000000, testKEY = 10, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10110000, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  20testSW = 00000000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  30testSW = 00000000, testKEY = 01, testLED = 0000000000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  40testSW = 00000000, testKEY = 00, testLED = 0011111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  50testSW = 00000001, testKEY = 00, testLED = 0011111110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  60testSW = 00000010, testKEY = 00, testLED = 0011111101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  70testSW = 00000011, testKEY = 00, testLED = 0011111100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  80testSW = 00000100, testKEY = 00, testLED = 0011111011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  90testSW = 00000101, testKEY = 00, testLED = 0011111010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 100testSW = 00000110, testKEY = 00, testLED = 0011111001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 110testSW = 00000111, testKEY = 00, testLED = 0011111000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 120testSW = 00001000, testKEY = 00, testLED = 0011110111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 130testSW = 00001001, testKEY = 00, testLED = 0011110110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 140testSW = 00001010, testKEY = 00, testLED = 0011110101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 150testSW = 00001011, testKEY = 00, testLED = 0011110100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 160testSW = 00001100, testKEY = 00, testLED = 0011110011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 170testSW = 00001101, testKEY = 00, testLED = 0011110010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 180testSW = 00001110, testKEY = 00, testLED = 0011110001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 190testSW = 00001111, testKEY = 00, testLED = 0011110000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 200testSW = 00010000, testKEY = 00, testLED = 0011101111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 210testSW = 00010001, testKEY = 00, testLED = 0011101110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 220testSW = 00010010, testKEY = 00, testLED = 0011101101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 230testSW = 00010011, testKEY = 00, testLED = 0011101100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 240testSW = 00010100, testKEY = 00, testLED = 0011101011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 250testSW = 00010101, testKEY = 00, testLED = 0011101010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 260testSW = 00010110, testKEY = 00, testLED = 0011101001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 270testSW = 00010111, testKEY = 00, testLED = 0011101000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 280testSW = 00011000, testKEY = 00, testLED = 0011100111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 290testSW = 00011001, testKEY = 00, testLED = 0011100110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 300testSW = 00011010, testKEY = 00, testLED = 0011100101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 310testSW = 00011011, testKEY = 00, testLED = 0011100100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 320testSW = 00011100, testKEY = 00, testLED = 0011100011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 330testSW = 00011101, testKEY = 00, testLED = 0011100010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 340testSW = 00011110, testKEY = 00, testLED = 0011100001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 350testSW = 00011111, testKEY = 00, testLED = 0011100000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 360testSW = 00100000, testKEY = 00, testLED = 0011011111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 370testSW = 00100001, testKEY = 00, testLED = 0011011110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 380testSW = 00100010, testKEY = 00, testLED = 0011011101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 390testSW = 00100011, testKEY = 00, testLED = 0011011100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 400testSW = 00100100, testKEY = 00, testLED = 0011011011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 410testSW = 00100101, testKEY = 00, testLED = 0011011010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 420testSW = 00100110, testKEY = 00, testLED = 0011011001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 430testSW = 00100111, testKEY = 00, testLED = 0011011000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 440testSW = 00101000, testKEY = 00, testLED = 0011010111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 450testSW = 00101001, testKEY = 00, testLED = 0011010110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 460testSW = 00101010, testKEY = 00, testLED = 0011010101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 470testSW = 00101011, testKEY = 00, testLED = 0011010100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 480testSW = 00101100, testKEY = 00, testLED = 0011010011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 490testSW = 00101101, testKEY = 00, testLED = 0011010010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 500testSW = 00101110, testKEY = 00, testLED = 0011010001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 510testSW = 00101111, testKEY = 00, testLED = 0011010000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 520testSW = 00110000, testKEY = 00, testLED = 0011001111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 530testSW = 00110001, testKEY = 00, testLED = 0011001110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 540testSW = 00110010, testKEY = 00, testLED = 0011001101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 550testSW = 00110011, testKEY = 00, testLED = 0011001100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 560testSW = 00110100, testKEY = 00, testLED = 0011001011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 570testSW = 00110101, testKEY = 00, testLED = 0011001010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 580testSW = 00110110, testKEY = 00, testLED = 0011001001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 590testSW = 00110111, testKEY = 00, testLED = 0011001000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 600testSW = 00111000, testKEY = 00, testLED = 0011000111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 610testSW = 00111001, testKEY = 00, testLED = 0011000110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 620testSW = 00111010, testKEY = 00, testLED = 0011000101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 630testSW = 00111011, testKEY = 00, testLED = 0011000100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 640testSW = 00111100, testKEY = 00, testLED = 0011000011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 650testSW = 00111101, testKEY = 00, testLED = 0011000010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 660testSW = 00111110, testKEY = 00, testLED = 0011000001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 670testSW = 00111111, testKEY = 00, testLED = 0011000000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 680testSW = 01000000, testKEY = 00, testLED = 0010111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 690testSW = 01000001, testKEY = 00, testLED = 0010111110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 700testSW = 01000010, testKEY = 00, testLED = 0010111101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 710testSW = 01000011, testKEY = 00, testLED = 0010111100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 720testSW = 01000100, testKEY = 00, testLED = 0010111011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 730testSW = 01000101, testKEY = 00, testLED = 0010111010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 740testSW = 01000110, testKEY = 00, testLED = 0010111001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 750testSW = 01000111, testKEY = 00, testLED = 0010111000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 760testSW = 01001000, testKEY = 00, testLED = 0010110111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 770testSW = 01001001, testKEY = 00, testLED = 0010110110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 780testSW = 01001010, testKEY = 00, testLED = 0010110101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 790testSW = 01001011, testKEY = 00, testLED = 0010110100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 800testSW = 01001100, testKEY = 00, testLED = 0010110011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 810testSW = 01001101, testKEY = 00, testLED = 0010110010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 820testSW = 01001110, testKEY = 00, testLED = 0010110001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 830testSW = 01001111, testKEY = 00, testLED = 0010110000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 840testSW = 01010000, testKEY = 00, testLED = 0010101111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 850testSW = 01010001, testKEY = 00, testLED = 0010101110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 860testSW = 01010010, testKEY = 00, testLED = 0010101101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 870testSW = 01010011, testKEY = 00, testLED = 0010101100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 880testSW = 01010100, testKEY = 00, testLED = 0010101011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 890testSW = 01010101, testKEY = 00, testLED = 0010101010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 900testSW = 01010110, testKEY = 00, testLED = 0010101001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 910testSW = 01010111, testKEY = 00, testLED = 0010101000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 920testSW = 01011000, testKEY = 00, testLED = 0010100111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 930testSW = 01011001, testKEY = 00, testLED = 0010100110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 940testSW = 01011010, testKEY = 00, testLED = 0010100101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 950testSW = 01011011, testKEY = 00, testLED = 0010100100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 960testSW = 01011100, testKEY = 00, testLED = 0010100011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 970testSW = 01011101, testKEY = 00, testLED = 0010100010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 980testSW = 01011110, testKEY = 00, testLED = 0010100001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                 990testSW = 01011111, testKEY = 00, testLED = 0010100000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1000testSW = 01100000, testKEY = 00, testLED = 0010011111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1010testSW = 01100001, testKEY = 00, testLED = 0010011110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1020testSW = 01100010, testKEY = 00, testLED = 0010011101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1030testSW = 01100011, testKEY = 00, testLED = 0010011100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1040testSW = 01100100, testKEY = 00, testLED = 0010011011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1050testSW = 01100101, testKEY = 00, testLED = 0010011010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1060testSW = 01100110, testKEY = 00, testLED = 0010011001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1070testSW = 01100111, testKEY = 00, testLED = 0010011000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1080testSW = 01101000, testKEY = 00, testLED = 0010010111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1090testSW = 01101001, testKEY = 00, testLED = 0010010110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1100testSW = 01101010, testKEY = 00, testLED = 0010010101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1110testSW = 01101011, testKEY = 00, testLED = 0010010100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1120testSW = 01101100, testKEY = 00, testLED = 0010010011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1130testSW = 01101101, testKEY = 00, testLED = 0010010010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1140testSW = 01101110, testKEY = 00, testLED = 0010010001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1150testSW = 01101111, testKEY = 00, testLED = 0010010000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1160testSW = 01110000, testKEY = 00, testLED = 0010001111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1170testSW = 01110001, testKEY = 00, testLED = 0010001110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1180testSW = 01110010, testKEY = 00, testLED = 0010001101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1190testSW = 01110011, testKEY = 00, testLED = 0010001100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1200testSW = 01110100, testKEY = 00, testLED = 0010001011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1210testSW = 01110101, testKEY = 00, testLED = 0010001010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1220testSW = 01110110, testKEY = 00, testLED = 0010001001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1230testSW = 01110111, testKEY = 00, testLED = 0010001000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1240testSW = 01111000, testKEY = 00, testLED = 0010000111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1250testSW = 01111001, testKEY = 00, testLED = 0010000110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1260testSW = 01111010, testKEY = 00, testLED = 0010000101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1270testSW = 01111011, testKEY = 00, testLED = 0010000100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1280testSW = 01111100, testKEY = 00, testLED = 0010000011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1290testSW = 01111101, testKEY = 00, testLED = 0010000010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1300testSW = 01111110, testKEY = 00, testLED = 0010000001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1310testSW = 01111111, testKEY = 00, testLED = 0010000000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1320testSW = 10000000, testKEY = 00, testLED = 0001111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1330testSW = 10000001, testKEY = 00, testLED = 0001111110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1340testSW = 10000010, testKEY = 00, testLED = 0001111101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1350testSW = 10000011, testKEY = 00, testLED = 0001111100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1360testSW = 10000100, testKEY = 00, testLED = 0001111011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1370testSW = 10000101, testKEY = 00, testLED = 0001111010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1380testSW = 10000110, testKEY = 00, testLED = 0001111001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1390testSW = 10000111, testKEY = 00, testLED = 0001111000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1400testSW = 10001000, testKEY = 00, testLED = 0001110111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1410testSW = 10001001, testKEY = 00, testLED = 0001110110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1420testSW = 10001010, testKEY = 00, testLED = 0001110101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1430testSW = 10001011, testKEY = 00, testLED = 0001110100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1440testSW = 10001100, testKEY = 00, testLED = 0001110011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1450testSW = 10001101, testKEY = 00, testLED = 0001110010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1460testSW = 10001110, testKEY = 00, testLED = 0001110001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1470testSW = 10001111, testKEY = 00, testLED = 0001110000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1480testSW = 10010000, testKEY = 00, testLED = 0001101111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1490testSW = 10010001, testKEY = 00, testLED = 0001101110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1500testSW = 10010010, testKEY = 00, testLED = 0001101101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1510testSW = 10010011, testKEY = 00, testLED = 0001101100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1520testSW = 10010100, testKEY = 00, testLED = 0001101011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1530testSW = 10010101, testKEY = 00, testLED = 0001101010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1540testSW = 10010110, testKEY = 00, testLED = 0001101001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1550testSW = 10010111, testKEY = 00, testLED = 0001101000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1560testSW = 10011000, testKEY = 00, testLED = 0001100111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1570testSW = 10011001, testKEY = 00, testLED = 0001100110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1580testSW = 10011010, testKEY = 00, testLED = 0001100101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1590testSW = 10011011, testKEY = 00, testLED = 0001100100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1600testSW = 10011100, testKEY = 00, testLED = 0001100011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1610testSW = 10011101, testKEY = 00, testLED = 0001100010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1620testSW = 10011110, testKEY = 00, testLED = 0001100001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1630testSW = 10011111, testKEY = 00, testLED = 0001100000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1640testSW = 10100000, testKEY = 00, testLED = 0001011111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1650testSW = 10100001, testKEY = 00, testLED = 0001011110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1660testSW = 10100010, testKEY = 00, testLED = 0001011101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1670testSW = 10100011, testKEY = 00, testLED = 0001011100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1680testSW = 10100100, testKEY = 00, testLED = 0001011011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1690testSW = 10100101, testKEY = 00, testLED = 0001011010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1700testSW = 10100110, testKEY = 00, testLED = 0001011001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1710testSW = 10100111, testKEY = 00, testLED = 0001011000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1720testSW = 10101000, testKEY = 00, testLED = 0001010111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1730testSW = 10101001, testKEY = 00, testLED = 0001010110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1740testSW = 10101010, testKEY = 00, testLED = 0001010101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1750testSW = 10101011, testKEY = 00, testLED = 0001010100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1760testSW = 10101100, testKEY = 00, testLED = 0001010011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1770testSW = 10101101, testKEY = 00, testLED = 0001010010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1780testSW = 10101110, testKEY = 00, testLED = 0001010001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1790testSW = 10101111, testKEY = 00, testLED = 0001010000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1800testSW = 10110000, testKEY = 00, testLED = 0001001111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1810testSW = 10110001, testKEY = 00, testLED = 0001001110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1820testSW = 10110010, testKEY = 00, testLED = 0001001101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1830testSW = 10110011, testKEY = 00, testLED = 0001001100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1840testSW = 10110100, testKEY = 00, testLED = 0001001011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1850testSW = 10110101, testKEY = 00, testLED = 0001001010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1860testSW = 10110110, testKEY = 00, testLED = 0001001001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1870testSW = 10110111, testKEY = 00, testLED = 0001001000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1880testSW = 10111000, testKEY = 00, testLED = 0001000111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1890testSW = 10111001, testKEY = 00, testLED = 0001000110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1900testSW = 10111010, testKEY = 00, testLED = 0001000101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1910testSW = 10111011, testKEY = 00, testLED = 0001000100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1920testSW = 10111100, testKEY = 00, testLED = 0001000011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1930testSW = 10111101, testKEY = 00, testLED = 0001000010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1940testSW = 10111110, testKEY = 00, testLED = 0001000001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1950testSW = 10111111, testKEY = 00, testLED = 0001000000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1960testSW = 11000000, testKEY = 00, testLED = 0000111111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1970testSW = 11000001, testKEY = 00, testLED = 0000111110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1980testSW = 11000010, testKEY = 00, testLED = 0000111101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                1990testSW = 11000011, testKEY = 00, testLED = 0000111100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2000testSW = 11000100, testKEY = 00, testLED = 0000111011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2010testSW = 11000101, testKEY = 00, testLED = 0000111010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2020testSW = 11000110, testKEY = 00, testLED = 0000111001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2030testSW = 11000111, testKEY = 00, testLED = 0000111000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2040testSW = 11001000, testKEY = 00, testLED = 0000110111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2050testSW = 11001001, testKEY = 00, testLED = 0000110110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2060testSW = 11001010, testKEY = 00, testLED = 0000110101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2070testSW = 11001011, testKEY = 00, testLED = 0000110100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2080testSW = 11001100, testKEY = 00, testLED = 0000110011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2090testSW = 11001101, testKEY = 00, testLED = 0000110010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2100testSW = 11001110, testKEY = 00, testLED = 0000110001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2110testSW = 11001111, testKEY = 00, testLED = 0000110000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2120testSW = 11010000, testKEY = 00, testLED = 0000101111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2130testSW = 11010001, testKEY = 00, testLED = 0000101110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2140testSW = 11010010, testKEY = 00, testLED = 0000101101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2150testSW = 11010011, testKEY = 00, testLED = 0000101100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2160testSW = 11010100, testKEY = 00, testLED = 0000101011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2170testSW = 11010101, testKEY = 00, testLED = 0000101010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2180testSW = 11010110, testKEY = 00, testLED = 0000101001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2190testSW = 11010111, testKEY = 00, testLED = 0000101000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2200testSW = 11011000, testKEY = 00, testLED = 0000100111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2210testSW = 11011001, testKEY = 00, testLED = 0000100110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2220testSW = 11011010, testKEY = 00, testLED = 0000100101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2230testSW = 11011011, testKEY = 00, testLED = 0000100100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2240testSW = 11011100, testKEY = 00, testLED = 0000100011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2250testSW = 11011101, testKEY = 00, testLED = 0000100010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2260testSW = 11011110, testKEY = 00, testLED = 0000100001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2270testSW = 11011111, testKEY = 00, testLED = 0000100000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2280testSW = 11100000, testKEY = 00, testLED = 0000011111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2290testSW = 11100001, testKEY = 00, testLED = 0000011110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2300testSW = 11100010, testKEY = 00, testLED = 0000011101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2310testSW = 11100011, testKEY = 00, testLED = 0000011100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2320testSW = 11100100, testKEY = 00, testLED = 0000011011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2330testSW = 11100101, testKEY = 00, testLED = 0000011010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2340testSW = 11100110, testKEY = 00, testLED = 0000011001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2350testSW = 11100111, testKEY = 00, testLED = 0000011000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2360testSW = 11101000, testKEY = 00, testLED = 0000010111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2370testSW = 11101001, testKEY = 00, testLED = 0000010110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2380testSW = 11101010, testKEY = 00, testLED = 0000010101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2390testSW = 11101011, testKEY = 00, testLED = 0000010100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2400testSW = 11101100, testKEY = 00, testLED = 0000010011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2410testSW = 11101101, testKEY = 00, testLED = 0000010010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2420testSW = 11101110, testKEY = 00, testLED = 0000010001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2430testSW = 11101111, testKEY = 00, testLED = 0000010000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2440testSW = 11110000, testKEY = 00, testLED = 0000001111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2450testSW = 11110001, testKEY = 00, testLED = 0000001110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2460testSW = 11110010, testKEY = 00, testLED = 0000001101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2470testSW = 11110011, testKEY = 00, testLED = 0000001100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2480testSW = 11110100, testKEY = 00, testLED = 0000001011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2490testSW = 11110101, testKEY = 00, testLED = 0000001010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2500testSW = 11110110, testKEY = 00, testLED = 0000001001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2510testSW = 11110111, testKEY = 00, testLED = 0000001000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2520testSW = 11111000, testKEY = 00, testLED = 0000000111, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2530testSW = 11111001, testKEY = 00, testLED = 0000000110, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2540testSW = 11111010, testKEY = 00, testLED = 0000000101, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2550testSW = 11111011, testKEY = 00, testLED = 0000000100, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2560testSW = 11111100, testKEY = 00, testLED = 0000000011, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2570testSW = 11111101, testKEY = 00, testLED = 0000000010, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2580testSW = 11111110, testKEY = 00, testLED = 0000000001, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                2590testSW = 11111111, testKEY = 00, testLED = 0000000000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 0000000000, testLED = 00xxxxx100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                  10testSW = 0000000001, testLED = 00xxxxx001, testHEX0 = 11111001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  20testSW = 0000000010, testLED = 00xxxxx001, testHEX0 = 10100100, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  30testSW = 0000000011, testLED = 00xxxxx001, testHEX0 = 10110000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  40testSW = 0000000100, testLED = 00xxxxx001, testHEX0 = 10011001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  50testSW = 0000000101, testLED = 00xxxxx001, testHEX0 = 10010010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  60testSW = 0000000110, testLED = 00xxxxx001, testHEX0 = 10000010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  70testSW = 0000000111, testLED = 00xxxxx001, testHEX0 = 11111000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  80testSW = 0000001000, testLED = 00xxxxx001, testHEX0 = 10000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  90testSW = 0000001001, testLED = 00xxxxx001, testHEX0 = 10011000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 100testSW = 0000001010, testLED = 00xxxxx001, testHEX0 = 00001000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 110testSW = 0000001011, testLED = 00xxxxx001, testHEX0 = 00000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 120testSW = 0000001100, testLED = 00xxxxx001, testHEX0 = 01000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 130testSW = 0000001101, testLED = 00xxxxx001, testHEX0 = 01000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 140testSW = 0000001110, testLED = 00xxxxx001, testHEX0 = 00000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 150testSW = 0000001111, testLED = 00xxxxx001, testHEX0 = 00001110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 0000000000, testLED = 00xxxxx100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                  10testSW = 0000000001, testLED = 00xxxxx001, testHEX0 = 11111001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  20testSW = 0000000010, testLED = 00xxxxx001, testHEX0 = 10100100, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  30testSW = 0000000011, testLED = 00xxxxx001, testHEX0 = 10110000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  40testSW = 0000000100, testLED = 00xxxxx001, testHEX0 = 10011001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  50testSW = 0000000101, testLED = 00xxxxx001, testHEX0 = 10010010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  60testSW = 0000000110, testLED = 00xxxxx001, testHEX0 = 10000010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  70testSW = 0000000111, testLED = 00xxxxx001, testHEX0 = 11111000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  80testSW = 0000001000, testLED = 00xxxxx001, testHEX0 = 10000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  90testSW = 0000001001, testLED = 00xxxxx001, testHEX0 = 10011000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 100testSW = 0000001010, testLED = 00xxxxx001, testHEX0 = 00001000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 110testSW = 0000001011, testLED = 00xxxxx001, testHEX0 = 00000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 120testSW = 0000001100, testLED = 00xxxxx001, testHEX0 = 01000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 130testSW = 0000001101, testLED = 00xxxxx001, testHEX0 = 01000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 140testSW = 0000001110, testLED = 00xxxxx001, testHEX0 = 00000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 150testSW = 0000001111, testLED = 00xxxxx001, testHEX0 = 00001110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 0000000000, testLED = 00xxxxxx00, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                  10testSW = 0000000001, testLED = 00xxxxx00x, testHEX0 = 11111001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  20testSW = 0000000010, testLED = 00xxxxx00x, testHEX0 = 10100100, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  30testSW = 0000000011, testLED = 00xxxxx00x, testHEX0 = 10110000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  40testSW = 0000000100, testLED = 00xxxxx00x, testHEX0 = 10011001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  50testSW = 0000000101, testLED = 00xxxxx00x, testHEX0 = 10010010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  60testSW = 0000000110, testLED = 00xxxxx00x, testHEX0 = 10000010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  70testSW = 0000000111, testLED = 00xxxxx00x, testHEX0 = 11111000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  80testSW = 0000001000, testLED = 00xxxxx00x, testHEX0 = 10000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  90testSW = 0000001001, testLED = 00xxxxx00x, testHEX0 = 10011000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 100testSW = 0000001010, testLED = 00xxxxx00x, testHEX0 = 00001000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 110testSW = 0000001011, testLED = 00xxxxx00x, testHEX0 = 00000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 120testSW = 0000001100, testLED = 00xxxxx00x, testHEX0 = 01000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 130testSW = 0000001101, testLED = 00xxxxx00x, testHEX0 = 01000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 140testSW = 0000001110, testLED = 00xxxxx00x, testHEX0 = 00000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 150testSW = 0000001111, testLED = 00xxxxx00x, testHEX0 = 00001110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 0000000000, testLED = 0000000100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                  10testSW = 0000000001, testLED = 0000000001, testHEX0 = 11111001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  20testSW = 0000000010, testLED = 0000000001, testHEX0 = 10100100, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  30testSW = 0000000011, testLED = 0000000001, testHEX0 = 10110000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  40testSW = 0000000100, testLED = 0000000001, testHEX0 = 10011001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  50testSW = 0000000101, testLED = 0000000001, testHEX0 = 10010010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  60testSW = 0000000110, testLED = 0000000001, testHEX0 = 10000010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  70testSW = 0000000111, testLED = 0000000001, testHEX0 = 11111000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  80testSW = 0000001000, testLED = 0000000001, testHEX0 = 10000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  90testSW = 0000001001, testLED = 0000000001, testHEX0 = 10011000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 100testSW = 0000001010, testLED = 0000000001, testHEX0 = 00001000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 110testSW = 0000001011, testLED = 0000000001, testHEX0 = 00000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 120testSW = 0000001100, testLED = 0000000001, testHEX0 = 01000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 130testSW = 0000001101, testLED = 0000000001, testHEX0 = 01000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 140testSW = 0000001110, testLED = 0000000001, testHEX0 = 00000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 150testSW = 0000001111, testLED = 0000000001, testHEX0 = 00001110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 0000000000, testLED = 0000000100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                  10testSW = 0000000001, testLED = 0000000001, testHEX0 = 11111001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  20testSW = 0000010001, testLED = 0000000100, testHEX0 = 11111001, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11111001, testHEX5 = 10000110
+                  30testSW = 0000010000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11111001, testHEX5 = 11111111
+                  40testSW = 0000000000, testLED = 0000000100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                  50testSW = 0000000001, testLED = 0000000001, testHEX0 = 11111001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  60testSW = 0000000010, testLED = 0000000001, testHEX0 = 10100100, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  70testSW = 0000000011, testLED = 0000000001, testHEX0 = 10110000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  80testSW = 0000000100, testLED = 0000000001, testHEX0 = 10011001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  90testSW = 0000000101, testLED = 0000000001, testHEX0 = 10010010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 100testSW = 0000000110, testLED = 0000000001, testHEX0 = 10000010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 110testSW = 0000000111, testLED = 0000000001, testHEX0 = 11111000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 120testSW = 0000001000, testLED = 0000000001, testHEX0 = 10000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 130testSW = 0000001001, testLED = 0000000001, testHEX0 = 10011000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 140testSW = 0000001010, testLED = 0000000001, testHEX0 = 00001000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 150testSW = 0000001011, testLED = 0000000001, testHEX0 = 00000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 160testSW = 0000001100, testLED = 0000000001, testHEX0 = 01000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 170testSW = 0000001101, testLED = 0000000001, testHEX0 = 01000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 180testSW = 0000001110, testLED = 0000000001, testHEX0 = 00000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 190testSW = 0000001111, testLED = 0000000001, testHEX0 = 00001110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 0000000000, testLED = 0000000100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                  10testSW = 0000000001, testLED = 0000000001, testHEX0 = 11111001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  20testSW = 0000010001, testLED = 0000000100, testHEX0 = 11111001, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11111001, testHEX5 = 10000110
+                  30testSW = 0000010000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11111001, testHEX5 = 11111111
+                  40testSW = 0000000000, testLED = 0000000100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                  60testSW = 0000000001, testLED = 0000000001, testHEX0 = 11111001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  70testSW = 0000000010, testLED = 0000000001, testHEX0 = 10100100, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  80testSW = 0000000011, testLED = 0000000001, testHEX0 = 10110000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  90testSW = 0000000100, testLED = 0000000001, testHEX0 = 10011001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 100testSW = 0000000101, testLED = 0000000001, testHEX0 = 10010010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 110testSW = 0000000110, testLED = 0000000001, testHEX0 = 10000010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 120testSW = 0000000111, testLED = 0000000001, testHEX0 = 11111000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 130testSW = 0000001000, testLED = 0000000001, testHEX0 = 10000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 140testSW = 0000001001, testLED = 0000000001, testHEX0 = 10011000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 150testSW = 0000001010, testLED = 0000000001, testHEX0 = 00001000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 160testSW = 0000001011, testLED = 0000000001, testHEX0 = 00000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 170testSW = 0000001100, testLED = 0000000001, testHEX0 = 01000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 180testSW = 0000001101, testLED = 0000000001, testHEX0 = 01000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 190testSW = 0000001110, testLED = 0000000001, testHEX0 = 00000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 200testSW = 0000001111, testLED = 0000000001, testHEX0 = 00001110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 0000000000, testLED = 0000000100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                  10testSW = 0000000001, testLED = 0000000001, testHEX0 = 11111001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  20testSW = 0000010001, testLED = 0000000100, testHEX0 = 11111001, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11111001, testHEX5 = 10000110
+                  30testSW = 0000010000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11111001, testHEX5 = 11111111
+                  40testSW = 0000000000, testLED = 0000000100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                  60testSW = 0000000001, testLED = 0000000001, testHEX0 = 11111001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  70testSW = 0000000010, testLED = 0000000001, testHEX0 = 10100100, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  80testSW = 0000000011, testLED = 0000000001, testHEX0 = 10110000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                  90testSW = 0000000100, testLED = 0000000001, testHEX0 = 10011001, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 100testSW = 0000000101, testLED = 0000000001, testHEX0 = 10010010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 110testSW = 0000000110, testLED = 0000000001, testHEX0 = 10000010, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 120testSW = 0000000111, testLED = 0000000001, testHEX0 = 11111000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 130testSW = 0000001000, testLED = 0000000001, testHEX0 = 10000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 140testSW = 0000001001, testLED = 0000000001, testHEX0 = 10011000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 150testSW = 0000001010, testLED = 0000000001, testHEX0 = 00001000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 160testSW = 0000001011, testLED = 0000000001, testHEX0 = 00000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 170testSW = 0000001100, testLED = 0000000001, testHEX0 = 01000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 180testSW = 0000001101, testLED = 0000000001, testHEX0 = 01000000, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 190testSW = 0000001110, testLED = 0000000001, testHEX0 = 00000110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 200testSW = 0000001111, testLED = 0000000001, testHEX0 = 00001110, testHEX1 = 11111111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 11000111
+                 210testSW = 0000000000, testLED = 0000000100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                 220testSW = 0000010000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11111001, testHEX5 = 11111111
+                 230testSW = 0000100000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 10100100, testHEX5 = 11111111
+                 240testSW = 0000110000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 10110000, testHEX5 = 11111111
+                 250testSW = 0001000000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 10011001, testHEX5 = 11111111
+                 260testSW = 0001010000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 10010010, testHEX5 = 11111111
+                 270testSW = 0001100000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 10000010, testHEX5 = 11111111
+                 280testSW = 0001110000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11111000, testHEX5 = 11111111
+                 290testSW = 0010000000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 10000000, testHEX5 = 11111111
+                 300testSW = 0010010000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 10011000, testHEX5 = 11111111
+                 310testSW = 0010100000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 00001000, testHEX5 = 11111111
+                 320testSW = 0010110000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 00000000, testHEX5 = 11111111
+                 330testSW = 0011000000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 01000110, testHEX5 = 11111111
+                 340testSW = 0011010000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 01000000, testHEX5 = 11111111
+                 350testSW = 0011100000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 00000110, testHEX5 = 11111111
+                 360testSW = 0011110000, testLED = 0000000010, testHEX0 = 11000000, testHEX1 = 11000111, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 00001110, testHEX5 = 11111111
+                 370testSW = 0000000000, testLED = 0000000100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110

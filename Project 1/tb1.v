@@ -2,7 +2,7 @@
 
 module tb1();
 
-reg [7:0] testSW;
+reg [9:0] testSW;
 reg [1:0] testKEY;
 wire [9:0] testLED;
 wire [7:0] testHEX0;
