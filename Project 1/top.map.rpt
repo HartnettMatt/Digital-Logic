@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Tue Feb 18 15:45:54 2020
+Thu Feb 20 07:54:58 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -49,13 +49,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 18 15:45:54 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 20 07:54:58 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 51                                          ;
-;     Total combinational functions  ; 51                                          ;
+; Total logic elements               ; 52                                          ;
+;     Total combinational functions  ; 52                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 70                                          ;
@@ -187,16 +187,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 51          ;
+; Estimated Total logic elements              ; 52          ;
 ;                                             ;             ;
-; Total combinational functions               ; 51          ;
+; Total combinational functions               ; 52          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 25          ;
-;     -- 3 input functions                    ; 10          ;
+;     -- 4 input functions                    ; 28          ;
+;     -- 3 input functions                    ; 8           ;
 ;     -- <=2 input functions                  ; 16          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 51          ;
+;     -- normal mode                          ; 52          ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
 ; Total registers                             ; 0           ;
@@ -208,9 +208,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; SW[9]~input ;
-; Maximum fan-out                             ; 42          ;
-; Total fan-out                               ; 281         ;
-; Average fan-out                             ; 1.47        ;
+; Maximum fan-out                             ; 41          ;
+; Total fan-out                               ; 287         ;
+; Average fan-out                             ; 1.49        ;
 +---------------------------------------------+-------------+
 
 
@@ -219,7 +219,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name         ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------+-------------+--------------+
-; |top                       ; 51 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 70   ; 0            ; 0          ; |top                        ; top         ; work         ;
+; |top                       ; 52 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 70   ; 0            ; 0          ; |top                        ; top         ; work         ;
 ;    |design2:U1|            ; 35 (7)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|design2:U1             ; design2     ; work         ;
 ;       |sevenSeg:U0|        ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|design2:U1|sevenSeg:U0 ; sevenSeg    ; work         ;
 ;       |sevenSeg:U1|        ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|design2:U1|sevenSeg:U1 ; sevenSeg    ; work         ;
@@ -315,16 +315,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 70                          ;
-; cycloneiii_lcell_comb ; 59                          ;
-;     normal            ; 59                          ;
+; cycloneiii_lcell_comb ; 54                          ;
+;     normal            ; 54                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 6                           ;
 ;         2 data inputs ; 16                          ;
-;         3 data inputs ; 10                          ;
-;         4 data inputs ; 25                          ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 28                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.74                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.37                        ;
 +-----------------------+-----------------------------+
 
 
@@ -343,7 +342,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Feb 18 15:45:43 2020
+    Info: Processing started: Thu Feb 20 07:54:48 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -367,15 +366,12 @@ Warning (10235): Verilog HDL Always Construct warning at top.v(51): variable "he
 Warning (12125): Using design file design1.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: design1 File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 2
 Info (12128): Elaborating entity "design1" for hierarchy "design1:U0" File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 29
-Warning (10235): Verilog HDL Always Construct warning at design1.v(23): variable "switch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 23
-Warning (10235): Verilog HDL Always Construct warning at design1.v(27): variable "switch" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 27
 Warning (12125): Using design file sevenSeg.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: sevenSeg File: /home/matt/Documents/Digital Logic/Project 1/sevenSeg.v Line: 1
 Info (12128): Elaborating entity "sevenSeg" for hierarchy "design1:U0|sevenSeg:S2" File: /home/matt/Documents/Digital Logic/Project 1/design1.v Line: 33
 Warning (12125): Using design file design2.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: design2 File: /home/matt/Documents/Digital Logic/Project 1/design2.v Line: 1
 Info (12128): Elaborating entity "design2" for hierarchy "design2:U1" File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 30
-Warning (10034): Output port "leds[7..3]" at design2.v(4) has no driver File: /home/matt/Documents/Digital Logic/Project 1/design2.v Line: 4
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 5
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 5
@@ -391,14 +387,14 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[8]" File: /home/matt/Documents/Digital Logic/Project 1/top.v Line: 3
-Info (21057): Implemented 121 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 122 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 58 output pins
-    Info (21061): Implemented 51 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info (21061): Implemented 52 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
     Info: Peak virtual memory: 985 megabytes
-    Info: Processing ended: Tue Feb 18 15:45:54 2020
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Processing ended: Thu Feb 20 07:54:58 2020
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:24
 
 

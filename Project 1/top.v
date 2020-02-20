@@ -26,7 +26,7 @@ wire [7:0] hex3b;
 wire [7:0] hex4b;
 wire [7:0] hex5b;
 
-design1 U0(.switch(SW[7:0]), .key(KEY), .leds(ledsa),.hex0(hex0a),.hex1(hex1a),.hex2(hex2a),.hex3(hex3a),.hex4(hex4a),.hex5(hex5a));
+design1 U0(.switch(SW), .key(KEY), .leds(ledsa),.hex0(hex0a),.hex1(hex1a),.hex2(hex2a),.hex3(hex3a),.hex4(hex4a),.hex5(hex5a));
 design2 U1(.switch(SW), .leds(ledsb),.hex0(hex0b),.hex1(hex1b),.hex2(hex2b),.hex3(hex3b),.hex4(hex4b),.hex5(hex5b));
 
 always @(SW[9]) begin

@@ -1,7 +1,7 @@
 //The purpose of this design is to have LEDR[7:0] to be controlled by SW[7:0], and have KEY[0] invert the values. Additionally, HEX[5:0] are used to display lab partners birthday, and when KEY[1] is high, change to my birthday
 module design1 (switch,key,leds,hex0,hex1,hex2,hex3,hex4,hex5);
 
-input [7:0] switch;
+input [9:0] switch;
 input [1:0] key;
 output [9:0] leds;
 output [7:0] hex0;
@@ -16,15 +16,14 @@ reg [9:0] leds1;
 assign leds = leds1;
 always @(key[0] or switch)
 begin
-  leds1[9:8] = 2'b00;
-  leds1[7:0] = 8'b00000000;
+  leds1[9:0] =10'b0000000000;
   if(key[0])
   begin
-    leds1[7:0] = switch[7:0];
+    leds1[7:0] = ~switch[7:0];
   end
   else
   begin
-    leds1[7:0] = ~switch[7:0];
+    leds1[7:0] = switch[7:0];
   end
 end
 

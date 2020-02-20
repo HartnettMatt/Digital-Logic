@@ -21,7 +21,7 @@ initial begin
   $display($time, "Starting simulation");
 
   //Initialize inputs:
-  testSW = 8'b00000000;
+  testSW = 10'b0000000000;
   testKEY = 2'b00;
 
   // Test birthday switch:
