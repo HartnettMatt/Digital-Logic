@@ -1,0 +1,114 @@
+$date
+	Thu Feb 20 15:54:11 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module tbtop $end
+$var wire 10 ! testLED [9:0] $end
+$var wire 8 " testHEX5 [7:0] $end
+$var wire 8 # testHEX4 [7:0] $end
+$var wire 8 $ testHEX3 [7:0] $end
+$var wire 8 % testHEX2 [7:0] $end
+$var wire 8 & testHEX1 [7:0] $end
+$var wire 8 ' testHEX0 [7:0] $end
+$var reg 1 ( clock $end
+$var reg 4 ) counter [3:0] $end
+$var reg 2 * testKEY [1:0] $end
+$var reg 10 + testSW [9:0] $end
+$scope module DUT $end
+$var wire 1 ( ADC_CLK_10 $end
+$var wire 2 , KEY [1:0] $end
+$var wire 10 - SW [9:0] $end
+$var reg 8 . HEX0 [7:0] $end
+$var reg 8 / HEX1 [7:0] $end
+$var reg 8 0 HEX2 [7:0] $end
+$var reg 8 1 HEX3 [7:0] $end
+$var reg 8 2 HEX4 [7:0] $end
+$var reg 8 3 HEX5 [7:0] $end
+$var reg 10 4 LEDR [9:0] $end
+$var reg 8 5 count [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 5
+b0x 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+0(
+bx '
+bx &
+bx %
+bx $
+bx #
+bx "
+b0x !
+$end
+#100
+b10 5
+b1 )
+1(
+#200
+b10 )
+0(
+#300
+b11 5
+b11 )
+1(
+#400
+b100 )
+0(
+#500
+b100 5
+b101 )
+1(
+#600
+b110 )
+0(
+#700
+b101 5
+b111 )
+1(
+#800
+b1000 )
+0(
+#900
+b110 5
+b1001 )
+1(
+#1000
+b1010 )
+0(
+#1100
+b111 5
+b1011 )
+1(
+#1200
+b1100 )
+0(
+#1300
+b1000 5
+b1101 )
+1(
+#1400
+b1110 )
+0(
+#1500
+b1001 5
+b1111 )
+1(
+#1600

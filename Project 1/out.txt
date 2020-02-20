@@ -6979,3 +6979,62 @@ VCD info: dumpfile test.vcd opened for output.
                    0testSW = 0000000000, testKEY = 00, testLED = 0000000000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10110000, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
                   10testSW = 1000000000, testKEY = 00, testLED = 0000000100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
                   20testSW = 0000000000, testKEY = 00, testLED = 0000000000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+VCD warning: tb2.v:18: $dumpfile called after $dumpvars started,
+                       using existing file (test.vcd).
+VCD warning: ignoring signals in previously scanned scope tb1.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S0.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S1.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S2.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S3.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S4.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S5.
+VCD warning: ignoring signals in previously scanned scope tb2.
+VCD warning: ignoring signals in previously scanned scope tb2.DUT.
+VCD warning: ignoring signals in previously scanned scope tb2.DUT.U0.
+VCD warning: ignoring signals in previously scanned scope tb2.DUT.U1.
+VCD warning: ignoring signals in previously scanned scope tbtop.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S0.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S1.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S2.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S3.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S4.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S5.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U1.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U1.U0.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U1.U1.
+                   0Starting simulation
+VCD warning: tbtop.v:19: $dumpfile called after $dumpvars started,
+                         using existing file (test.vcd).
+VCD warning: ignoring signals in previously scanned scope tb1.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S0.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S1.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S2.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S3.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S4.
+VCD warning: ignoring signals in previously scanned scope tb1.DUT.S5.
+VCD warning: ignoring signals in previously scanned scope tb2.
+VCD warning: ignoring signals in previously scanned scope tb2.DUT.
+VCD warning: ignoring signals in previously scanned scope tb2.DUT.U0.
+VCD warning: ignoring signals in previously scanned scope tb2.DUT.U1.
+VCD warning: ignoring signals in previously scanned scope tbtop.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S0.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S1.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S2.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S3.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S4.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U0.S5.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U1.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U1.U0.
+VCD warning: ignoring signals in previously scanned scope tbtop.DUT.U1.U1.
+                   0Starting simulation
+                   0testSW = 0000000000, testKEY = 00, testLED = 0000000000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10110000, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
+                  10testSW = 1000000000, testKEY = 00, testLED = 0000000100, testHEX0 = 11000000, testHEX1 = 10000110, testHEX2 = 11111111, testHEX3 = 11111111, testHEX4 = 11000000, testHEX5 = 10000110
+                  20testSW = 0000000000, testKEY = 00, testLED = 0000000000, testHEX0 = 11111001, testHEX1 = 11000000, testHEX2 = 10011001, testHEX3 = 10100100, testHEX4 = 10000000, testHEX5 = 11000000
