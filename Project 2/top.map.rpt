@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Thu Feb 20 15:17:36 2020
+Thu Feb 27 16:33:13 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,9 +14,14 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Inverted Register Statistics
+ 10. Parameter Settings for User Entity Instance: clockDivider:U0
+ 11. Port Connectivity Checks: "sevenSeg:H5"
+ 12. Port Connectivity Checks: "sevenSeg:H4"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+ 16. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -42,16 +47,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 20 15:17:36 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 27 16:33:13 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 1                                           ;
-;     Total combinational functions  ; 1                                           ;
-;     Dedicated logic registers      ; 1                                           ;
-; Total registers                    ; 1                                           ;
-; Total pins                         ; 71                                          ;
+; Total logic elements               ; 64                                          ;
+;     Total combinational functions  ; 64                                          ;
+;     Dedicated logic registers      ; 33                                          ;
+; Total registers                    ; 33                                          ;
+; Total pins                         ; 52                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -160,17 +165,20 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                       ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------+---------+
-; top.v                            ; yes             ; Auto-Found Verilog HDL File  ; /home/matt/Documents/Digital Logic/Project 2/top.v ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
+; top.v                            ; yes             ; Auto-Found Verilog HDL File  ; /home/matt/Documents/Digital Logic/Project 2/top.v          ;         ;
+; clockDivider.v                   ; yes             ; Auto-Found Verilog HDL File  ; /home/matt/Documents/Digital Logic/Project 2/clockDivider.v ;         ;
+; sevenSeg.v                       ; yes             ; Auto-Found Verilog HDL File  ; /home/matt/Documents/Digital Logic/Project 2/sevenSeg.v     ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -178,40 +186,43 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 1            ;
+; Estimated Total logic elements              ; 64           ;
 ;                                             ;              ;
-; Total combinational functions               ; 1            ;
+; Total combinational functions               ; 64           ;
 ; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 0            ;
-;     -- 3 input functions                    ; 0            ;
-;     -- <=2 input functions                  ; 1            ;
+;     -- 4 input functions                    ; 28           ;
+;     -- 3 input functions                    ; 11           ;
+;     -- <=2 input functions                  ; 25           ;
 ;                                             ;              ;
 ; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 1            ;
-;     -- arithmetic mode                      ; 0            ;
+;     -- normal mode                          ; 42           ;
+;     -- arithmetic mode                      ; 22           ;
 ;                                             ;              ;
-; Total registers                             ; 1            ;
-;     -- Dedicated logic registers            ; 1            ;
+; Total registers                             ; 33           ;
+;     -- Dedicated logic registers            ; 33           ;
 ;     -- I/O registers                        ; 0            ;
 ;                                             ;              ;
-; I/O pins                                    ; 71           ;
+; I/O pins                                    ; 52           ;
 ;                                             ;              ;
 ; Embedded Multiplier 9-bit elements          ; 0            ;
 ;                                             ;              ;
-; Maximum fan-out node                        ; LEDR[0]~reg0 ;
-; Maximum fan-out                             ; 2            ;
-; Total fan-out                               ; 75           ;
-; Average fan-out                             ; 0.52         ;
+; Maximum fan-out node                        ; KEY[0]~input ;
+; Maximum fan-out                             ; 33           ;
+; Total fan-out                               ; 361          ;
+; Average fan-out                             ; 1.80         ;
 +---------------------------------------------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |top                       ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 71   ; 0            ; 0          ; |top                ; top         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+--------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name  ; Entity Name  ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+--------------+--------------+
+; |top                       ; 64 (11)             ; 33 (9)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 52   ; 0            ; 0          ; |top                 ; top          ; work         ;
+;    |clockDivider:U0|       ; 39 (39)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|clockDivider:U0 ; clockDivider ; work         ;
+;    |sevenSeg:H4|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|sevenSeg:H4     ; sevenSeg     ; work         ;
+;    |sevenSeg:H5|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|sevenSeg:H5     ; sevenSeg     ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -220,14 +231,52 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1     ;
+; Total registers                              ; 33    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 32    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 3     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; counter1[0]                            ; 12      ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: clockDivider:U0 ;
++----------------+---------+-----------------------------------+
+; Parameter Name ; Value   ; Type                              ;
++----------------+---------+-----------------------------------+
+; divide_by      ; 2500000 ; Signed Integer                    ;
++----------------+---------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenSeg:H5"                                                                                             ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; seg1 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sevenSeg:H4"                                                                                             ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; seg1 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -235,16 +284,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 71                          ;
-; cycloneiii_ff         ; 1                           ;
+; boundary_port         ; 52                          ;
+; cycloneiii_ff         ; 33                          ;
+;     CLR               ; 29                          ;
+;     ENA CLR           ; 3                           ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 2                           ;
-;     normal            ; 2                           ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
+; cycloneiii_lcell_comb ; 68                          ;
+;     arith             ; 22                          ;
+;         2 data inputs ; 22                          ;
+;     normal            ; 46                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 28                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.50                        ;
+; Max LUT depth         ; 4.10                        ;
+; Average LUT depth     ; 2.61                        ;
 +-----------------------+-----------------------------+
 
 
@@ -263,102 +319,85 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Feb 20 15:17:27 2020
+    Info: Processing started: Thu Feb 27 16:33:03 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file top.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: top File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 1
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Warning (10034): Output port "LEDR[9..1]" at top.v(6) has no driver File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
-Warning (10034): Output port "HEX0" at top.v(7) has no driver File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
-Warning (10034): Output port "HEX1" at top.v(8) has no driver File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
-Warning (10034): Output port "HEX2" at top.v(9) has no driver File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 9
-Warning (10034): Output port "HEX3" at top.v(10) has no driver File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 10
-Warning (10034): Output port "HEX4" at top.v(11) has no driver File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
-Warning (10034): Output port "HEX5" at top.v(12) has no driver File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 12
+Warning (10036): Verilog HDL or VHDL warning at top.v(14): object "clock_reset" assigned a value but never read File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 14
+Warning (10036): Verilog HDL or VHDL warning at top.v(21): object "segCounter10" assigned a value but never read File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 21
+Warning (10230): Verilog HDL assignment warning at top.v(58): truncated value with size 32 to match size of target (4) File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 58
+Warning (10230): Verilog HDL assignment warning at top.v(65): truncated value with size 32 to match size of target (4) File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 65
+Warning (10034): Output port "HEX0" at top.v(6) has no driver File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
+Warning (10034): Output port "HEX1" at top.v(7) has no driver File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
+Warning (10034): Output port "HEX2" at top.v(8) has no driver File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
+Warning (12125): Using design file clockDivider.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: clockDivider File: /home/matt/Documents/Digital Logic/Project 2/clockDivider.v Line: 1
+Info (12128): Elaborating entity "clockDivider" for hierarchy "clockDivider:U0" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 16
+Warning (10230): Verilog HDL assignment warning at clockDivider.v(22): truncated value with size 32 to match size of target (23) File: /home/matt/Documents/Digital Logic/Project 2/clockDivider.v Line: 22
+Warning (12125): Using design file sevenSeg.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: sevenSeg File: /home/matt/Documents/Digital Logic/Project 2/sevenSeg.v Line: 2
+Info (12128): Elaborating entity "sevenSeg" for hierarchy "sevenSeg:H4" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 23
+Warning (10034): Output port "seg1" at sevenSeg.v(2) has no driver File: /home/matt/Documents/Digital Logic/Project 2/sevenSeg.v Line: 2
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13000): Registers with preset signals will power-up high File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 55
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
-    Warning (13410): Pin "HEX0[7]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
-    Warning (13410): Pin "HEX1[7]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 9
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 9
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 9
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 9
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 9
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 9
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 9
-    Warning (13410): Pin "HEX2[7]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 9
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 10
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 10
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 10
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 10
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 10
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 10
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 10
-    Warning (13410): Pin "HEX3[7]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 10
-    Warning (13410): Pin "HEX4[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
-    Warning (13410): Pin "HEX4[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
-    Warning (13410): Pin "HEX4[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
-    Warning (13410): Pin "HEX4[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
-    Warning (13410): Pin "HEX4[7]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
-    Warning (13410): Pin "HEX5[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 12
-    Warning (13410): Pin "HEX5[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 12
-    Warning (13410): Pin "HEX5[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 12
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 12
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 12
-    Warning (13410): Pin "HEX5[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 12
-    Warning (13410): Pin "HEX5[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 12
-    Warning (13410): Pin "HEX5[7]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 12
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
+    Warning (13410): Pin "HEX0[7]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
+    Warning (13410): Pin "HEX1[7]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
+    Warning (13410): Pin "HEX2[7]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
+    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 9
+    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 10
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
 Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file /home/matt/Documents/Digital Logic/Project 2/top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 3
-    Warning (15610): No output dependent on input pin "SW[1]" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 3
-    Warning (15610): No output dependent on input pin "SW[2]" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 3
-    Warning (15610): No output dependent on input pin "SW[3]" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 3
-    Warning (15610): No output dependent on input pin "SW[4]" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 3
-    Warning (15610): No output dependent on input pin "SW[5]" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 3
-    Warning (15610): No output dependent on input pin "SW[6]" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 3
-    Warning (15610): No output dependent on input pin "SW[7]" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 3
-    Warning (15610): No output dependent on input pin "SW[8]" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 3
-    Warning (15610): No output dependent on input pin "SW[9]" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 3
-    Warning (15610): No output dependent on input pin "KEY[0]" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 4
-    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 4
-Info (21057): Implemented 72 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 13 input pins
-    Info (21059): Implemented 58 output pins
-    Info (21061): Implemented 1 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 80 warnings
-    Info: Peak virtual memory: 998 megabytes
-    Info: Processing ended: Thu Feb 20 15:17:36 2020
-    Info: Elapsed time: 00:00:09
+Info (21057): Implemented 116 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 50 output pins
+    Info (21061): Implemented 64 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
+    Info: Peak virtual memory: 1013 megabytes
+    Info: Processing ended: Thu Feb 27 16:33:13 2020
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:24
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /home/matt/Documents/Digital Logic/Project 2/top.map.smsg.
 
 

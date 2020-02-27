@@ -1,29 +1,77 @@
-module top (SW, KEY, ADC_CLK_10, LEDR, HEX0, HEX1, HEX2, HEX3, HEX4, HEX5);
+module top (ADC_CLK_10, KEY, HEX0, HEX1, HEX2, HEX4, HEX5, LEDR);
 
-input [9:0] SW;
-input [1:0] KEY;
 input ADC_CLK_10;
-output reg [9:0] LEDR;
-output reg [7:0] HEX0;
-output reg [7:0] HEX1;
-output reg [7:0] HEX2;
-output reg [7:0] HEX3;
-output reg [7:0] HEX4;
-output reg [7:0] HEX5;
+input [0:0] KEY;
 
-reg [7:0]count;
+output [7:0] HEX0;
+output [7:0] HEX1;
+output [7:0] HEX2;
+output [7:0] HEX4;
+output [7:0] HEX5;
+output [9:0] LEDR;
+
+wire clock;
+reg clock_reset;
+
+clockDivider U0 (.clock_in(ADC_CLK_10), .reset_n(KEY[0]), .clock_out(clock));
+
+reg [3:0] counter1;
+reg [3:0] counter10;
+
+reg [3:0] segCounter10;
+
+sevenSeg H4 (.val(counter1), .seg(HEX4));
+sevenSeg H5 (.val(counter10), .seg(HEX5));
+
+reg ledValue;
+
+assign LEDR[9:1] = 9'b0_0000_0000;
+assign LEDR[0] = ledValue;
 
 initial begin
-   count = 8'b0000_0001;
-   LEDR[9:1] = 8'b0000_0000;
+    counter1 = 1;
+    counter10 = 0;
+    segCounter10 = 0;
+    clock_reset = 1;
 end
 
-always @(posedge ADC_CLK_10 or posedge KEY[0]) begin
-  LEDR[0] = ~LEDR[0];
-  if(KEY[0])
-    count = 1;
-  else
-    count = count + 1;
-end
+always @ (posedge clock or negedge KEY[0])
+    begin
+        /*if (counter10 == 4'b0000)
+        begin
+            segCounter10 <= 4'b1111;
+        end
+        else
+        begin
+            segCounter10 <= counter10;
+        end */
+       if (~KEY[0])
+       begin
+            counter1 <= 1;
+            counter10 <= 0;
+        end
+        else
+        begin
+            ledValue <= ~ledValue;
+            if (counter1 != 4'b1001)
+            begin
+                counter1 <= counter1 + 1;
+            end
+            else
+            begin
+                if (counter10 != 4'b1001)
+                begin
+                    counter1 <= 0;
+                    counter10 <= counter10 + 1;
+                end
+                else
+                begin
+                    counter1 <= 1;
+                    counter10 <= 0;
+                end
+            end
+        end
+    end
+
 
 endmodule
