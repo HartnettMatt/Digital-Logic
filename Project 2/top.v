@@ -21,7 +21,7 @@ reg [3:0] counter10;
 reg [3:0] segCounter10;
 
 sevenSeg H4 (.val(counter1), .seg(HEX4));
-sevenSeg H5 (.val(counter10), .seg(HEX5));
+sevenSeg H5 (.val(segCounter10), .seg(HEX5));
 
 reg ledValue;
 
@@ -37,18 +37,12 @@ end
 
 always @ (posedge clock or negedge KEY[0])
     begin
-        /*if (counter10 == 4'b0000)
-        begin
-            segCounter10 <= 4'b1111;
-        end
-        else
-        begin
-            segCounter10 <= counter10;
-        end */
+
        if (~KEY[0])
        begin
             counter1 <= 1;
             counter10 <= 0;
+            segCounter10 <= 4'b1111;
         end
         else
         begin
@@ -63,11 +57,13 @@ always @ (posedge clock or negedge KEY[0])
                 begin
                     counter1 <= 0;
                     counter10 <= counter10 + 1;
+                    segCounter10 <= counter10 + 1;
                 end
                 else
                 begin
                     counter1 <= 1;
                     counter10 <= 0;
+                    segCounter10 <= 4'b1111;
                 end
             end
         end

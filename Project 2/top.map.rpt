@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Thu Feb 27 16:33:13 2020
+Thu Feb 27 16:49:36 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -47,15 +47,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Feb 27 16:33:13 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 27 16:49:36 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 64                                          ;
-;     Total combinational functions  ; 64                                          ;
-;     Dedicated logic registers      ; 33                                          ;
-; Total registers                    ; 33                                          ;
+; Total logic elements               ; 68                                          ;
+;     Total combinational functions  ; 68                                          ;
+;     Dedicated logic registers      ; 37                                          ;
+; Total registers                    ; 37                                          ;
 ; Total pins                         ; 52                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -186,20 +186,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 64           ;
+; Estimated Total logic elements              ; 68           ;
 ;                                             ;              ;
-; Total combinational functions               ; 64           ;
+; Total combinational functions               ; 68           ;
 ; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 28           ;
-;     -- 3 input functions                    ; 11           ;
-;     -- <=2 input functions                  ; 25           ;
+;     -- 4 input functions                    ; 30           ;
+;     -- 3 input functions                    ; 12           ;
+;     -- <=2 input functions                  ; 26           ;
 ;                                             ;              ;
 ; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 42           ;
+;     -- normal mode                          ; 46           ;
 ;     -- arithmetic mode                      ; 22           ;
 ;                                             ;              ;
-; Total registers                             ; 33           ;
-;     -- Dedicated logic registers            ; 33           ;
+; Total registers                             ; 37           ;
+;     -- Dedicated logic registers            ; 37           ;
 ;     -- I/O registers                        ; 0            ;
 ;                                             ;              ;
 ; I/O pins                                    ; 52           ;
@@ -207,9 +207,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0            ;
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 33           ;
-; Total fan-out                               ; 361          ;
-; Average fan-out                             ; 1.80         ;
+; Maximum fan-out                             ; 37           ;
+; Total fan-out                               ; 391          ;
+; Average fan-out                             ; 1.87         ;
 +---------------------------------------------+--------------+
 
 
@@ -218,7 +218,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name  ; Entity Name  ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+--------------+--------------+
-; |top                       ; 64 (11)             ; 33 (9)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 52   ; 0            ; 0          ; |top                 ; top          ; work         ;
+; |top                       ; 68 (15)             ; 37 (13)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 52   ; 0            ; 0          ; |top                 ; top          ; work         ;
 ;    |clockDivider:U0|       ; 39 (39)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|clockDivider:U0 ; clockDivider ; work         ;
 ;    |sevenSeg:H4|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|sevenSeg:H4     ; sevenSeg     ; work         ;
 ;    |sevenSeg:H5|           ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|sevenSeg:H5     ; sevenSeg     ; work         ;
@@ -231,12 +231,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 33    ;
+; Total registers                              ; 37    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Clear ; 36    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 3     ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -247,7 +247,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
 ; counter1[0]                            ; 12      ;
-; Total number of inverted registers = 1 ;         ;
+; segCounter10[0]                        ; 7       ;
+; segCounter10[1]                        ; 7       ;
+; segCounter10[2]                        ; 7       ;
+; segCounter10[3]                        ; 7       ;
+; Total number of inverted registers = 5 ;         ;
 +----------------------------------------+---------+
 
 
@@ -285,22 +289,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 52                          ;
-; cycloneiii_ff         ; 33                          ;
-;     CLR               ; 29                          ;
-;     ENA CLR           ; 3                           ;
+; cycloneiii_ff         ; 37                          ;
+;     CLR               ; 28                          ;
+;     ENA CLR           ; 8                           ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 68                          ;
+; cycloneiii_lcell_comb ; 72                          ;
 ;     arith             ; 22                          ;
 ;         2 data inputs ; 22                          ;
-;     normal            ; 46                          ;
+;     normal            ; 50                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 11                          ;
-;         4 data inputs ; 28                          ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 30                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.61                        ;
+; Average LUT depth     ; 2.53                        ;
 +-----------------------+-----------------------------+
 
 
@@ -319,7 +323,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Feb 27 16:33:03 2020
+    Info: Processing started: Thu Feb 27 16:49:26 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -327,9 +331,9 @@ Warning (12125): Using design file top.v, which is not specified as a design fil
     Info (12023): Found entity 1: top File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 1
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at top.v(14): object "clock_reset" assigned a value but never read File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 14
-Warning (10036): Verilog HDL or VHDL warning at top.v(21): object "segCounter10" assigned a value but never read File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 21
-Warning (10230): Verilog HDL assignment warning at top.v(58): truncated value with size 32 to match size of target (4) File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 58
-Warning (10230): Verilog HDL assignment warning at top.v(65): truncated value with size 32 to match size of target (4) File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 65
+Warning (10230): Verilog HDL assignment warning at top.v(52): truncated value with size 32 to match size of target (4) File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 52
+Warning (10230): Verilog HDL assignment warning at top.v(59): truncated value with size 32 to match size of target (4) File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 59
+Warning (10230): Verilog HDL assignment warning at top.v(60): truncated value with size 32 to match size of target (4) File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 60
 Warning (10034): Output port "HEX0" at top.v(6) has no driver File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
 Warning (10034): Output port "HEX1" at top.v(7) has no driver File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 7
 Warning (10034): Output port "HEX2" at top.v(8) has no driver File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 8
@@ -342,7 +346,7 @@ Warning (12125): Using design file sevenSeg.v, which is not specified as a desig
 Info (12128): Elaborating entity "sevenSeg" for hierarchy "sevenSeg:H4" File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 23
 Warning (10034): Output port "seg1" at sevenSeg.v(2) has no driver File: /home/matt/Documents/Digital Logic/Project 2/sevenSeg.v Line: 2
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 55
+Info (13000): Registers with preset signals will power-up high File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 49
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX0[0]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 6
@@ -381,16 +385,21 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
     Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 11
 Info (286030): Timing-Driven Synthesis is running
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register segCounter10[0] will power up to High File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 49
+    Critical Warning (18010): Register segCounter10[1] will power up to High File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 49
+    Critical Warning (18010): Register segCounter10[2] will power up to High File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 49
+    Critical Warning (18010): Register segCounter10[3] will power up to High File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 49
 Info (144001): Generated suppressed messages file /home/matt/Documents/Digital Logic/Project 2/top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 116 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 120 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 50 output pins
-    Info (21061): Implemented 64 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
-    Info: Peak virtual memory: 1013 megabytes
-    Info: Processing ended: Thu Feb 27 16:33:13 2020
+    Info (21061): Implemented 68 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 55 warnings
+    Info: Peak virtual memory: 1012 megabytes
+    Info: Processing ended: Thu Feb 27 16:49:36 2020
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:24
 
