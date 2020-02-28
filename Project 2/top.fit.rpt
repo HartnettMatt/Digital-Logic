@@ -1,5 +1,5 @@
 Fitter report for top
-Thu Feb 27 16:49:44 2020
+Thu Feb 27 18:19:02 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Feb 27 16:49:44 2020       ;
+; Fitter Status                      ; Successful - Thu Feb 27 18:19:02 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top                                         ;
@@ -298,7 +298,7 @@ The pin-out file can be found in /home/matt/Documents/Digital Logic/Project 2/to
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%    ;
-; Peak interconnect usage (total/H/V)         ; 0.3% / 0.2% / 0.5%    ;
+; Peak interconnect usage (total/H/V)         ; 0.2% / 0.2% / 0.4%    ;
 ; Maximum fan-out                             ; 37                    ;
 ; Highest non-global fan-out                  ; 37                    ;
 ; Total fan-out                               ; 405                   ;
@@ -1037,8 +1037,9 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name  ; Entity Name  ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------+--------------+--------------+
-; |top                       ; 70 (16)     ; 37 (13)                   ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 52   ; 0            ; 33 (3)       ; 1 (0)             ; 36 (13)          ; 0          ; |top                 ; top          ; work         ;
+; |top                       ; 70 (2)      ; 37 (1)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 52   ; 0            ; 33 (1)       ; 1 (0)             ; 36 (1)           ; 0          ; |top                 ; top          ; work         ;
 ;    |clockDivider:U0|       ; 40 (40)     ; 24 (24)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (16)      ; 1 (1)             ; 23 (23)          ; 0          ; |top|clockDivider:U0 ; clockDivider ; work         ;
+;    |counter:C0|            ; 14 (14)     ; 12 (12)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 12 (12)          ; 0          ; |top|counter:C0      ; counter      ; work         ;
 ;    |sevenSeg:H4|           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |top|sevenSeg:H4     ; sevenSeg     ; work         ;
 ;    |sevenSeg:H5|           ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |top|sevenSeg:H5     ; sevenSeg     ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------+--------------+--------------+
@@ -1111,20 +1112,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                      ; Pad To Core Index ; Setting ;
 +------------------------------------------+-------------------+---------+
 ; KEY[0]                                   ;                   ;         ;
-;      - counter10[0]                      ; 0                 ; 6       ;
-;      - counter10[1]                      ; 0                 ; 6       ;
-;      - counter10[2]                      ; 0                 ; 6       ;
-;      - counter10[3]                      ; 0                 ; 6       ;
-;      - counter1[1]                       ; 0                 ; 6       ;
-;      - counter1[2]                       ; 0                 ; 6       ;
-;      - counter1[3]                       ; 0                 ; 6       ;
+;      - ledValue                          ; 0                 ; 6       ;
+;      - counter:C0|c10[0]                 ; 0                 ; 6       ;
+;      - counter:C0|c10[1]                 ; 0                 ; 6       ;
+;      - counter:C0|c10[2]                 ; 0                 ; 6       ;
+;      - counter:C0|c10[3]                 ; 0                 ; 6       ;
+;      - counter:C0|c1[1]                  ; 0                 ; 6       ;
+;      - counter:C0|c1[2]                  ; 0                 ; 6       ;
+;      - counter:C0|c1[3]                  ; 0                 ; 6       ;
 ;      - clockDivider:U0|clock_out         ; 0                 ; 6       ;
-;      - counter1[0]                       ; 0                 ; 6       ;
-;      - segCounter10[0]                   ; 0                 ; 6       ;
-;      - segCounter10[1]                   ; 0                 ; 6       ;
-;      - segCounter10[2]                   ; 0                 ; 6       ;
-;      - segCounter10[3]                   ; 0                 ; 6       ;
-;      - ledValue~0                        ; 0                 ; 6       ;
+;      - counter:C0|c1[0]                  ; 0                 ; 6       ;
+;      - counter:C0|sC10[0]                ; 0                 ; 6       ;
+;      - counter:C0|sC10[1]                ; 0                 ; 6       ;
+;      - counter:C0|sC10[2]                ; 0                 ; 6       ;
+;      - counter:C0|sC10[3]                ; 0                 ; 6       ;
 ;      - clockDivider:U0|clock_divider[0]  ; 0                 ; 6       ;
 ;      - clockDivider:U0|clock_divider[21] ; 0                 ; 6       ;
 ;      - clockDivider:U0|clock_divider[22] ; 0                 ; 6       ;
@@ -1158,9 +1159,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                      ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; ADC_CLK_10                ; PIN_N5            ; 24      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; Equal0~0                  ; LCCOMB_X76_Y40_N2 ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; KEY[0]                    ; PIN_B8            ; 37      ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; clockDivider:U0|clock_out ; FF_X47_Y53_N11    ; 13      ; Clock        ; yes    ; Global Clock         ; GCLK12           ; --                        ;
+; clockDivider:U0|clock_out ; FF_X45_Y53_N11    ; 13      ; Clock        ; yes    ; Global Clock         ; GCLK13           ; --                        ;
+; counter:C0|Equal0~0       ; LCCOMB_X76_Y40_N2 ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +---------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1170,7 +1171,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                      ; Location       ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; ADC_CLK_10                ; PIN_N5         ; 24      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
-; clockDivider:U0|clock_out ; FF_X47_Y53_N11 ; 13      ; 0                                    ; Global Clock         ; GCLK12           ; --                        ;
+; clockDivider:U0|clock_out ; FF_X45_Y53_N11 ; 13      ; 0                                    ; Global Clock         ; GCLK13           ; --                        ;
 +---------------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1179,9 +1180,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 70 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 1 / 5,382 ( < 1 % )    ;
-; C4 interconnects      ; 40 / 106,704 ( < 1 % ) ;
+; Block interconnects   ; 71 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 2 / 5,382 ( < 1 % )    ;
+; C4 interconnects      ; 38 / 106,704 ( < 1 % ) ;
 ; Direct links          ; 27 / 148,641 ( < 1 % ) ;
 ; Global clocks         ; 2 / 20 ( 10 % )        ;
 ; Local interconnects   ; 43 / 49,760 ( < 1 % )  ;
@@ -1218,9 +1219,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 0.88) ; Number of LABs  (Total = 8) ;
+; LAB-wide Signals  (Average = 1.00) ; Number of LABs  (Total = 8) ;
 +------------------------------------+-----------------------------+
-; 1 Async. clear                     ; 3                           ;
+; 1 Async. clear                     ; 4                           ;
 ; 1 Clock                            ; 3                           ;
 ; 2 Clocks                           ; 1                           ;
 +------------------------------------+-----------------------------+
@@ -1478,30 +1479,30 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------------------------+---------------------------+-------------------+
 ; Source Register                   ; Destination Register      ; Delay Added in ns ;
 +-----------------------------------+---------------------------+-------------------+
-; clockDivider:U0|clock_out         ; clockDivider:U0|clock_out ; 4.695             ;
-; clockDivider:U0|clock_divider[21] ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[22] ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[20] ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[18] ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[17] ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[19] ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[16] ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[15] ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[13] ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[14] ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[12] ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[10] ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[11] ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[8]  ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[9]  ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[7]  ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[6]  ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[5]  ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[4]  ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[3]  ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[2]  ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[1]  ; clockDivider:U0|clock_out ; 1.585             ;
-; clockDivider:U0|clock_divider[0]  ; clockDivider:U0|clock_out ; 1.585             ;
+; clockDivider:U0|clock_out         ; clockDivider:U0|clock_out ; 4.698             ;
+; clockDivider:U0|clock_divider[21] ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[22] ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[20] ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[18] ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[17] ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[19] ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[16] ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[15] ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[13] ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[14] ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[12] ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[10] ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[11] ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[8]  ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[9]  ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[7]  ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[6]  ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[5]  ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[4]  ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[3]  ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[2]  ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[1]  ; clockDivider:U0|clock_out ; 1.451             ;
+; clockDivider:U0|clock_divider[0]  ; clockDivider:U0|clock_out ; 1.451             ;
 +-----------------------------------+---------------------------+-------------------+
 Note: This table only shows the top 24 path(s) that have the largest delay added for hold.
 
@@ -1587,7 +1588,7 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X45_Y44 to location X55_Y54
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X67_Y33 to location X78_Y43
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
@@ -1603,9 +1604,9 @@ Warning (169177): 2 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
     Info (169178): Pin ADC_CLK_10 uses I/O standard 3.3-V LVTTL at N5 File: /home/matt/Documents/Digital Logic/Project 2/top.v Line: 3
 Info (144001): Generated suppressed messages file /home/matt/Documents/Digital Logic/Project 2/top.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 28 warnings
-    Info: Peak virtual memory: 1660 megabytes
-    Info: Processing ended: Thu Feb 27 16:49:45 2020
-    Info: Elapsed time: 00:00:09
+    Info: Peak virtual memory: 1656 megabytes
+    Info: Processing ended: Thu Feb 27 18:19:02 2020
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:11
 
 
