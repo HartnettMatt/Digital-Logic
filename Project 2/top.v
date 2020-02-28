@@ -42,7 +42,7 @@ always @ (negedge clock or negedge KEY[0])
 
 always @ (negedge clock or negedge KEY[1]) begin
   if(~KEY[1])
-    divide_by = 1250000;
+    divide_by = 1000000;
   else
     divide_by = 2500000;
 end
