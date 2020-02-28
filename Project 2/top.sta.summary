@@ -3,19 +3,19 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'ADC_CLK_10'
-Slack : -3.782
-TNS   : -41.692
+Slack : -4.477
+TNS   : -86.919
 
 Type  : Slow 1200mV 85C Model Setup 'clockDivider:U0|clock_out'
-Slack : -1.059
-TNS   : -10.207
+Slack : -1.003
+TNS   : -10.453
 
 Type  : Slow 1200mV 85C Model Hold 'clockDivider:U0|clock_out'
 Slack : 0.347
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'ADC_CLK_10'
-Slack : 0.645
+Slack : 0.512
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ADC_CLK_10'
@@ -24,22 +24,22 @@ TNS   : -36.672
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clockDivider:U0|clock_out'
 Slack : -1.403
-TNS   : -18.239
+TNS   : -19.642
 
 Type  : Slow 1200mV 0C Model Setup 'ADC_CLK_10'
-Slack : -3.442
-TNS   : -35.800
+Slack : -4.062
+TNS   : -78.247
 
 Type  : Slow 1200mV 0C Model Setup 'clockDivider:U0|clock_out'
-Slack : -0.901
-TNS   : -8.413
+Slack : -0.842
+TNS   : -8.664
 
 Type  : Slow 1200mV 0C Model Hold 'clockDivider:U0|clock_out'
-Slack : 0.312
+Slack : 0.311
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ADC_CLK_10'
-Slack : 0.596
+Slack : 0.462
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ADC_CLK_10'
@@ -48,30 +48,30 @@ TNS   : -36.672
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clockDivider:U0|clock_out'
 Slack : -1.403
-TNS   : -18.239
+TNS   : -19.642
 
 Type  : Fast 1200mV 0C Model Setup 'ADC_CLK_10'
-Slack : -1.059
-TNS   : -4.666
+Slack : -1.387
+TNS   : -23.558
 
 Type  : Fast 1200mV 0C Model Setup 'clockDivider:U0|clock_out'
-Slack : 0.141
+Slack : 0.138
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clockDivider:U0|clock_out'
-Slack : 0.152
+Slack : 0.150
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ADC_CLK_10'
-Slack : 0.251
+Slack : 0.180
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ADC_CLK_10'
 Slack : -3.000
-TNS   : -31.009
+TNS   : -31.052
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clockDivider:U0|clock_out'
 Slack : -1.000
-TNS   : -13.000
+TNS   : -14.000
 
 ------------------------------------------------------------

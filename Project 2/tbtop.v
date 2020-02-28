@@ -3,9 +3,9 @@
 module tbtop();
 
 reg [9:0] testSW;
-reg  testKEY;
+reg [1:0] testKEY;
 reg clock;
-reg [15:0] counter;
+reg [7:0] counter;
 wire [9:0] testLED;
 wire [7:0] testHEX0;
 wire [7:0] testHEX1;
@@ -27,7 +27,7 @@ initial begin
   testKEY = 1;
   clock = 1'b0;
   counter = 0;
-  while(counter < 16'b1111111111111111) begin
+  while(counter < 8'b11111111) begin
     #10 clock = ~clock;
     counter = counter + 1;
   end

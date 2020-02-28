@@ -15,12 +15,12 @@ assign counter1 = c1;
 assign segCounter10 = sC10;
 
 initial begin
-    c1 = 1;
+    c1 = 0;
     c10 = 0;
     sC10 = 4'b1111;
 end
 
-always @ (posedge clock or negedge reset_n)
+always @ (negedge clock or negedge reset_n)
     begin
        if (~reset_n)
        begin

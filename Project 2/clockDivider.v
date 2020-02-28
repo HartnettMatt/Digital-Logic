@@ -1,10 +1,11 @@
-module clockDivider(clock_in, reset_n, clock_out);
+module clockDivider(clock_in, reset_n, divide_by, clock_out);
 input clock_in;
 input reset_n;
+input [31:0] divide_by;
 output reg clock_out;
 
 reg [22:0] clock_divider = 0;
-parameter divide_by = 2500000;
+
 initial begin
   clock_out = 0;
   clock_divider = 0;
