@@ -14,7 +14,7 @@ wire [7:0] testHEX3;
 wire [7:0] testHEX4;
 wire [7:0] testHEX5;
 
-top DUT(.KEY(testKEY), .ADC_CLK_10(clock), .LEDR(testLED),.HEX0(testHEX0),.HEX1(testHEX1),.HEX2(testHEX2),.HEX4(testHEX4),.HEX5(testHEX5));
+top DUT(.KEY(testKEY), .SW(testSW), .ADC_CLK_10(clock), .LEDR(testLED),.HEX0(testHEX0),.HEX1(testHEX1),.HEX2(testHEX2),.HEX4(testHEX4),.HEX5(testHEX5));
 
 // Begin stimulating inputs:
 initial begin
