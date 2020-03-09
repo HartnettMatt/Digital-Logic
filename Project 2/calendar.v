@@ -1,76 +1,127 @@
-module calendar (clock, reset_n, SW9, c10, c1, hm,  hd10, hd1);
+module calendar (switch, counter10, counter1, hexMonth, dayCounter10, segDay10, dayCounter1);
 
-input clock;
-input reset_n;
-input SW9;
-input [3:0] c10;
-input [3:0] c1;
+input switch;
+input [3:0] counter10;
+input [3:0] counter1;
 
-output reg [3:0] hm;
-output reg [3:0] hd1;
-output reg [3:0] hd10;
+output reg [3:0] hexMonth;
+output reg [3:0] dayCounter10;
+output reg [3:0] segDay10;
+output reg [3:0] dayCounter1;
 
-wire [6:0] binary_c;
-assign binary_c = c10*10+c1;
+reg[6:0] binary_c;
 
-initial begin
-  hm = 1;
-  hd1 = 1;
-  hd10 = 0;
+always @(counter1 or counter10)
+begin
+    binary_c = counter1 + counter10*10;
+    // January code (independant of leap year)
+    if (binary_c <= 31)
+    begin
+        dayCounter1 <= counter1;
+        hexMonth <= 1;
+        if (counter10 < 1)
+        begin
+            dayCounter10 <= 0;
+            segDay10 <= 4'b1111;
+        end
+        else
+        begin
+            dayCounter10 <= counter10;
+            segDay10 <= counter10;
+        end
+    end
+    // Leap year code:
+    if (switch)
+    begin
+    // February:
+        if (binary_c > 31 & binary_c <= 60)
+        begin
+          hexMonth <= 2;
+          if (counter1 > 0)
+          begin
+              dayCounter1 <= counter1 - 1;
+              dayCounter10 <= counter10 - 3;
+          end
+          else
+          begin
+              dayCounter1 <= 9;
+              dayCounter10 <= counter10 - 4;
+          end
+        end
+        // April
+        if(binary_c >= 61 & binary_c <= 91)
+        begin
+          hexMonth <= 3;
+          dayCounter1 <= counter1;
+          dayCounter10 <= counter10 - 6;
+        end
+        // March
+        if(binary_c > 91 & binary_c <= 99)
+        begin
+          hexMonth <= 4;
+          dayCounter10 <= 0;
+          if(counter1 != 0)
+          begin
+            dayCounter1 <= counter1-1;
+            dayCounter10 <= counter10 - 9;
+          end
+          else
+          begin
+            dayCounter1 <= 9;
+            dayCounter10 <= counter10 - 8;
+          end
+        end
+    end
+    // Non-leap year code:
+    else if(~switch)
+    begin
+    // February
+      if (binary_c > 31 & binary_c <= 59)
+      begin
+          hexMonth <= 2;
+          if (counter1 > 0)
+          begin
+              dayCounter1 <= counter1 - 1;
+              dayCounter10 <= counter10 - 3;
+          end
+          else
+          begin
+              dayCounter1 <= 9;
+              dayCounter10 <= counter10 - 4;
+          end
+      end
+      // April
+      if(binary_c >= 60 & binary_c <= 90)
+      begin
+        hexMonth <= 3;
+        if(counter1 != 9)
+        begin
+          dayCounter1 <= counter1+1;
+          dayCounter10 <= counter10 - 6;
+        end
+        else
+        begin
+          dayCounter1 <= 0;
+          dayCounter10 <= counter10 -5;
+        end
+      end
+      // March:
+      if(binary_c > 90 & binary_c <= 99)
+      begin
+        hexMonth <= 4;
+        dayCounter10 <= counter10-9;
+        dayCounter1 <= counter1;
+      end
+    end
+    // Blank the display if the 10's place is zero
+    if (dayCounter10 == 0)
+    begin
+        segDay10 <= 4'b1111;
+    end
+    else
+    begin
+        segDay10 <= dayCounter10;
+    end
 end
 
-always @(negedge clock or negedge reset_n)
-  begin
-    if(~reset_n)
-      begin
-        hm <= 1;
-        hd1 <= 1;
-        hd10 <= 0;
-      end
-    if(binary_c == 1)
-
-      begin
-        hm <= 1;
-        hd1 <= 1;
-        hd10 <= 0;
-      end
-
-    else if(binary_c != 1 & binary_c < 31)
-
-      begin
-        hm <= 1;
-        if(hd1 != 9)
-          hd1 <= hd1 + 1;
-        else if(hd1 == 9)
-        begin
-          hd1 <= 0;
-          hd10 <= hd10 +1;
-        end
-
-      end
-
-    else if (binary_c == 32)
-
-    begin
-      hm <= 2;
-      hd1 <= 1;
-      hd10 <= 0;
-    end
-
-    else if(binary_c != 32 & binary_c < 59+SW9)
-
-    begin
-      if(hd1 == 9)
-      begin
-        hd1 <= 0;
-        hd10 <= hd10 +1;
-      end
-      else
-      begin
-        hd1 <= hd1 + 1;
-      end
-      hm <= 2;
-    end
-
-  end
 endmodule

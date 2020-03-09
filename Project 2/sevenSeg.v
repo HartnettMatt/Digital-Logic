@@ -1,4 +1,4 @@
-// ALTERED SEVEN SEG so that there is blanking and no letters. See project 1 for real SevenSeg module
+// ALTERED SEVEN SEG so that there is blanking and no letters. See project 1 for full SevenSeg module
 module sevenSeg (input [3:0] val, output reg [7:0] seg, output reg [7:0] seg1);
 
 always @(val)

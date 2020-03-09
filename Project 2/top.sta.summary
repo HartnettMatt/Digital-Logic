@@ -2,160 +2,112 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'ADC_CLK_10'
-Slack : -3.554
-TNS   : -62.703
+Type  : Slow 1200mV 85C Model Setup 'counter:C0|c10[0]'
+Slack : -10.580
+TNS   : -110.609
 
-Type  : Slow 1200mV 85C Model Setup 'KEY[0]'
-Slack : -3.065
-TNS   : -29.226
+Type  : Slow 1200mV 85C Model Setup 'ADC_CLK_10'
+Slack : -4.528
+TNS   : -85.018
 
 Type  : Slow 1200mV 85C Model Setup 'clockDivider:U0|clock_out'
-Slack : -1.297
-TNS   : -12.109
+Slack : -3.899
+TNS   : -31.756
+
+Type  : Slow 1200mV 85C Model Hold 'counter:C0|c10[0]'
+Slack : -2.240
+TNS   : -3.101
 
 Type  : Slow 1200mV 85C Model Hold 'clockDivider:U0|clock_out'
-Slack : 0.348
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'KEY[0]'
-Slack : 0.378
+Slack : 0.362
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'ADC_CLK_10'
-Slack : 0.638
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Recovery 'ADC_CLK_10'
-Slack : -2.016
-TNS   : -47.638
-
-Type  : Slow 1200mV 85C Model Recovery 'clockDivider:U0|clock_out'
-Slack : -0.576
-TNS   : -7.041
-
-Type  : Slow 1200mV 85C Model Removal 'clockDivider:U0|clock_out'
-Slack : 0.291
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'ADC_CLK_10'
-Slack : 1.667
+Slack : 0.635
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ADC_CLK_10'
 Slack : -3.000
 TNS   : -36.672
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'KEY[0]'
-Slack : -3.000
-TNS   : -17.030
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'counter:C0|c10[0]'
+Slack : -1.644
+TNS   : -107.816
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clockDivider:U0|clock_out'
 Slack : -1.403
 TNS   : -19.642
 
-Type  : Slow 1200mV 0C Model Setup 'ADC_CLK_10'
-Slack : -3.209
-TNS   : -55.694
+Type  : Slow 1200mV 0C Model Setup 'counter:C0|c10[0]'
+Slack : -9.770
+TNS   : -102.213
 
-Type  : Slow 1200mV 0C Model Setup 'KEY[0]'
-Slack : -2.654
-TNS   : -25.173
+Type  : Slow 1200mV 0C Model Setup 'ADC_CLK_10'
+Slack : -4.115
+TNS   : -76.629
 
 Type  : Slow 1200mV 0C Model Setup 'clockDivider:U0|clock_out'
-Slack : -1.112
-TNS   : -10.087
+Slack : -3.572
+TNS   : -28.362
+
+Type  : Slow 1200mV 0C Model Hold 'counter:C0|c10[0]'
+Slack : -1.999
+TNS   : -2.831
 
 Type  : Slow 1200mV 0C Model Hold 'clockDivider:U0|clock_out'
-Slack : 0.311
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'KEY[0]'
-Slack : 0.338
+Slack : 0.326
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ADC_CLK_10'
-Slack : 0.590
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Recovery 'ADC_CLK_10'
-Slack : -1.781
-TNS   : -42.046
-
-Type  : Slow 1200mV 0C Model Recovery 'clockDivider:U0|clock_out'
-Slack : -0.626
-TNS   : -7.706
-
-Type  : Slow 1200mV 0C Model Removal 'clockDivider:U0|clock_out'
-Slack : 0.329
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'ADC_CLK_10'
-Slack : 1.671
+Slack : 0.587
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ADC_CLK_10'
 Slack : -3.000
 TNS   : -36.672
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'KEY[0]'
-Slack : -3.000
-TNS   : -17.030
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'counter:C0|c10[0]'
+Slack : -1.489
+TNS   : -92.860
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clockDivider:U0|clock_out'
 Slack : -1.403
 TNS   : -19.642
 
-Type  : Fast 1200mV 0C Model Setup 'ADC_CLK_10'
-Slack : -0.956
-TNS   : -13.011
+Type  : Fast 1200mV 0C Model Setup 'counter:C0|c10[0]'
+Slack : -4.397
+TNS   : -45.001
 
-Type  : Fast 1200mV 0C Model Setup 'KEY[0]'
-Slack : -0.451
-TNS   : -4.064
+Type  : Fast 1200mV 0C Model Setup 'ADC_CLK_10'
+Slack : -1.314
+TNS   : -21.147
 
 Type  : Fast 1200mV 0C Model Setup 'clockDivider:U0|clock_out'
-Slack : 0.015
-TNS   : 0.000
+Slack : -1.277
+TNS   : -7.840
+
+Type  : Fast 1200mV 0C Model Hold 'counter:C0|c10[0]'
+Slack : -1.160
+TNS   : -1.771
 
 Type  : Fast 1200mV 0C Model Hold 'clockDivider:U0|clock_out'
-Slack : 0.151
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'KEY[0]'
-Slack : 0.165
+Slack : 0.155
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ADC_CLK_10'
-Slack : 0.247
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Recovery 'ADC_CLK_10'
-Slack : -1.020
-TNS   : -23.903
-
-Type  : Fast 1200mV 0C Model Recovery 'clockDivider:U0|clock_out'
-Slack : 0.278
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'clockDivider:U0|clock_out'
-Slack : 0.200
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'ADC_CLK_10'
-Slack : 0.455
+Slack : 0.244
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ADC_CLK_10'
 Slack : -3.000
-TNS   : -31.008
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'KEY[0]'
-Slack : -3.000
-TNS   : -16.066
+TNS   : -31.027
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clockDivider:U0|clock_out'
 Slack : -1.000
 TNS   : -14.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'counter:C0|c10[0]'
+Slack : -0.450
+TNS   : -18.608
 
 ------------------------------------------------------------
