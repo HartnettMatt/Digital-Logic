@@ -27,7 +27,8 @@ initial begin
   testKEY = 0;
   clock = 1'b0;
   counter = 0;
-
+  // Test leap year:
+  testSW[9] = 1;
   // Create a clock signal that has 256 cycles
   while(counter < 8'b11111111) begin
     #10 clock = ~clock;
@@ -37,10 +38,10 @@ initial begin
         testKEY[0] = 1;
       end
       // Test frequency changing:
-    if(counter > 8'b00001100)
-      begin
-        testKEY[1] = 1;
-      end
+    // if(counter > 8'b00001100)
+    //   begin
+    //     testKEY[1] = 1;
+    //   end
 
     counter = counter + 1;
   end

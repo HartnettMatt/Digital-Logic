@@ -1,5 +1,5 @@
 Flow report for top
-Sun Mar  8 21:09:44 2020
+Tue Mar 10 12:39:52 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Mar  8 21:09:41 2020       ;
+; Flow Status                        ; Successful - Tue Mar 10 12:39:50 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top                                         ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/08/2020 21:09:16 ;
+; Start date & time ; 03/10/2020 12:39:24 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; top                 ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 207432540240832.158372335531198        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 207432540240832.158386556403707        ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -90,10 +90,10 @@ refer to the applicable agreement for further details.
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 972 MB              ; 00:00:24                           ;
-; Fitter               ; 00:00:12     ; 1.1                     ; 1686 MB             ; 00:00:17                           ;
+; Fitter               ; 00:00:12     ; 1.1                     ; 1679 MB             ; 00:00:17                           ;
 ; Assembler            ; 00:00:03     ; 1.0                     ; 835 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 903 MB              ; 00:00:03                           ;
-; Total                ; 00:00:27     ; --                      ; --                  ; 00:00:47                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.2                     ; 903 MB              ; 00:00:02                           ;
+; Total                ; 00:00:27     ; --                      ; --                  ; 00:00:46                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
