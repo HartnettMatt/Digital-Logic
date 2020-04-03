@@ -1,69 +1,92 @@
-module top (ADC_CLK_10, SW, KEY, HEX0, HEX1, HEX2, HEX4, HEX5, LEDR);
+module top (ADC_CLK_10, SW, KEY, LEDR, HEX0);
+
 
 input ADC_CLK_10;
+input [2:0] SW;
 input [1:0] KEY;
-input [9:0] SW;
-
-output [7:0] HEX0;
-output [7:0] HEX1;
-output [7:0] HEX2;
-output [7:0] HEX4;
-output [7:0] HEX5;
-output [9:0] LEDR;
-
 wire clock;
-reg clock_reset;
-wire [3:0] counter1;
-wire [3:0] counter10;
-wire [3:0] segCounter10;
-wire [3:0] hexMonth;
-wire [3:0] hexDay1;
-wire [3:0] hexDay10;
-wire [3:0] segDay10;
-reg ledValue;
-reg [31:0] divide_by;
+output reg [9:0] LEDR;
+output [7:0] HEX0;
+reg [2:0] left_LEDs;
+reg [2:0] right_LEDs;
 
-assign LEDR[9:1] = 9'b0_0000_0000;
-assign LEDR[0] = ledValue;
+wire [2:0] l_LEDS;
+wire [2:0] r_LEDS;
 
-counter C0(.clock(clock), .reset_n(KEY[0]), .c10(counter10), .c1(counter1), .sC10(segCounter10));
-
-calendar Cal0 (.switch(SW[9]), .counter10(counter10), .counter1(counter1), .hexMonth(hexMonth),  .dayCounter10(hexDay10), .segDay10(segDay10), .dayCounter1(hexDay1));
-
-// SevenSeg Displays that show the calendar date
-sevenSeg H0 (.val(hexDay1), .seg(HEX0));
-sevenSeg H1 (.val(segDay10), .seg(HEX1));
-sevenSeg H2 (.val(hexMonth), .seg(HEX2));
-// SevenSeg Displays that show the 1-99 counter
-sevenSeg H4 (.val(counter1), .seg(HEX4));
-sevenSeg H5 (.val(segCounter10), .seg(HEX5));
-
-clockDivider U0 (.clock_in(ADC_CLK_10), .divide_by(divide_by), .reset_n(KEY[0]), .clock_out(clock));
-
-// When two values are shown for divide_by, one is for the DE-10 testing, the other for GTKWave testing (to avoid large files)
-initial begin
-    ledValue = 0;
-    divide_by = 2500000;
-    // divide_by = 2;
+always @(l_LEDS or r_LEDS)
+begin
+    left_LEDs <= l_LEDS;
+    right_LEDs <= r_LEDS;
 end
 
-// Flip the LEDR[0] to match the clock
-always @ (negedge clock or negedge KEY[0])
+clockDivider C0 (.clock_in(ADC_CLK_10), .reset_n(KEY[0]), .divide_by(1000000), .clock_out(clock));
+blink B0 (.clock(clock), .hazards(SW[0]), .reset_n(KEY[0]), .turnChange(KEY[1]), .rightLEDs(r_LEDS), .leftLEDs(l_LEDS), .hex(HEX0));
+
+initial
+begin
+    LEDR[9:0] = 10'b0000000000;
+end
+
+
+always @(SW[2:0] or KEY[1] or KEY[0])
+begin
+    //RESET
+    if (~KEY[0])
     begin
-       if (~KEY[0])
-            ledValue = 0;
-        else
-            ledValue <= ~ledValue;
-
+        LEDR[9:0] = 10'b0000000000;
     end
-
-// Handle the changing of frequency when KEY[1] is pressed
-always @ (negedge clock or negedge KEY[1]) begin
-  if(~KEY[1])
-    divide_by = 1000000;
-    // divide_by = 1;
-  else
-    divide_by = 2500000;
-    // divide_by = 2;
+    //BEHAVIOR 1: IDLE
+    else if (~SW[1] & ~SW[0] & ~SW[2] & KEY[0])
+    begin
+        LEDR[2:0] <= 3'b000;
+        LEDR[9:7] <= 3'b000;
+    end
+    //BEHAVIOR 2: LEFT TURN
+    else if (SW[1] & KEY[1] & ~SW[0] & ~SW[2] & KEY[0])
+    begin
+        LEDR[9:7] <= left_LEDs;
+        LEDR[2:0] <= 3'b000;
+    end
+    //BEHAVIOR 3: RIGHT TURN
+    else if (SW[1] & ~KEY[1] & ~SW[0] & ~SW[2] & KEY[0])
+    begin
+        LEDR[9:7] <= 3'b000;
+        LEDR[2] <= right_LEDs[0];
+        LEDR[1] <= right_LEDs[1];
+        LEDR[0] <= right_LEDs[2];
+    end
+    //BEHAVIOR 4: LEFT BRAKE
+    else if (SW[1] & KEY[1] & ~SW[0] & SW[2] & KEY[0])
+    begin
+        LEDR[9:7] <= left_LEDs;
+        LEDR[2:0] <= 3'b111;
+    end
+    //BEHAVIOR 5: RIGHT BRAKE
+    else if (SW[1] & ~KEY[1] & ~SW[0] & SW[2] & KEY[0])
+    begin
+        LEDR[9:7] <= 3'b111;
+        LEDR[2] <= right_LEDs[0];
+        LEDR[1] <= right_LEDs[1];
+        LEDR[0] <= right_LEDs[2];
+    end
+    //BEHAVIOR 6: STRAIGHT BRAKE
+    else if ((~SW[1] & SW[2] & KEY[0]) | (SW[0] & SW[1] & SW[2]))
+    begin
+        LEDR[2:0] <= 3'b111;
+        LEDR[9:7] <= 3'b111;
+    end
+    //BEHAVIOR 7: HAZARDS
+    else if (SW[0] & ~SW[2] & KEY[0])
+    begin
+        LEDR[9:7] <= left_LEDs;
+        LEDR[2] <= right_LEDs[0];
+        LEDR[1] <= right_LEDs[1];
+        LEDR[0] <= right_LEDs[2];
+    end
+    else
+    begin
+        LEDR[9:0] = 10'b1111111111;
+    end
 end
+
 endmodule

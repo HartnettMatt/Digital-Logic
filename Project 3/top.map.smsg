@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at top.v(31): always construct contains both blocking and non-blocking assignments File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 31
+Warning (10268): Verilog HDL information at clockDivider.v(13): always construct contains both blocking and non-blocking assignments File: /home/matt/Documents/Digital Logic/Project 3/clockDivider.v Line: 13
