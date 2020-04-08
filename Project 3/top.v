@@ -2,9 +2,10 @@ module top (ADC_CLK_10, SW, KEY, LEDR, HEX0);
 
 
 input ADC_CLK_10;
-input [2:0] SW;
+input [7:0] SW;
 input [1:0] KEY;
 wire clock;
+reg reset = 1;
 output reg [9:0] LEDR;
 output [7:0] HEX0;
 reg [2:0] left_LEDs;
@@ -19,8 +20,24 @@ begin
     right_LEDs <= r_LEDS;
 end
 
-clockDivider C0 (.clock_in(ADC_CLK_10), .reset_n(KEY[0]), .divide_by(1000000), .clock_out(clock));
-blink B0 (.clock(clock), .hazards(SW[0]), .reset_n(KEY[0]), .turnChange(KEY[1]), .rightLEDs(r_LEDS), .leftLEDs(l_LEDS), .hex(HEX0));
+always @ (ADC_CLK_10)
+begin
+  if(SW[0] || SW[1])
+  begin
+    reset = KEY[0];
+  end
+  else if(~SW[0] && ~SW[1])
+  begin
+    reset = 0;
+  end
+end
+// Initialize for the on-board programming:
+clockDivider C0 (.clock_in(ADC_CLK_10), .reset_n(reset), .divide_by(1000000), .clock_out(clock));
+
+// Initialize for the testbenching:
+// clockDivider C0 (.clock_in(ADC_CLK_10), .reset_n(KEY[0]), .divide_by(1), .clock_out(clock));
+
+blink B0 (.clock(clock), .hazards(SW[0]), .reset_n(reset), .turnChange(KEY[1]), .rightLEDs(r_LEDS), .leftLEDs(l_LEDS), .hex(HEX0));
 
 initial
 begin
@@ -28,10 +45,10 @@ begin
 end
 
 
-always @(SW[2:0] or KEY[1] or KEY[0])
+always @(SW[7:0] or KEY[1] or KEY[0] or reset)
 begin
     //RESET
-    if (~KEY[0])
+    if (~reset)
     begin
         LEDR[9:0] = 10'b0000000000;
     end

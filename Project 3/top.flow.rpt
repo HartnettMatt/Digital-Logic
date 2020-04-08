@@ -1,5 +1,5 @@
 Flow report for top
-Thu Apr  2 16:48:04 2020
+Tue Apr  7 22:20:12 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Apr  2 16:48:01 2020       ;
+; Flow Status                        ; Successful - Tue Apr  7 22:20:10 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 58 / 49,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 57 / 49,760 ( < 1 % )                       ;
+; Total logic elements               ; 61 / 49,760 ( < 1 % )                       ;
+;     Total combinational functions  ; 60 / 49,760 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 26 / 49,760 ( < 1 % )                       ;
 ; Total registers                    ; 26                                          ;
-; Total pins                         ; 24 / 360 ( 7 % )                            ;
+; Total pins                         ; 29 / 360 ( 8 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/02/2020 16:47:41 ;
+; Start date & time ; 04/07/2020 22:19:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; top                 ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 207432540240832.158586766121726        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 207432540240832.158631958912229        ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -89,11 +89,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 970 MB              ; 00:00:24                           ;
-; Fitter               ; 00:00:08     ; 1.0                     ; 1668 MB             ; 00:00:10                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 835 MB              ; 00:00:03                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 952 MB              ; 00:00:23                           ;
+; Fitter               ; 00:00:07     ; 1.0                     ; 1672 MB             ; 00:00:10                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 831 MB              ; 00:00:03                           ;
 ; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 898 MB              ; 00:00:02                           ;
-; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:39                           ;
+; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:38                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

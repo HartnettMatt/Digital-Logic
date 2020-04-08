@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Thu Apr  2 16:47:50 2020
+Tue Apr  7 22:19:59 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -45,16 +45,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr  2 16:47:50 2020       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr  7 22:19:59 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 56                                          ;
-;     Total combinational functions  ; 56                                          ;
+; Total logic elements               ; 59                                          ;
+;     Total combinational functions  ; 59                                          ;
 ;     Dedicated logic registers      ; 26                                          ;
 ; Total registers                    ; 26                                          ;
-; Total pins                         ; 24                                          ;
+; Total pins                         ; 29                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -163,8 +163,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -180,36 +179,36 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 56           ;
-;                                             ;              ;
-; Total combinational functions               ; 56           ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 14           ;
-;     -- 3 input functions                    ; 13           ;
-;     -- <=2 input functions                  ; 29           ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 34           ;
-;     -- arithmetic mode                      ; 22           ;
-;                                             ;              ;
-; Total registers                             ; 26           ;
-;     -- Dedicated logic registers            ; 26           ;
-;     -- I/O registers                        ; 0            ;
-;                                             ;              ;
-; I/O pins                                    ; 24           ;
-;                                             ;              ;
-; Embedded Multiplier 9-bit elements          ; 0            ;
-;                                             ;              ;
-; Maximum fan-out node                        ; KEY[0]~input ;
-; Maximum fan-out                             ; 34           ;
-; Total fan-out                               ; 265          ;
-; Average fan-out                             ; 2.04         ;
-+---------------------------------------------+--------------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+; Estimated Total logic elements              ; 59      ;
+;                                             ;         ;
+; Total combinational functions               ; 59      ;
+; Logic element usage by number of LUT inputs ;         ;
+;     -- 4 input functions                    ; 18      ;
+;     -- 3 input functions                    ; 12      ;
+;     -- <=2 input functions                  ; 29      ;
+;                                             ;         ;
+; Logic elements by mode                      ;         ;
+;     -- normal mode                          ; 37      ;
+;     -- arithmetic mode                      ; 22      ;
+;                                             ;         ;
+; Total registers                             ; 26      ;
+;     -- Dedicated logic registers            ; 26      ;
+;     -- I/O registers                        ; 0       ;
+;                                             ;         ;
+; I/O pins                                    ; 29      ;
+;                                             ;         ;
+; Embedded Multiplier 9-bit elements          ; 0       ;
+;                                             ;         ;
+; Maximum fan-out node                        ; reset~0 ;
+; Maximum fan-out                             ; 32      ;
+; Total fan-out                               ; 283     ;
+; Average fan-out                             ; 1.98    ;
++---------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -217,7 +216,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name  ; Entity Name  ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+--------------+--------------+
-; |top                       ; 56 (13)             ; 26 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 24   ; 0            ; 0          ; |top                 ; top          ; work         ;
+; |top                       ; 59 (16)             ; 26 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 29   ; 0            ; 0          ; |top                 ; top          ; work         ;
 ;    |blink:B0|              ; 5 (5)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|blink:B0        ; blink        ; work         ;
 ;    |clockDivider:C0|       ; 38 (38)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|clockDivider:C0 ; clockDivider ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+--------------+--------------+
@@ -271,18 +270,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 24                          ;
+; boundary_port         ; 29                          ;
 ; cycloneiii_ff         ; 26                          ;
 ;     CLR               ; 26                          ;
-; cycloneiii_lcell_comb ; 59                          ;
+; cycloneiii_lcell_comb ; 62                          ;
 ;     arith             ; 22                          ;
 ;         2 data inputs ; 22                          ;
-;     normal            ; 37                          ;
+;     normal            ; 40                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 5                           ;
-;         3 data inputs ; 13                          ;
-;         4 data inputs ; 14                          ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 18                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.90                        ;
 ; Average LUT depth     ; 2.86                        ;
@@ -304,67 +303,80 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Apr  2 16:47:40 2020
+    Info: Processing started: Tue Apr  7 22:19:49 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file top.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: top File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 1
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Warning (10235): Verilog HDL Always Construct warning at top.v(47): variable "left_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 47
-Warning (10235): Verilog HDL Always Construct warning at top.v(54): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 54
-Warning (10235): Verilog HDL Always Construct warning at top.v(55): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 55
-Warning (10235): Verilog HDL Always Construct warning at top.v(56): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 56
-Warning (10235): Verilog HDL Always Construct warning at top.v(61): variable "left_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 61
-Warning (10235): Verilog HDL Always Construct warning at top.v(68): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 68
-Warning (10235): Verilog HDL Always Construct warning at top.v(69): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 69
-Warning (10235): Verilog HDL Always Construct warning at top.v(70): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 70
-Warning (10235): Verilog HDL Always Construct warning at top.v(81): variable "left_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 81
-Warning (10235): Verilog HDL Always Construct warning at top.v(82): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 82
-Warning (10235): Verilog HDL Always Construct warning at top.v(83): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 83
-Warning (10235): Verilog HDL Always Construct warning at top.v(84): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 84
-Warning (10240): Verilog HDL Always Construct warning at top.v(31): inferring latch(es) for variable "LEDR", which holds its previous value in one or more paths through the always construct File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 31
-Info (10041): Inferred latch for "LEDR[3]" at top.v(39) File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 39
-Info (10041): Inferred latch for "LEDR[4]" at top.v(39) File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 39
-Info (10041): Inferred latch for "LEDR[5]" at top.v(39) File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 39
-Info (10041): Inferred latch for "LEDR[6]" at top.v(39) File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 39
+Warning (10235): Verilog HDL Always Construct warning at top.v(25): variable "SW" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 25
+Warning (10235): Verilog HDL Always Construct warning at top.v(27): variable "KEY" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 27
+Warning (10235): Verilog HDL Always Construct warning at top.v(29): variable "SW" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 29
+Warning (10240): Verilog HDL Always Construct warning at top.v(23): inferring latch(es) for variable "reset", which holds its previous value in one or more paths through the always construct File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 23
+Warning (10235): Verilog HDL Always Construct warning at top.v(64): variable "left_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 64
+Warning (10235): Verilog HDL Always Construct warning at top.v(71): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 71
+Warning (10235): Verilog HDL Always Construct warning at top.v(72): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 72
+Warning (10235): Verilog HDL Always Construct warning at top.v(73): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 73
+Warning (10235): Verilog HDL Always Construct warning at top.v(78): variable "left_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 78
+Warning (10235): Verilog HDL Always Construct warning at top.v(85): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 85
+Warning (10235): Verilog HDL Always Construct warning at top.v(86): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 86
+Warning (10235): Verilog HDL Always Construct warning at top.v(87): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 87
+Warning (10235): Verilog HDL Always Construct warning at top.v(98): variable "left_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 98
+Warning (10235): Verilog HDL Always Construct warning at top.v(99): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 99
+Warning (10235): Verilog HDL Always Construct warning at top.v(100): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 100
+Warning (10235): Verilog HDL Always Construct warning at top.v(101): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 101
+Warning (10240): Verilog HDL Always Construct warning at top.v(48): inferring latch(es) for variable "LEDR", which holds its previous value in one or more paths through the always construct File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 48
+Info (10041): Inferred latch for "LEDR[3]" at top.v(56) File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 56
+Info (10041): Inferred latch for "LEDR[4]" at top.v(56) File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 56
+Info (10041): Inferred latch for "LEDR[5]" at top.v(56) File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 56
+Info (10041): Inferred latch for "LEDR[6]" at top.v(56) File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 56
+Info (10041): Inferred latch for "reset" at top.v(29) File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 29
 Warning (12125): Using design file clockDivider.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: clockDivider File: /home/matt/Documents/Digital Logic/Project 3/clockDivider.v Line: 1
-Info (12128): Elaborating entity "clockDivider" for hierarchy "clockDivider:C0" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 22
+Info (12128): Elaborating entity "clockDivider" for hierarchy "clockDivider:C0" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 35
 Warning (10230): Verilog HDL assignment warning at clockDivider.v(23): truncated value with size 32 to match size of target (23) File: /home/matt/Documents/Digital Logic/Project 3/clockDivider.v Line: 23
 Warning (12125): Using design file blink.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: blink File: /home/matt/Documents/Digital Logic/Project 3/blink.v Line: 1
-Info (12128): Elaborating entity "blink" for hierarchy "blink:B0" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 23
+Info (12128): Elaborating entity "blink" for hierarchy "blink:B0" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 40
 Warning (10235): Verilog HDL Always Construct warning at blink.v(18): variable "blink" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/blink.v Line: 18
 Warning (10235): Verilog HDL Always Construct warning at blink.v(20): variable "hazards" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/blink.v Line: 20
 Warning (10230): Verilog HDL assignment warning at blink.v(25): truncated value with size 32 to match size of target (2) File: /home/matt/Documents/Digital Logic/Project 3/blink.v Line: 25
 Warning (12125): Using design file sevenSeg.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: sevenSeg File: /home/matt/Documents/Digital Logic/Project 3/sevenSeg.v Line: 1
 Info (12128): Elaborating entity "sevenSeg" for hierarchy "blink:B0|sevenSeg:H0" File: /home/matt/Documents/Digital Logic/Project 3/blink.v Line: 14
-Warning (14025): LATCH primitive "LEDR[3]$latch" is permanently disabled File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 39
-Warning (14025): LATCH primitive "LEDR[4]$latch" is permanently disabled File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 39
-Warning (14025): LATCH primitive "LEDR[5]$latch" is permanently disabled File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 39
-Warning (14025): LATCH primitive "LEDR[6]$latch" is permanently disabled File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 39
+Warning (14026): LATCH primitive "reset" is permanently enabled File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 8
+Warning (14026): LATCH primitive "reset" is permanently enabled File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 8
+Warning (14025): LATCH primitive "LEDR[3]$latch" is permanently disabled File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 56
+Warning (14025): LATCH primitive "LEDR[4]$latch" is permanently disabled File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 56
+Warning (14025): LATCH primitive "LEDR[5]$latch" is permanently disabled File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 56
+Warning (14025): LATCH primitive "LEDR[6]$latch" is permanently disabled File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 56
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 39
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 39
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 39
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 39
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 9
-    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 9
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 56
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 56
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 56
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 56
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 10
+    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file /home/matt/Documents/Digital Logic/Project 3/top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 80 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
+Warning (21074): Design contains 5 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[3]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 5
+    Warning (15610): No output dependent on input pin "SW[4]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 5
+    Warning (15610): No output dependent on input pin "SW[5]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 5
+    Warning (15610): No output dependent on input pin "SW[6]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 5
+    Warning (15610): No output dependent on input pin "SW[7]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 5
+Info (21057): Implemented 88 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
     Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 56 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
-    Info: Peak virtual memory: 1010 megabytes
-    Info: Processing ended: Thu Apr  2 16:47:50 2020
+    Info (21061): Implemented 59 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 996 megabytes
+    Info: Processing ended: Tue Apr  7 22:19:59 2020
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+
