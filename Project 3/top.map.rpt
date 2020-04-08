@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Tue Apr  7 22:19:59 2020
+Tue Apr  7 22:40:51 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -45,16 +45,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr  7 22:19:59 2020       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr  7 22:40:51 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 59                                          ;
-;     Total combinational functions  ; 59                                          ;
+; Total logic elements               ; 53                                          ;
+;     Total combinational functions  ; 53                                          ;
 ;     Dedicated logic registers      ; 26                                          ;
 ; Total registers                    ; 26                                          ;
-; Total pins                         ; 29                                          ;
+; Total pins                         ; 31                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -163,7 +163,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -179,36 +180,36 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+---------------------------------------------+---------+
-; Resource                                    ; Usage   ;
-+---------------------------------------------+---------+
-; Estimated Total logic elements              ; 59      ;
-;                                             ;         ;
-; Total combinational functions               ; 59      ;
-; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 18      ;
-;     -- 3 input functions                    ; 12      ;
-;     -- <=2 input functions                  ; 29      ;
-;                                             ;         ;
-; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 37      ;
-;     -- arithmetic mode                      ; 22      ;
-;                                             ;         ;
-; Total registers                             ; 26      ;
-;     -- Dedicated logic registers            ; 26      ;
-;     -- I/O registers                        ; 0       ;
-;                                             ;         ;
-; I/O pins                                    ; 29      ;
-;                                             ;         ;
-; Embedded Multiplier 9-bit elements          ; 0       ;
-;                                             ;         ;
-; Maximum fan-out node                        ; reset~0 ;
-; Maximum fan-out                             ; 32      ;
-; Total fan-out                               ; 283     ;
-; Average fan-out                             ; 1.98    ;
-+---------------------------------------------+---------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 53           ;
+;                                             ;              ;
+; Total combinational functions               ; 53           ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 19           ;
+;     -- 3 input functions                    ; 5            ;
+;     -- <=2 input functions                  ; 29           ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 31           ;
+;     -- arithmetic mode                      ; 22           ;
+;                                             ;              ;
+; Total registers                             ; 26           ;
+;     -- Dedicated logic registers            ; 26           ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 31           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; KEY[0]~input ;
+; Maximum fan-out                             ; 29           ;
+; Total fan-out                               ; 268          ;
+; Average fan-out                             ; 1.90         ;
++---------------------------------------------+--------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -216,9 +217,9 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name  ; Entity Name  ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+--------------+--------------+
-; |top                       ; 59 (16)             ; 26 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 29   ; 0            ; 0          ; |top                 ; top          ; work         ;
+; |top                       ; 53 (16)             ; 26 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 31   ; 0            ; 0          ; |top                 ; top          ; work         ;
 ;    |blink:B0|              ; 5 (5)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|blink:B0        ; blink        ; work         ;
-;    |clockDivider:C0|       ; 38 (38)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|clockDivider:C0 ; clockDivider ; work         ;
+;    |clockDivider:C0|       ; 32 (32)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|clockDivider:C0 ; clockDivider ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -248,21 +249,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
-+-----------------------------------------------------+
-; Port Connectivity Checks: "clockDivider:C0"         ;
-+-------------------+-------+----------+--------------+
-; Port              ; Type  ; Severity ; Details      ;
-+-------------------+-------+----------+--------------+
-; divide_by[19..16] ; Input ; Info     ; Stuck at VCC ;
-; divide_by[31..20] ; Input ; Info     ; Stuck at GND ;
-; divide_by[13..10] ; Input ; Info     ; Stuck at GND ;
-; divide_by[8..7]   ; Input ; Info     ; Stuck at GND ;
-; divide_by[5..0]   ; Input ; Info     ; Stuck at GND ;
-; divide_by[15]     ; Input ; Info     ; Stuck at GND ;
-; divide_by[14]     ; Input ; Info     ; Stuck at VCC ;
-; divide_by[9]      ; Input ; Info     ; Stuck at VCC ;
-; divide_by[6]      ; Input ; Info     ; Stuck at VCC ;
-+-------------------+-------+----------+--------------+
++----------------------------------------------------+
+; Port Connectivity Checks: "clockDivider:C0"        ;
++------------------+-------+----------+--------------+
+; Port             ; Type  ; Severity ; Details      ;
++------------------+-------+----------+--------------+
+; divide_by[31..1] ; Input ; Info     ; Stuck at GND ;
+; divide_by[0]     ; Input ; Info     ; Stuck at VCC ;
++------------------+-------+----------+--------------+
 
 
 +-----------------------------------------------------+
@@ -270,21 +264,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 29                          ;
+; boundary_port         ; 31                          ;
 ; cycloneiii_ff         ; 26                          ;
 ;     CLR               ; 26                          ;
-; cycloneiii_lcell_comb ; 62                          ;
+; cycloneiii_lcell_comb ; 56                          ;
 ;     arith             ; 22                          ;
 ;         2 data inputs ; 22                          ;
-;     normal            ; 40                          ;
+;     normal            ; 34                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 5                           ;
-;         3 data inputs ; 12                          ;
-;         4 data inputs ; 18                          ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 19                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.90                        ;
-; Average LUT depth     ; 2.86                        ;
+; Max LUT depth         ; 3.20                        ;
+; Average LUT depth     ; 2.61                        ;
 +-----------------------+-----------------------------+
 
 
@@ -303,7 +297,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Apr  7 22:19:49 2020
+    Info: Processing started: Tue Apr  7 22:40:41 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -334,7 +328,7 @@ Info (10041): Inferred latch for "LEDR[6]" at top.v(56) File: /home/matt/Documen
 Info (10041): Inferred latch for "reset" at top.v(29) File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 29
 Warning (12125): Using design file clockDivider.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: clockDivider File: /home/matt/Documents/Digital Logic/Project 3/clockDivider.v Line: 1
-Info (12128): Elaborating entity "clockDivider" for hierarchy "clockDivider:C0" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 35
+Info (12128): Elaborating entity "clockDivider" for hierarchy "clockDivider:C0" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 38
 Warning (10230): Verilog HDL assignment warning at clockDivider.v(23): truncated value with size 32 to match size of target (23) File: /home/matt/Documents/Digital Logic/Project 3/clockDivider.v Line: 23
 Warning (12125): Using design file blink.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: blink File: /home/matt/Documents/Digital Logic/Project 3/blink.v Line: 1
@@ -362,21 +356,23 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file /home/matt/Documents/Digital Logic/Project 3/top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 5 input pin(s) that do not drive logic
+Warning (21074): Design contains 7 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[3]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 5
     Warning (15610): No output dependent on input pin "SW[4]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 5
     Warning (15610): No output dependent on input pin "SW[5]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 5
     Warning (15610): No output dependent on input pin "SW[6]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 5
     Warning (15610): No output dependent on input pin "SW[7]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 5
-Info (21057): Implemented 88 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
+    Warning (15610): No output dependent on input pin "SW[8]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 5
+    Warning (15610): No output dependent on input pin "SW[9]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 5
+Info (21057): Implemented 84 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
     Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 59 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 45 warnings
-    Info: Peak virtual memory: 996 megabytes
-    Info: Processing ended: Tue Apr  7 22:19:59 2020
+    Info (21061): Implemented 53 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 47 warnings
+    Info: Peak virtual memory: 1011 megabytes
+    Info: Processing ended: Tue Apr  7 22:40:51 2020
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:24
 
 
 +------------------------------------------+

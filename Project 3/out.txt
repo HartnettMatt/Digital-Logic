@@ -995,3 +995,213 @@ VCD info: dumpfile test.vcd opened for output.
                  300testSW = 00000001, testKEY = 01, clock = 0010000100, testLED = 0, testHEX0 = 10110000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
                  310testSW = 00000001, testKEY = 01, clock = 0010000100, testLED = 1, testHEX0 = 10110000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
                  320testSW = 00000001, testKEY = 01, clock = 0010000100, testLED = 0, testHEX0 = 10110000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 00000000, testKEY = 00, clock = 0000000000, testLED = 0, testHEX0 = 11000000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                  10testSW = 00000000, testKEY = 00, clock = 0000000000, testLED = 1, testHEX0 = 11000000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                  20testSW = 00000000, testKEY = 00, clock = 0000000000, testLED = 0, testHEX0 = 11000000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                  30testSW = 00000000, testKEY = 00, clock = 0000000000, testLED = 1, testHEX0 = 11000000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                  40testSW = 00000000, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                  50testSW = 00000000, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                  60testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                  70testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                  80testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                  90testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 100testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 110testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 120testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 130testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10100100, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 140testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10100100, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 150testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10100100, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 160testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10100100, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 170testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10110000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 180testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10110000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 190testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10110000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 200testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10110000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 210testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 220testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 230testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 240testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 250testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 260testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 270testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 280testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 290testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10100100, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 300testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10100100, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 310testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10100100, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+                 320testSW = 00000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10100100, testHEX1 = zzzzzzzz, testHEX2 = zzzzzzzz, testHEX3 = zzzzzzzz, testHEX4 = zzzzzzzz, testHEX5 = zzzzzzzz
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  10testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  20testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  30testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  40testSW = 0000000000, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  50testSW = 0000000000, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  60testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  70testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  80testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  90testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001,
+                 100testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001,
+                 110testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001,
+                 120testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001,
+                 130testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10100100,
+                 140testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10100100,
+                 150testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10100100,
+                 160testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10100100,
+                 170testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10110000,
+                 180testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10110000,
+                 190testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10110000,
+                 200testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10110000,
+                 210testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                 220testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                 230testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                 240testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                 250testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001,
+                 260testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001,
+                 270testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001,
+                 280testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001,
+                 290testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10100100,
+                 300testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10100100,
+                 310testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10100100,
+                 320testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10100100,
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  10testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  20testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  30testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  40testSW = 0000000000, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  50testSW = 0000000000, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  60testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  70testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  80testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  90testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001,
+                 100testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001,
+                 110testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001,
+                 120testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001,
+                 130testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10100100,
+                 140testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10100100,
+                 150testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10100100,
+                 160testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10100100,
+                 170testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10110000,
+                 180testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10110000,
+                 190testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10110000,
+                 200testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10110000,
+                 210testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                 220testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                 230testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                 240testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                 250testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001,
+                 260testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001,
+                 270testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001,
+                 280testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001,
+                 290testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10100100,
+                 300testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10100100,
+                 310testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 10100100,
+                 320testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 10100100,
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  10testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  20testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  30testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  40testSW = 0000000000, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  50testSW = 0000000000, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  60testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  70testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  80testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  90testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001,
+                 100testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001,
+                 110testSW = 0000000001, testKEY = 01, clock = 0010000100, testLED = 1, testHEX0 = 11111001,
+                 120testSW = 0000000001, testKEY = 01, clock = 0010000100, testLED = 0, testHEX0 = 11111001,
+                 130testSW = 0000000001, testKEY = 01, clock = 0010000100, testLED = 1, testHEX0 = 10100100,
+                 140testSW = 0000000001, testKEY = 01, clock = 0010000100, testLED = 0, testHEX0 = 10100100,
+                 150testSW = 0000000001, testKEY = 01, clock = 0110000110, testLED = 1, testHEX0 = 10100100,
+                 160testSW = 0000000001, testKEY = 01, clock = 0110000110, testLED = 0, testHEX0 = 10100100,
+                 170testSW = 0000000001, testKEY = 01, clock = 0110000110, testLED = 1, testHEX0 = 10110000,
+                 180testSW = 0000000001, testKEY = 01, clock = 0110000110, testLED = 0, testHEX0 = 10110000,
+                 190testSW = 0000000001, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 10110000,
+                 200testSW = 0000000001, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 10110000,
+                 210testSW = 0000000001, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 11000000,
+                 220testSW = 0000000001, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 11000000,
+                 230testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                 240testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                 250testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001,
+                 260testSW = 0000000001, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001,
+                 270testSW = 0000000001, testKEY = 01, clock = 0010000100, testLED = 1, testHEX0 = 11111001,
+                 280testSW = 0000000001, testKEY = 01, clock = 0010000100, testLED = 0, testHEX0 = 11111001,
+                 290testSW = 0000000001, testKEY = 01, clock = 0010000100, testLED = 1, testHEX0 = 10100100,
+                 300testSW = 0000000001, testKEY = 01, clock = 0010000100, testLED = 0, testHEX0 = 10100100,
+                 310testSW = 0000000001, testKEY = 01, clock = 0110000110, testLED = 1, testHEX0 = 10100100,
+                 320testSW = 0000000001, testKEY = 01, clock = 0110000110, testLED = 0, testHEX0 = 10100100,
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  10testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  20testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  30testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  40testSW = 0000000000, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  50testSW = 0000000000, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  60testSW = 0000000010, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  70testSW = 0000000010, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  80testSW = 0000000010, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  90testSW = 0000000010, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001,
+                 100testSW = 0000000010, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001,
+                 110testSW = 0000000010, testKEY = 01, clock = 0000000100, testLED = 1, testHEX0 = 11111001,
+                 120testSW = 0000000010, testKEY = 01, clock = 0000000100, testLED = 0, testHEX0 = 11111001,
+                 130testSW = 0000000010, testKEY = 01, clock = 0000000100, testLED = 1, testHEX0 = 10100100,
+                 140testSW = 0000000010, testKEY = 01, clock = 0000000100, testLED = 0, testHEX0 = 10100100,
+                 150testSW = 0000000010, testKEY = 01, clock = 0000000110, testLED = 1, testHEX0 = 10100100,
+                 160testSW = 0000000010, testKEY = 01, clock = 0000000110, testLED = 0, testHEX0 = 10100100,
+                 170testSW = 0000000010, testKEY = 01, clock = 0000000110, testLED = 1, testHEX0 = 10110000,
+                 180testSW = 0000000010, testKEY = 01, clock = 0000000110, testLED = 0, testHEX0 = 10110000,
+                 190testSW = 0000000010, testKEY = 01, clock = 0000000111, testLED = 1, testHEX0 = 10110000,
+                 200testSW = 0000000010, testKEY = 01, clock = 0000000111, testLED = 0, testHEX0 = 10110000,
+                 210testSW = 0000000010, testKEY = 01, clock = 0000000111, testLED = 1, testHEX0 = 11000000,
+                 220testSW = 0000000010, testKEY = 01, clock = 0000000111, testLED = 0, testHEX0 = 11000000,
+                 230testSW = 0000000010, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                 240testSW = 0000000010, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                 250testSW = 0000000010, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11111001,
+                 260testSW = 0000000010, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11111001,
+                 270testSW = 0000000010, testKEY = 01, clock = 0000000100, testLED = 1, testHEX0 = 11111001,
+                 280testSW = 0000000010, testKEY = 01, clock = 0000000100, testLED = 0, testHEX0 = 11111001,
+                 290testSW = 0000000010, testKEY = 01, clock = 0000000100, testLED = 1, testHEX0 = 10100100,
+                 300testSW = 0000000010, testKEY = 01, clock = 0000000100, testLED = 0, testHEX0 = 10100100,
+                 310testSW = 0000000010, testKEY = 01, clock = 0000000110, testLED = 1, testHEX0 = 10100100,
+                 320testSW = 0000000010, testKEY = 01, clock = 0000000110, testLED = 0, testHEX0 = 10100100,
+VCD info: dumpfile test.vcd opened for output.
+                   0Starting simulation
+                   0testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  10testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  20testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  30testSW = 0000000000, testKEY = 00, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  40testSW = 0000000000, testKEY = 01, clock = 0000000000, testLED = 0, testHEX0 = 11000000,
+                  50testSW = 0000000000, testKEY = 01, clock = 0000000000, testLED = 1, testHEX0 = 11000000,
+                  60testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 11000000,
+                  70testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 11000000,
+                  80testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 11000000,
+                  90testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 11111001,
+                 100testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 11111001,
+                 110testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 11111001,
+                 120testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 11111001,
+                 130testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 10100100,
+                 140testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 10100100,
+                 150testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 10100100,
+                 160testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 10100100,
+                 170testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 10110000,
+                 180testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 10110000,
+                 190testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 10110000,
+                 200testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 10110000,
+                 210testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 11000000,
+                 220testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 11000000,
+                 230testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 11000000,
+                 240testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 11000000,
+                 250testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 11111001,
+                 260testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 11111001,
+                 270testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 11111001,
+                 280testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 11111001,
+                 290testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 10100100,
+                 300testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 10100100,
+                 310testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 1, testHEX0 = 10100100,
+                 320testSW = 0000000100, testKEY = 01, clock = 1110000111, testLED = 0, testHEX0 = 10100100,

@@ -2,17 +2,15 @@
 
 module tb();
 
-reg [7:0] testSW;
+reg [9:0] testSW;
 reg [1:0] testKEY;
 reg clock;
 reg [7:0] counter;
 wire [9:0] testLED;
 wire [7:0] testHEX0;
-wire [7:0] testHEX1;
-wire [7:0] testHEX2;
-wire [7:0] testHEX3;
-wire [7:0] testHEX4;
-wire [7:0] testHEX5;
+
+parameter testCase = 0;
+
 
 top DUT(.KEY(testKEY), .SW(testSW), .ADC_CLK_10(clock), .LEDR(testLED),.HEX0(testHEX0));
 
@@ -35,10 +33,45 @@ initial begin
       begin
         testKEY[0] = 1;
       end
-    if (counter > 8'b00000100)
-    begin
-      testSW[0] = 1;
+
+// Based on testCase, test different aspects of the design one at a time (easier for GTKWave comprehension)
+      case (testCase)
+
+// Test Hazards:
+      0: begin
+        if (counter > 8'b00000100)
+        begin
+          testSW[0] = 1;
+        end
+      end
+
+// Test Right Turn:
+      1: begin
+        if (counter > 8'b00000100)
+        begin
+          testSW[1] = 1;
+          testKEY[1] = 0;
+        end
+      end
+
+// Test Left Turn:
+      2: begin
+        if (counter > 8'b00000100)
+        begin
+          testSW[1] = 1;
+          testKEY[1] = 1;
+        end
+      end
+
+// Test Brake:
+    3: begin
+      if (counter > 8'b00000100)
+      begin
+        testSW[2] = 1;
+      end
     end
+  endcase
+
     counter = counter + 1;
   end
   // End testing
@@ -48,7 +81,7 @@ end
 // Monitor inputs and outputs
 initial
   begin
-    $monitor($time, "testSW = %b, testKEY = %b, clock = %b, testLED = %b, testHEX0 = %b, testHEX1 = %b, testHEX2 = %b, testHEX3 = %b, testHEX4 = %b, testHEX5 = %b",
-           testSW, testKEY, testLED, clock, testHEX0, testHEX1, testHEX2, testHEX3, testHEX4, testHEX5);
+    $monitor($time, "testSW = %b, testKEY = %b, clock = %b, testLED = %b, testHEX0 = %b,",
+           testSW, testKEY, testLED, clock, testHEX0);
   end
 endmodule
