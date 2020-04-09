@@ -9,7 +9,7 @@ reg [7:0] counter;
 wire [9:0] testLED;
 wire [7:0] testHEX0;
 
-parameter testCase = 0;
+parameter testCase = 4;
 
 
 manual DUT(.KEY(testKEY), .SW(testSW), .ADC_CLK_10(clock), .LEDR(testLED),.HEX0(testHEX0));
@@ -68,6 +68,13 @@ initial begin
       if (counter > 8'b00000100)
       begin
         testSW[2] = 1;
+      end
+    end
+// Test Idle:
+    4: begin
+      if (counter > 8'b00000100)
+      begin
+        testSW[2:0] = 0;
       end
     end
   endcase

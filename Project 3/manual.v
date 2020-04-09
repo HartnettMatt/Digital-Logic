@@ -32,10 +32,10 @@ begin
   end
 end
 // Initialize for the on-board programming:
-// clockDivider C0 (.clock_in(ADC_CLK_10), .reset_n(reset), .divide_by(1000000), .clock_out(clock));
+clockDivider C0 (.clock_in(ADC_CLK_10), .reset_n(reset), .divide_by(1000000), .clock_out(clock));
 
 // Initialize for the testbenching:
-clockDivider C0 (.clock_in(ADC_CLK_10), .reset_n(KEY[0]), .divide_by(1), .clock_out(clock));
+// clockDivider C0 (.clock_in(ADC_CLK_10), .reset_n(KEY[0]), .divide_by(1), .clock_out(clock));
 
 blink B0 (.clock(clock), .hazards(SW[0]), .reset_n(reset), .turnChange(KEY[1]), .rightLEDs(r_LEDS), .leftLEDs(l_LEDS), .hex(HEX0));
 

@@ -9,10 +9,12 @@ output [7:0] hex;
 reg [1:0] blinkState;
 reg [1:0] blink;
 reg [1:0] next;
-
+reg updateNext;
 
 sevenSeg H0 (.val(blinkState), .seg(hex));
 
+
+//NEXT STATE LOGIC
 always @(blinkState or turnChange)
 begin
 if (blink == blinkState)
@@ -23,6 +25,7 @@ begin
     end
 end
 next <= blinkState + 1;
+//OUTPUT LOGIC
 case (blinkState)
     0 : begin
         leftLEDs <= 0;
@@ -40,7 +43,7 @@ case (blinkState)
         leftLEDs <= 7;
         rightLEDs <= 7;
         end
-    default: begin
+    default: begin 
         leftLEDs <= 0;
         rightLEDs <= 0;
         end
@@ -48,6 +51,8 @@ endcase
 blink <= blinkState;
 end
 
+
+// CURRENT STATE LOGIC
 always @(posedge clock or negedge reset_n)
 begin
     if (~reset_n)

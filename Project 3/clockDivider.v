@@ -4,7 +4,7 @@ input reset_n;
 input [31:0] divide_by;
 output reg clock_out;
 
-reg [22:0] clock_divider = 0;
+reg [31:0] clock_divider = 0;
 
 initial begin
   clock_out = 0;

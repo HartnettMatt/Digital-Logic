@@ -1,5 +1,5 @@
 Timing Analyzer report for top
-Tue Apr  7 22:41:04 2020
+Thu Apr  9 09:03:07 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -38,15 +38,17 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  30. Signal Integrity Metrics (Fast 1200mv 0c Model)
  31. Setup Transfers
  32. Hold Transfers
- 33. Report TCCS
- 34. Report RSKM
- 35. Unconstrained Paths Summary
- 36. Clock Status Summary
- 37. Unconstrained Input Ports
- 38. Unconstrained Output Ports
+ 33. Recovery Transfers
+ 34. Removal Transfers
+ 35. Report TCCS
+ 36. Report RSKM
+ 37. Unconstrained Paths Summary
+ 38. Clock Status Summary
  39. Unconstrained Input Ports
  40. Unconstrained Output Ports
- 41. Timing Analyzer Messages
+ 41. Unconstrained Input Ports
+ 42. Unconstrained Output Ports
+ 43. Timing Analyzer Messages
 
 
 
@@ -91,77 +93,91 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.03        ;
+; Average used               ; 1.06        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.9%      ;
-;     Processors 3-4         ;   0.9%      ;
+;     Processor 2            ;   2.3%      ;
+;     Processor 3            ;   2.1%      ;
+;     Processor 4            ;   2.1%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                                               ;
-+---------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------+
-; Clock Name                ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                       ;
-+---------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------+
-; ADC_CLK_10                ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ADC_CLK_10 }                ;
-; clockDivider:C0|clock_out ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockDivider:C0|clock_out } ;
-+---------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                   ;
++-------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------+
+; Clock Name                          ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                 ;
++-------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------+
+; ADC_CLK_10                          ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { ADC_CLK_10 }                          ;
+; clockDivider:C0|clock_out           ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clockDivider:C0|clock_out }           ;
+; manual:I3|clockDivider:C0|clock_out ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { manual:I3|clockDivider:C0|clock_out } ;
++-------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                                                                         ;
-+-------------+-----------------+---------------------------+------------------------------------------------+
-; Fmax        ; Restricted Fmax ; Clock Name                ; Note                                           ;
-+-------------+-----------------+---------------------------+------------------------------------------------+
-; 210.66 MHz  ; 210.66 MHz      ; ADC_CLK_10                ;                                                ;
-; 1156.07 MHz ; 416.15 MHz      ; clockDivider:C0|clock_out ; limit due to minimum period restriction (tmin) ;
-+-------------+-----------------+---------------------------+------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                                   ;
++-------------+-----------------+-------------------------------------+------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name                          ; Note                                           ;
++-------------+-----------------+-------------------------------------+------------------------------------------------+
+; 183.18 MHz  ; 183.18 MHz      ; ADC_CLK_10                          ;                                                ;
+; 827.13 MHz  ; 416.15 MHz      ; clockDivider:C0|clock_out           ; limit due to minimum period restriction (tmin) ;
+; 1154.73 MHz ; 416.15 MHz      ; manual:I3|clockDivider:C0|clock_out ; limit due to minimum period restriction (tmin) ;
++-------------+-----------------+-------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+----------------------------------------------------+
-; Slow 1200mV 85C Model Setup Summary                ;
-+---------------------------+--------+---------------+
-; Clock                     ; Slack  ; End Point TNS ;
-+---------------------------+--------+---------------+
-; ADC_CLK_10                ; -3.747 ; -36.950       ;
-; clockDivider:C0|clock_out ; 0.135  ; 0.000         ;
-+---------------------------+--------+---------------+
++--------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup Summary                          ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; ADC_CLK_10                          ; -4.459 ; -152.104      ;
+; clockDivider:C0|clock_out           ; -0.209 ; -0.555        ;
+; manual:I3|clockDivider:C0|clock_out ; 0.134  ; 0.000         ;
++-------------------------------------+--------+---------------+
 
 
-+---------------------------------------------------+
-; Slow 1200mV 85C Model Hold Summary                ;
-+---------------------------+-------+---------------+
-; Clock                     ; Slack ; End Point TNS ;
-+---------------------------+-------+---------------+
-; clockDivider:C0|clock_out ; 0.348 ; 0.000         ;
-; ADC_CLK_10                ; 0.638 ; 0.000         ;
-+---------------------------+-------+---------------+
++-------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary                          ;
++-------------------------------------+-------+---------------+
+; Clock                               ; Slack ; End Point TNS ;
++-------------------------------------+-------+---------------+
+; clockDivider:C0|clock_out           ; 0.347 ; 0.000         ;
+; manual:I3|clockDivider:C0|clock_out ; 0.347 ; 0.000         ;
+; ADC_CLK_10                          ; 0.645 ; 0.000         ;
++-------------------------------------+-------+---------------+
 
 
-------------------------------------------
-; Slow 1200mV 85C Model Recovery Summary ;
-------------------------------------------
-No paths to report.
++--------------------------------------------------------------+
+; Slow 1200mV 85C Model Recovery Summary                       ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; ADC_CLK_10                          ; -2.545 ; -79.273       ;
+; manual:I3|clockDivider:C0|clock_out ; -2.161 ; -4.322        ;
++-------------------------------------+--------+---------------+
 
 
------------------------------------------
-; Slow 1200mV 85C Model Removal Summary ;
------------------------------------------
-No paths to report.
++-------------------------------------------------------------+
+; Slow 1200mV 85C Model Removal Summary                       ;
++-------------------------------------+-------+---------------+
+; Clock                               ; Slack ; End Point TNS ;
++-------------------------------------+-------+---------------+
+; manual:I3|clockDivider:C0|clock_out ; 2.123 ; 0.000         ;
+; ADC_CLK_10                          ; 2.245 ; 0.000         ;
++-------------------------------------+-------+---------------+
 
 
-+----------------------------------------------------+
-; Slow 1200mV 85C Model Minimum Pulse Width Summary  ;
-+---------------------------+--------+---------------+
-; Clock                     ; Slack  ; End Point TNS ;
-+---------------------------+--------+---------------+
-; ADC_CLK_10                ; -3.000 ; -36.672       ;
-; clockDivider:C0|clock_out ; -1.403 ; -2.806        ;
-+---------------------------+--------+---------------+
++--------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary            ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; ADC_CLK_10                          ; -3.000 ; -107.708      ;
+; clockDivider:C0|clock_out           ; -1.403 ; -4.209        ;
+; manual:I3|clockDivider:C0|clock_out ; -1.403 ; -2.806        ;
++-------------------------------------+--------+---------------+
 
 
 -----------------------------------------------
@@ -170,57 +186,69 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                                                                          ;
-+-------------+-----------------+---------------------------+------------------------------------------------+
-; Fmax        ; Restricted Fmax ; Clock Name                ; Note                                           ;
-+-------------+-----------------+---------------------------+------------------------------------------------+
-; 225.94 MHz  ; 225.94 MHz      ; ADC_CLK_10                ;                                                ;
-; 1259.45 MHz ; 416.15 MHz      ; clockDivider:C0|clock_out ; limit due to minimum period restriction (tmin) ;
-+-------------+-----------------+---------------------------+------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                                    ;
++-------------+-----------------+-------------------------------------+------------------------------------------------+
+; Fmax        ; Restricted Fmax ; Clock Name                          ; Note                                           ;
++-------------+-----------------+-------------------------------------+------------------------------------------------+
+; 195.43 MHz  ; 195.43 MHz      ; ADC_CLK_10                          ;                                                ;
+; 903.34 MHz  ; 416.15 MHz      ; clockDivider:C0|clock_out           ; limit due to minimum period restriction (tmin) ;
+; 1259.45 MHz ; 416.15 MHz      ; manual:I3|clockDivider:C0|clock_out ; limit due to minimum period restriction (tmin) ;
++-------------+-----------------+-------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+----------------------------------------------------+
-; Slow 1200mV 0C Model Setup Summary                 ;
-+---------------------------+--------+---------------+
-; Clock                     ; Slack  ; End Point TNS ;
-+---------------------------+--------+---------------+
-; ADC_CLK_10                ; -3.426 ; -31.298       ;
-; clockDivider:C0|clock_out ; 0.206  ; 0.000         ;
-+---------------------------+--------+---------------+
++--------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup Summary                           ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; ADC_CLK_10                          ; -4.117 ; -131.879      ;
+; clockDivider:C0|clock_out           ; -0.107 ; -0.246        ;
+; manual:I3|clockDivider:C0|clock_out ; 0.206  ; 0.000         ;
++-------------------------------------+--------+---------------+
 
 
-+---------------------------------------------------+
-; Slow 1200mV 0C Model Hold Summary                 ;
-+---------------------------+-------+---------------+
-; Clock                     ; Slack ; End Point TNS ;
-+---------------------------+-------+---------------+
-; clockDivider:C0|clock_out ; 0.312 ; 0.000         ;
-; ADC_CLK_10                ; 0.589 ; 0.000         ;
-+---------------------------+-------+---------------+
++-------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary                           ;
++-------------------------------------+-------+---------------+
+; Clock                               ; Slack ; End Point TNS ;
++-------------------------------------+-------+---------------+
+; clockDivider:C0|clock_out           ; 0.311 ; 0.000         ;
+; manual:I3|clockDivider:C0|clock_out ; 0.312 ; 0.000         ;
+; ADC_CLK_10                          ; 0.596 ; 0.000         ;
++-------------------------------------+-------+---------------+
 
 
------------------------------------------
-; Slow 1200mV 0C Model Recovery Summary ;
------------------------------------------
-No paths to report.
++--------------------------------------------------------------+
+; Slow 1200mV 0C Model Recovery Summary                        ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; ADC_CLK_10                          ; -2.238 ; -69.658       ;
+; manual:I3|clockDivider:C0|clock_out ; -1.883 ; -3.766        ;
++-------------------------------------+--------+---------------+
 
 
-----------------------------------------
-; Slow 1200mV 0C Model Removal Summary ;
-----------------------------------------
-No paths to report.
++-------------------------------------------------------------+
+; Slow 1200mV 0C Model Removal Summary                        ;
++-------------------------------------+-------+---------------+
+; Clock                               ; Slack ; End Point TNS ;
++-------------------------------------+-------+---------------+
+; manual:I3|clockDivider:C0|clock_out ; 1.895 ; 0.000         ;
+; ADC_CLK_10                          ; 2.042 ; 0.000         ;
++-------------------------------------+-------+---------------+
 
 
-+----------------------------------------------------+
-; Slow 1200mV 0C Model Minimum Pulse Width Summary   ;
-+---------------------------+--------+---------------+
-; Clock                     ; Slack  ; End Point TNS ;
-+---------------------------+--------+---------------+
-; ADC_CLK_10                ; -3.000 ; -36.672       ;
-; clockDivider:C0|clock_out ; -1.403 ; -2.806        ;
-+---------------------------+--------+---------------+
++--------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary             ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; ADC_CLK_10                          ; -3.000 ; -107.263      ;
+; clockDivider:C0|clock_out           ; -1.403 ; -4.209        ;
+; manual:I3|clockDivider:C0|clock_out ; -1.403 ; -2.806        ;
++-------------------------------------+--------+---------------+
 
 
 ----------------------------------------------
@@ -229,46 +257,57 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+----------------------------------------------------+
-; Fast 1200mV 0C Model Setup Summary                 ;
-+---------------------------+--------+---------------+
-; Clock                     ; Slack  ; End Point TNS ;
-+---------------------------+--------+---------------+
-; ADC_CLK_10                ; -1.096 ; -2.339        ;
-; clockDivider:C0|clock_out ; 0.631  ; 0.000         ;
-+---------------------------+--------+---------------+
++--------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup Summary                           ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; ADC_CLK_10                          ; -1.481 ; -25.869       ;
+; clockDivider:C0|clock_out           ; 0.483  ; 0.000         ;
+; manual:I3|clockDivider:C0|clock_out ; 0.631  ; 0.000         ;
++-------------------------------------+--------+---------------+
 
 
-+---------------------------------------------------+
-; Fast 1200mV 0C Model Hold Summary                 ;
-+---------------------------+-------+---------------+
-; Clock                     ; Slack ; End Point TNS ;
-+---------------------------+-------+---------------+
-; clockDivider:C0|clock_out ; 0.153 ; 0.000         ;
-; ADC_CLK_10                ; 0.247 ; 0.000         ;
-+---------------------------+-------+---------------+
++-------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary                           ;
++-------------------------------------+-------+---------------+
+; Clock                               ; Slack ; End Point TNS ;
++-------------------------------------+-------+---------------+
+; clockDivider:C0|clock_out           ; 0.152 ; 0.000         ;
+; manual:I3|clockDivider:C0|clock_out ; 0.152 ; 0.000         ;
+; ADC_CLK_10                          ; 0.250 ; 0.000         ;
++-------------------------------------+-------+---------------+
 
 
------------------------------------------
-; Fast 1200mV 0C Model Recovery Summary ;
------------------------------------------
-No paths to report.
++--------------------------------------------------------------+
+; Fast 1200mV 0C Model Recovery Summary                        ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; ADC_CLK_10                          ; -0.582 ; -17.214       ;
+; manual:I3|clockDivider:C0|clock_out ; -0.394 ; -0.788        ;
++-------------------------------------+--------+---------------+
 
 
-----------------------------------------
-; Fast 1200mV 0C Model Removal Summary ;
-----------------------------------------
-No paths to report.
++-------------------------------------------------------------+
+; Fast 1200mV 0C Model Removal Summary                        ;
++-------------------------------------+-------+---------------+
+; Clock                               ; Slack ; End Point TNS ;
++-------------------------------------+-------+---------------+
+; manual:I3|clockDivider:C0|clock_out ; 0.889 ; 0.000         ;
+; ADC_CLK_10                          ; 1.009 ; 0.000         ;
++-------------------------------------+-------+---------------+
 
 
-+----------------------------------------------------+
-; Fast 1200mV 0C Model Minimum Pulse Width Summary   ;
-+---------------------------+--------+---------------+
-; Clock                     ; Slack  ; End Point TNS ;
-+---------------------------+--------+---------------+
-; ADC_CLK_10                ; -3.000 ; -31.020       ;
-; clockDivider:C0|clock_out ; -1.000 ; -2.000        ;
-+---------------------------+--------+---------------+
++--------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary             ;
++-------------------------------------+--------+---------------+
+; Clock                               ; Slack  ; End Point TNS ;
++-------------------------------------+--------+---------------+
+; ADC_CLK_10                          ; -3.000 ; -86.254       ;
+; clockDivider:C0|clock_out           ; -1.000 ; -3.000        ;
+; manual:I3|clockDivider:C0|clock_out ; -1.000 ; -2.000        ;
++-------------------------------------+--------+---------------+
 
 
 ----------------------------------------------
@@ -277,18 +316,20 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-----------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                     ;
-+----------------------------+---------+-------+----------+---------+---------------------+
-; Clock                      ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+----------------------------+---------+-------+----------+---------+---------------------+
-; Worst-case Slack           ; -3.747  ; 0.153 ; N/A      ; N/A     ; -3.000              ;
-;  ADC_CLK_10                ; -3.747  ; 0.247 ; N/A      ; N/A     ; -3.000              ;
-;  clockDivider:C0|clock_out ; 0.135   ; 0.153 ; N/A      ; N/A     ; -1.403              ;
-; Design-wide TNS            ; -36.95  ; 0.0   ; 0.0      ; 0.0     ; -39.478             ;
-;  ADC_CLK_10                ; -36.950 ; 0.000 ; N/A      ; N/A     ; -36.672             ;
-;  clockDivider:C0|clock_out ; 0.000   ; 0.000 ; N/A      ; N/A     ; -2.806              ;
-+----------------------------+---------+-------+----------+---------+---------------------+
++----------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                ;
++--------------------------------------+----------+-------+----------+---------+---------------------+
+; Clock                                ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++--------------------------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack                     ; -4.459   ; 0.152 ; -2.545   ; 0.889   ; -3.000              ;
+;  ADC_CLK_10                          ; -4.459   ; 0.250 ; -2.545   ; 1.009   ; -3.000              ;
+;  clockDivider:C0|clock_out           ; -0.209   ; 0.152 ; N/A      ; N/A     ; -1.403              ;
+;  manual:I3|clockDivider:C0|clock_out ; 0.134    ; 0.152 ; -2.161   ; 0.889   ; -1.403              ;
+; Design-wide TNS                      ; -152.659 ; 0.0   ; -83.595  ; 0.0     ; -114.723            ;
+;  ADC_CLK_10                          ; -152.104 ; 0.000 ; -79.273  ; 0.000   ; -107.708            ;
+;  clockDivider:C0|clock_out           ; -0.555   ; 0.000 ; N/A      ; N/A     ; -4.209              ;
+;  manual:I3|clockDivider:C0|clock_out ; 0.000    ; 0.000 ; -4.322   ; 0.000   ; -2.806              ;
++--------------------------------------+----------+-------+----------+---------+---------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -330,11 +371,11 @@ No synchronizer chains to report.
 ; SW[7]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; SW[8]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; SW[9]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; SW[0]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; SW[1]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
-; KEY[1]              ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
-; KEY[0]              ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
 ; SW[2]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; SW[1]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; SW[0]               ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
+; KEY[0]              ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
+; KEY[1]              ; 3.3 V Schmitt Trigger ; 2640 ps         ; 2640 ps         ;
 ; ADC_CLK_10          ; 3.3-V LVTTL           ; 2640 ps         ; 2640 ps         ;
 ; ~ALTERA_TMS~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_TCK~        ; 2.5 V Schmitt Trigger ; 2000 ps         ; 2000 ps         ;
@@ -427,27 +468,53 @@ No synchronizer chains to report.
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Setup Transfers                                                                                   ;
-+---------------------------+---------------------------+----------+----------+----------+----------+
-; From Clock                ; To Clock                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------------+---------------------------+----------+----------+----------+----------+
-; ADC_CLK_10                ; ADC_CLK_10                ; 322      ; 0        ; 0        ; 0        ;
-; clockDivider:C0|clock_out ; ADC_CLK_10                ; 1        ; 1        ; 0        ; 0        ;
-; clockDivider:C0|clock_out ; clockDivider:C0|clock_out ; 3        ; 0        ; 0        ; 0        ;
-+---------------------------+---------------------------+----------+----------+----------+----------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                       ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; From Clock                          ; To Clock                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; ADC_CLK_10                          ; ADC_CLK_10                          ; 1732     ; 0        ; 0        ; 0        ;
+; clockDivider:C0|clock_out           ; ADC_CLK_10                          ; 4        ; 1        ; 0        ; 0        ;
+; manual:I3|clockDivider:C0|clock_out ; ADC_CLK_10                          ; 1        ; 1        ; 0        ; 0        ;
+; clockDivider:C0|clock_out           ; clockDivider:C0|clock_out           ; 9        ; 0        ; 0        ; 0        ;
+; manual:I3|clockDivider:C0|clock_out ; manual:I3|clockDivider:C0|clock_out ; 3        ; 0        ; 0        ; 0        ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+---------------------------------------------------------------------------------------------------+
-; Hold Transfers                                                                                    ;
-+---------------------------+---------------------------+----------+----------+----------+----------+
-; From Clock                ; To Clock                  ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+---------------------------+---------------------------+----------+----------+----------+----------+
-; ADC_CLK_10                ; ADC_CLK_10                ; 322      ; 0        ; 0        ; 0        ;
-; clockDivider:C0|clock_out ; ADC_CLK_10                ; 1        ; 1        ; 0        ; 0        ;
-; clockDivider:C0|clock_out ; clockDivider:C0|clock_out ; 3        ; 0        ; 0        ; 0        ;
-+---------------------------+---------------------------+----------+----------+----------+----------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                        ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; From Clock                          ; To Clock                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+; ADC_CLK_10                          ; ADC_CLK_10                          ; 1732     ; 0        ; 0        ; 0        ;
+; clockDivider:C0|clock_out           ; ADC_CLK_10                          ; 4        ; 1        ; 0        ; 0        ;
+; manual:I3|clockDivider:C0|clock_out ; ADC_CLK_10                          ; 1        ; 1        ; 0        ; 0        ;
+; clockDivider:C0|clock_out           ; clockDivider:C0|clock_out           ; 9        ; 0        ; 0        ; 0        ;
+; manual:I3|clockDivider:C0|clock_out ; manual:I3|clockDivider:C0|clock_out ; 3        ; 0        ; 0        ; 0        ;
++-------------------------------------+-------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++----------------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                           ;
++------------+-------------------------------------+----------+----------+----------+----------+
+; From Clock ; To Clock                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+-------------------------------------+----------+----------+----------+----------+
+; ADC_CLK_10 ; ADC_CLK_10                          ; 99       ; 0        ; 0        ; 0        ;
+; ADC_CLK_10 ; manual:I3|clockDivider:C0|clock_out ; 6        ; 0        ; 0        ; 0        ;
++------------+-------------------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++----------------------------------------------------------------------------------------------+
+; Removal Transfers                                                                            ;
++------------+-------------------------------------+----------+----------+----------+----------+
+; From Clock ; To Clock                            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+-------------------------------------+----------+----------+----------+----------+
+; ADC_CLK_10 ; ADC_CLK_10                          ; 99       ; 0        ; 0        ; 0        ;
+; ADC_CLK_10 ; manual:I3|clockDivider:C0|clock_out ; 6        ; 0        ; 0        ; 0        ;
++------------+-------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -470,21 +537,22 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 5     ; 5    ;
-; Unconstrained Input Port Paths  ; 62    ; 62   ;
+; Unconstrained Input Ports       ; 6     ; 6    ;
+; Unconstrained Input Port Paths  ; 247   ; 247  ;
 ; Unconstrained Output Ports      ; 12    ; 12   ;
-; Unconstrained Output Port Paths ; 50    ; 50   ;
+; Unconstrained Output Port Paths ; 80    ; 80   ;
 +---------------------------------+-------+------+
 
 
-+----------------------------------------------------------------------------+
-; Clock Status Summary                                                       ;
-+---------------------------+---------------------------+------+-------------+
-; Target                    ; Clock                     ; Type ; Status      ;
-+---------------------------+---------------------------+------+-------------+
-; ADC_CLK_10                ; ADC_CLK_10                ; Base ; Constrained ;
-; clockDivider:C0|clock_out ; clockDivider:C0|clock_out ; Base ; Constrained ;
-+---------------------------+---------------------------+------+-------------+
++------------------------------------------------------------------------------------------------+
+; Clock Status Summary                                                                           ;
++-------------------------------------+-------------------------------------+------+-------------+
+; Target                              ; Clock                               ; Type ; Status      ;
++-------------------------------------+-------------------------------------+------+-------------+
+; ADC_CLK_10                          ; ADC_CLK_10                          ; Base ; Constrained ;
+; clockDivider:C0|clock_out           ; clockDivider:C0|clock_out           ; Base ; Constrained ;
+; manual:I3|clockDivider:C0|clock_out ; manual:I3|clockDivider:C0|clock_out ; Base ; Constrained ;
++-------------------------------------+-------------------------------------+------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -497,6 +565,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; SW[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[2]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[9]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -530,6 +599,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; SW[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; SW[2]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[9]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -559,7 +629,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Apr  7 22:41:02 2020
+    Info: Processing started: Thu Apr  9 09:03:06 2020
 Info: Command: quartus_sta top -c top
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -571,77 +641,111 @@ Info (332142): No user constrained base clocks found in the design. Calling "der
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name ADC_CLK_10 ADC_CLK_10
     Info (332105): create_clock -period 1.000 -name clockDivider:C0|clock_out clockDivider:C0|clock_out
+    Info (332105): create_clock -period 1.000 -name manual:I3|clockDivider:C0|clock_out manual:I3|clockDivider:C0|clock_out
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -3.747
+Info (332146): Worst-case setup slack is -4.459
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.747             -36.950 ADC_CLK_10 
-    Info (332119):     0.135               0.000 clockDivider:C0|clock_out 
-Info (332146): Worst-case hold slack is 0.348
+    Info (332119):    -4.459            -152.104 ADC_CLK_10 
+    Info (332119):    -0.209              -0.555 clockDivider:C0|clock_out 
+    Info (332119):     0.134               0.000 manual:I3|clockDivider:C0|clock_out 
+Info (332146): Worst-case hold slack is 0.347
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.348               0.000 clockDivider:C0|clock_out 
-    Info (332119):     0.638               0.000 ADC_CLK_10 
-Info (332140): No Recovery paths to report
-Info (332140): No Removal paths to report
+    Info (332119):     0.347               0.000 clockDivider:C0|clock_out 
+    Info (332119):     0.347               0.000 manual:I3|clockDivider:C0|clock_out 
+    Info (332119):     0.645               0.000 ADC_CLK_10 
+Info (332146): Worst-case recovery slack is -2.545
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.545             -79.273 ADC_CLK_10 
+    Info (332119):    -2.161              -4.322 manual:I3|clockDivider:C0|clock_out 
+Info (332146): Worst-case removal slack is 2.123
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     2.123               0.000 manual:I3|clockDivider:C0|clock_out 
+    Info (332119):     2.245               0.000 ADC_CLK_10 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -36.672 ADC_CLK_10 
-    Info (332119):    -1.403              -2.806 clockDivider:C0|clock_out 
+    Info (332119):    -3.000            -107.708 ADC_CLK_10 
+    Info (332119):    -1.403              -4.209 clockDivider:C0|clock_out 
+    Info (332119):    -1.403              -2.806 manual:I3|clockDivider:C0|clock_out 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -3.426
+Info (332146): Worst-case setup slack is -4.117
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.426             -31.298 ADC_CLK_10 
-    Info (332119):     0.206               0.000 clockDivider:C0|clock_out 
-Info (332146): Worst-case hold slack is 0.312
+    Info (332119):    -4.117            -131.879 ADC_CLK_10 
+    Info (332119):    -0.107              -0.246 clockDivider:C0|clock_out 
+    Info (332119):     0.206               0.000 manual:I3|clockDivider:C0|clock_out 
+Info (332146): Worst-case hold slack is 0.311
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.312               0.000 clockDivider:C0|clock_out 
-    Info (332119):     0.589               0.000 ADC_CLK_10 
-Info (332140): No Recovery paths to report
-Info (332140): No Removal paths to report
+    Info (332119):     0.311               0.000 clockDivider:C0|clock_out 
+    Info (332119):     0.312               0.000 manual:I3|clockDivider:C0|clock_out 
+    Info (332119):     0.596               0.000 ADC_CLK_10 
+Info (332146): Worst-case recovery slack is -2.238
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.238             -69.658 ADC_CLK_10 
+    Info (332119):    -1.883              -3.766 manual:I3|clockDivider:C0|clock_out 
+Info (332146): Worst-case removal slack is 1.895
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.895               0.000 manual:I3|clockDivider:C0|clock_out 
+    Info (332119):     2.042               0.000 ADC_CLK_10 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -36.672 ADC_CLK_10 
-    Info (332119):    -1.403              -2.806 clockDivider:C0|clock_out 
+    Info (332119):    -3.000            -107.263 ADC_CLK_10 
+    Info (332119):    -1.403              -4.209 clockDivider:C0|clock_out 
+    Info (332119):    -1.403              -2.806 manual:I3|clockDivider:C0|clock_out 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.096
+Info (332146): Worst-case setup slack is -1.481
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.096              -2.339 ADC_CLK_10 
-    Info (332119):     0.631               0.000 clockDivider:C0|clock_out 
-Info (332146): Worst-case hold slack is 0.153
+    Info (332119):    -1.481             -25.869 ADC_CLK_10 
+    Info (332119):     0.483               0.000 clockDivider:C0|clock_out 
+    Info (332119):     0.631               0.000 manual:I3|clockDivider:C0|clock_out 
+Info (332146): Worst-case hold slack is 0.152
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.153               0.000 clockDivider:C0|clock_out 
-    Info (332119):     0.247               0.000 ADC_CLK_10 
-Info (332140): No Recovery paths to report
-Info (332140): No Removal paths to report
+    Info (332119):     0.152               0.000 clockDivider:C0|clock_out 
+    Info (332119):     0.152               0.000 manual:I3|clockDivider:C0|clock_out 
+    Info (332119):     0.250               0.000 ADC_CLK_10 
+Info (332146): Worst-case recovery slack is -0.582
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.582             -17.214 ADC_CLK_10 
+    Info (332119):    -0.394              -0.788 manual:I3|clockDivider:C0|clock_out 
+Info (332146): Worst-case removal slack is 0.889
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.889               0.000 manual:I3|clockDivider:C0|clock_out 
+    Info (332119):     1.009               0.000 ADC_CLK_10 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -31.020 ADC_CLK_10 
-    Info (332119):    -1.000              -2.000 clockDivider:C0|clock_out 
+    Info (332119):    -3.000             -86.254 ADC_CLK_10 
+    Info (332119):    -1.000              -3.000 clockDivider:C0|clock_out 
+    Info (332119):    -1.000              -2.000 manual:I3|clockDivider:C0|clock_out 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 903 megabytes
-    Info: Processing ended: Tue Apr  7 22:41:04 2020
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 900 megabytes
+    Info: Processing ended: Thu Apr  9 09:03:07 2020
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
 
