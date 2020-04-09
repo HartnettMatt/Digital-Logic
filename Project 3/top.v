@@ -1,108 +1,74 @@
-module top (ADC_CLK_10, SW, KEY, LEDR, HEX0);
-
+module top (ADC_CLK_10, SW, KEY, LEDR, HEX0, HEX1);
 
 input ADC_CLK_10;
 input [9:0] SW;
 input [1:0] KEY;
-wire clock;
-reg reset = 1;
-output reg [9:0] LEDR;
+reg [2:0] counter = 0;
+reg counter_clock;
+
+output [9:0] LEDR;
 output [7:0] HEX0;
-reg [2:0] left_LEDs;
-reg [2:0] right_LEDs;
+output [7:0] HEX1;
 
-wire [2:0] l_LEDS;
-wire [2:0] r_LEDS;
+reg [7:0] hexReg;
 
-always @(l_LEDS or r_LEDS)
-begin
-    left_LEDs <= l_LEDS;
-    right_LEDs <= r_LEDS;
-end
+assign HEX1 = hexReg;
 
-always @ (ADC_CLK_10)
-begin
-  if(SW[0] || SW[1] || SW[2])
-  begin
-    reset = KEY[0];
-  end
-  else if(~SW[0] && ~SW[1] && ~SW[2])
-  begin
-    reset = 0;
-  end
-end
-// Initialize for the on-board programming:
-// clockDivider C0 (.clock_in(ADC_CLK_10), .reset_n(reset), .divide_by(1000000), .clock_out(clock));
+wire [7:0] state;
+wire [7:0] inputs;
 
-// Initialize for the testbenching:
-clockDivider C0 (.clock_in(ADC_CLK_10), .reset_n(KEY[0]), .divide_by(1), .clock_out(clock));
+wire [9:0] switches;
+wire [1:0] keys;
 
-blink B0 (.clock(clock), .hazards(SW[0]), .reset_n(reset), .turnChange(KEY[1]), .rightLEDs(r_LEDS), .leftLEDs(l_LEDS), .hex(HEX0));
+reg [9:0] switchReg;
+reg [1:0] keyReg;
+
+
+assign state[7:3] = 5'b00000;
+assign state[2:0] = counter;
+
+assign switches = switchReg;
+assign keys = keyReg;
+
+
+memoryBlock I2 (.address(state), .clock(counter_clock), .q(inputs));
+
+manual I3 (.ADC_CLK_10(ADC_CLK_10), .SW(switches), .KEY(keys), .LEDR(LEDR), .HEX0(HEX0));
+
+clockDivider C0 (.clock_in(ADC_CLK_10), .reset_n(KEY[0]), .divide_by(2500000), .clock_out(counter_clock));
 
 initial
 begin
-    LEDR[9:0] = 10'b0000000000;
+    counter = 0;
 end
 
-
-always @(SW[7:0] or KEY[1] or KEY[0] or reset or clock)
+always @(SW[9])
 begin
-    //RESET
-    if (~reset)
+    if(~SW[9])
     begin
-        LEDR[9:0] = 10'b0000000000;
-    end
-    //BEHAVIOR 1: IDLE
-    else if (~SW[1] & ~SW[0] & ~SW[2] & KEY[0])
-    begin
-        LEDR[2:0] <= 3'b000;
-        LEDR[9:7] <= 3'b000;
-    end
-    //BEHAVIOR 2: LEFT TURN
-    else if (SW[1] & KEY[1] & ~SW[0] & ~SW[2] & KEY[0])
-    begin
-        LEDR[9:7] <= left_LEDs;
-        LEDR[2:0] <= 3'b000;
-    end
-    //BEHAVIOR 3: RIGHT TURN
-    else if (SW[1] & ~KEY[1] & ~SW[0] & ~SW[2] & KEY[0])
-    begin
-        LEDR[9:7] <= 3'b000;
-        LEDR[2] <= right_LEDs[0];
-        LEDR[1] <= right_LEDs[1];
-        LEDR[0] <= right_LEDs[2];
-    end
-    //BEHAVIOR 4: LEFT BRAKE
-    else if (SW[1] & KEY[1] & ~SW[0] & SW[2] & KEY[0])
-    begin
-        LEDR[9:7] <= left_LEDs;
-        LEDR[2:0] <= 3'b111;
-    end
-    //BEHAVIOR 5: RIGHT BRAKE
-    else if (SW[1] & ~KEY[1] & ~SW[0] & SW[2] & KEY[0])
-    begin
-        LEDR[9:7] <= 3'b111;
-        LEDR[2] <= right_LEDs[0];
-        LEDR[1] <= right_LEDs[1];
-        LEDR[0] <= right_LEDs[2];
-    end
-    //BEHAVIOR 6: STRAIGHT BRAKE
-    else if ((~SW[1] & SW[2] & KEY[0]) | (SW[0] & SW[1] & SW[2]))
-    begin
-        LEDR[2:0] <= 3'b111;
-        LEDR[9:7] <= 3'b111;
-    end
-    //BEHAVIOR 7: HAZARDS
-    else if (SW[0] & ~SW[2] & KEY[0])
-    begin
-        LEDR[9:7] <= left_LEDs;
-        LEDR[2] <= right_LEDs[0];
-        LEDR[1] <= right_LEDs[1];
-        LEDR[0] <= right_LEDs[2];
+        switchReg = SW;
+        keyReg = KEY;
+        hexReg = 8'b11111111;
     end
     else
     begin
-        LEDR[9:0] = 10'b1111111111;
+        switchReg[9:3] = 7'b0000000;
+        switchReg[2:0] = inputs[2:0];
+        keyReg[1] = inputs[3];
+        keyReg[0] = KEY[0];
+        hexReg = 8'b00000000;
+    end
+end
+
+always @(posedge counter_clock)
+begin
+    if (counter == 6)
+    begin
+        counter = 0;
+    end
+    else
+    begin
+        counter = counter + 1;
     end
 end
 

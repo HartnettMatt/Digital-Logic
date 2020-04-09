@@ -12,7 +12,7 @@ wire [7:0] testHEX0;
 parameter testCase = 0;
 
 
-top DUT(.KEY(testKEY), .SW(testSW), .ADC_CLK_10(clock), .LEDR(testLED),.HEX0(testHEX0));
+manual DUT(.KEY(testKEY), .SW(testSW), .ADC_CLK_10(clock), .LEDR(testLED),.HEX0(testHEX0));
 
 // Begin stimulating inputs:
 initial begin
