@@ -4,7 +4,7 @@ Timing Analyzer Summary
 
 Type  : Slow 1200mV 85C Model Setup 'ADC_CLK_10'
 Slack : -4.459
-TNS   : -152.104
+TNS   : -152.103
 
 Type  : Slow 1200mV 85C Model Setup 'clockDivider:C0|clock_out'
 Slack : -0.209
@@ -31,11 +31,11 @@ Slack : -2.545
 TNS   : -79.273
 
 Type  : Slow 1200mV 85C Model Recovery 'manual:I3|clockDivider:C0|clock_out'
-Slack : -2.161
-TNS   : -4.322
+Slack : -2.162
+TNS   : -4.324
 
 Type  : Slow 1200mV 85C Model Removal 'manual:I3|clockDivider:C0|clock_out'
-Slack : 2.123
+Slack : 2.124
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'ADC_CLK_10'

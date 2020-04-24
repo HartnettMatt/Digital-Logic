@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Thu Apr  9 09:02:54 2020
+Thu Apr 23 18:59:22 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -54,7 +54,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr  9 09:02:53 2020       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 23 18:59:21 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top                                         ;
@@ -164,42 +164,42 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 3-6         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
-+----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                         ; Library ;
-+----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------+---------+
-; memoryBlock.v                    ; yes             ; User Wizard-Generated File             ; /home/matt/Documents/Digital Logic/Project 3/memoryBlock.v                           ;         ;
-; top.v                            ; yes             ; Auto-Found Verilog HDL File            ; /home/matt/Documents/Digital Logic/Project 3/top.v                                   ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; /home/matt/intelFPGA_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; /home/matt/intelFPGA_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; /home/matt/intelFPGA_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; /home/matt/intelFPGA_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                           ; /home/matt/intelFPGA_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; /home/matt/intelFPGA_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; /home/matt/intelFPGA_lite/18.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; /home/matt/intelFPGA_lite/18.1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; /home/matt/intelFPGA_lite/18.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_nva1.tdf           ; yes             ; Auto-Generated Megafunction            ; /home/matt/Documents/Digital Logic/Project 3/db/altsyncram_nva1.tdf                  ;         ;
-; memoryBlock.mif                  ; yes             ; Auto-Found Memory Initialization File  ; /home/matt/Documents/Digital Logic/Project 3/memoryBlock.mif                         ;         ;
-; manual.v                         ; yes             ; Auto-Found Verilog HDL File            ; /home/matt/Documents/Digital Logic/Project 3/manual.v                                ;         ;
-; clockDivider.v                   ; yes             ; Auto-Found Verilog HDL File            ; /home/matt/Documents/Digital Logic/Project 3/clockDivider.v                          ;         ;
-; blink.v                          ; yes             ; Auto-Found Verilog HDL File            ; /home/matt/Documents/Digital Logic/Project 3/blink.v                                 ;         ;
-; sevenSeg.v                       ; yes             ; Auto-Found Verilog HDL File            ; /home/matt/Documents/Digital Logic/Project 3/sevenSeg.v                              ;         ;
-+----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
+; memoryBlock.v                    ; yes             ; User Wizard-Generated File             ; C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/memoryBlock.v          ;         ;
+; top.v                            ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v                  ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf           ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc    ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc              ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc           ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc           ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc            ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc               ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc               ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc             ;         ;
+; db/altsyncram_nva1.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/db/altsyncram_nva1.tdf ;         ;
+; memoryBlock.mif                  ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/memoryBlock.mif        ;         ;
+; manual.v                         ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v               ;         ;
+; clockdivider.v                   ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/clockdivider.v         ;         ;
+; blink.v                          ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/blink.v                ;         ;
+; sevenseg.v                       ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/sevenseg.v             ;         ;
++----------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------+
@@ -302,7 +302,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|manual:I3|LEDR        ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |top|manual:I3|LEDR        ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top|manual:I3|LEDR[9]     ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |top|manual:I3|LEDR[1]     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -481,7 +481,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -491,23 +491,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Apr  9 09:02:44 2020
+    Info: Processing started: Thu Apr 23 18:59:06 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file memoryBlock.v
-    Info (12023): Found entity 1: memoryBlock File: /home/matt/Documents/Digital Logic/Project 3/memoryBlock.v Line: 39
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file memoryblock.v
+    Info (12023): Found entity 1: memoryBlock File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/memoryBlock.v Line: 39
 Warning (12125): Using design file top.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: top File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 1
+    Info (12023): Found entity 1: top File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 1
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Warning (10235): Verilog HDL Always Construct warning at top.v(41): variable "KEY" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 41
-Warning (10235): Verilog HDL Always Construct warning at top.v(46): variable "inputs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 46
-Warning (10235): Verilog HDL Always Construct warning at top.v(47): variable "inputs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 47
-Warning (10230): Verilog HDL assignment warning at top.v(61): truncated value with size 32 to match size of target (3) File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 61
-Info (12128): Elaborating entity "memoryBlock" for hierarchy "memoryBlock:I2" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 29
-Info (12128): Elaborating entity "altsyncram" for hierarchy "memoryBlock:I2|altsyncram:altsyncram_component" File: /home/matt/Documents/Digital Logic/Project 3/memoryBlock.v Line: 81
-Info (12130): Elaborated megafunction instantiation "memoryBlock:I2|altsyncram:altsyncram_component" File: /home/matt/Documents/Digital Logic/Project 3/memoryBlock.v Line: 81
-Info (12133): Instantiated megafunction "memoryBlock:I2|altsyncram:altsyncram_component" with the following parameter: File: /home/matt/Documents/Digital Logic/Project 3/memoryBlock.v Line: 81
+Warning (10235): Verilog HDL Always Construct warning at top.v(41): variable "KEY" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 41
+Warning (10235): Verilog HDL Always Construct warning at top.v(46): variable "inputs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 46
+Warning (10235): Verilog HDL Always Construct warning at top.v(47): variable "inputs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 47
+Warning (10230): Verilog HDL assignment warning at top.v(61): truncated value with size 32 to match size of target (3) File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 61
+Info (12128): Elaborating entity "memoryBlock" for hierarchy "memoryBlock:I2" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 29
+Info (12128): Elaborating entity "altsyncram" for hierarchy "memoryBlock:I2|altsyncram:altsyncram_component" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/memoryBlock.v Line: 81
+Info (12130): Elaborated megafunction instantiation "memoryBlock:I2|altsyncram:altsyncram_component" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/memoryBlock.v Line: 81
+Info (12133): Instantiated megafunction "memoryBlock:I2|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/memoryBlock.v Line: 81
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -524,87 +524,88 @@ Info (12133): Instantiated megafunction "memoryBlock:I2|altsyncram:altsyncram_co
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_nva1.tdf
-    Info (12023): Found entity 1: altsyncram_nva1 File: /home/matt/Documents/Digital Logic/Project 3/db/altsyncram_nva1.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_nva1" for hierarchy "memoryBlock:I2|altsyncram:altsyncram_component|altsyncram_nva1:auto_generated" File: /home/matt/intelFPGA_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+    Info (12023): Found entity 1: altsyncram_nva1 File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/db/altsyncram_nva1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_nva1" for hierarchy "memoryBlock:I2|altsyncram:altsyncram_component|altsyncram_nva1:auto_generated" File: d:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Critical Warning (127005): Memory depth (256) in the design file differs from memory depth (6) in the Memory Initialization File "C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/memoryBlock.mif" -- setting initial value for remaining addresses to 0 File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/memoryBlock.v Line: 81
 Warning (12125): Using design file manual.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: manual File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 1
-Info (12128): Elaborating entity "manual" for hierarchy "manual:I3" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 31
-Warning (10235): Verilog HDL Always Construct warning at manual.v(25): variable "SW" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 25
-Warning (10235): Verilog HDL Always Construct warning at manual.v(27): variable "KEY" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 27
-Warning (10235): Verilog HDL Always Construct warning at manual.v(29): variable "SW" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 29
-Warning (10240): Verilog HDL Always Construct warning at manual.v(23): inferring latch(es) for variable "reset", which holds its previous value in one or more paths through the always construct File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 23
-Warning (10235): Verilog HDL Always Construct warning at manual.v(64): variable "left_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 64
-Warning (10235): Verilog HDL Always Construct warning at manual.v(71): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 71
-Warning (10235): Verilog HDL Always Construct warning at manual.v(72): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 72
-Warning (10235): Verilog HDL Always Construct warning at manual.v(73): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 73
-Warning (10235): Verilog HDL Always Construct warning at manual.v(78): variable "left_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 78
-Warning (10235): Verilog HDL Always Construct warning at manual.v(85): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 85
-Warning (10235): Verilog HDL Always Construct warning at manual.v(86): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 86
-Warning (10235): Verilog HDL Always Construct warning at manual.v(87): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 87
-Warning (10235): Verilog HDL Always Construct warning at manual.v(98): variable "left_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 98
-Warning (10235): Verilog HDL Always Construct warning at manual.v(99): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 99
-Warning (10235): Verilog HDL Always Construct warning at manual.v(100): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 100
-Warning (10235): Verilog HDL Always Construct warning at manual.v(101): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 101
-Warning (10240): Verilog HDL Always Construct warning at manual.v(48): inferring latch(es) for variable "LEDR", which holds its previous value in one or more paths through the always construct File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 48
-Info (10041): Inferred latch for "LEDR[3]" at manual.v(56) File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 56
-Info (10041): Inferred latch for "LEDR[4]" at manual.v(56) File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 56
-Info (10041): Inferred latch for "LEDR[5]" at manual.v(56) File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 56
-Info (10041): Inferred latch for "LEDR[6]" at manual.v(56) File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 56
-Info (10041): Inferred latch for "reset" at manual.v(29) File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 29
-Warning (12125): Using design file clockDivider.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: clockDivider File: /home/matt/Documents/Digital Logic/Project 3/clockDivider.v Line: 1
-Info (12128): Elaborating entity "clockDivider" for hierarchy "manual:I3|clockDivider:C0" File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 35
+    Info (12023): Found entity 1: manual File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 1
+Info (12128): Elaborating entity "manual" for hierarchy "manual:I3" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 31
+Warning (10235): Verilog HDL Always Construct warning at manual.v(25): variable "SW" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 25
+Warning (10235): Verilog HDL Always Construct warning at manual.v(27): variable "KEY" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 27
+Warning (10235): Verilog HDL Always Construct warning at manual.v(29): variable "SW" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 29
+Warning (10240): Verilog HDL Always Construct warning at manual.v(23): inferring latch(es) for variable "reset", which holds its previous value in one or more paths through the always construct File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 23
+Warning (10235): Verilog HDL Always Construct warning at manual.v(64): variable "left_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 64
+Warning (10235): Verilog HDL Always Construct warning at manual.v(71): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 71
+Warning (10235): Verilog HDL Always Construct warning at manual.v(72): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 72
+Warning (10235): Verilog HDL Always Construct warning at manual.v(73): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 73
+Warning (10235): Verilog HDL Always Construct warning at manual.v(78): variable "left_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 78
+Warning (10235): Verilog HDL Always Construct warning at manual.v(85): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 85
+Warning (10235): Verilog HDL Always Construct warning at manual.v(86): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 86
+Warning (10235): Verilog HDL Always Construct warning at manual.v(87): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 87
+Warning (10235): Verilog HDL Always Construct warning at manual.v(98): variable "left_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 98
+Warning (10235): Verilog HDL Always Construct warning at manual.v(99): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 99
+Warning (10235): Verilog HDL Always Construct warning at manual.v(100): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 100
+Warning (10235): Verilog HDL Always Construct warning at manual.v(101): variable "right_LEDs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 101
+Warning (10240): Verilog HDL Always Construct warning at manual.v(48): inferring latch(es) for variable "LEDR", which holds its previous value in one or more paths through the always construct File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 48
+Info (10041): Inferred latch for "LEDR[3]" at manual.v(56) File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 56
+Info (10041): Inferred latch for "LEDR[4]" at manual.v(56) File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 56
+Info (10041): Inferred latch for "LEDR[5]" at manual.v(56) File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 56
+Info (10041): Inferred latch for "LEDR[6]" at manual.v(56) File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 56
+Info (10041): Inferred latch for "reset" at manual.v(29) File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 29
+Warning (12125): Using design file clockdivider.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: clockDivider File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/clockdivider.v Line: 1
+Info (12128): Elaborating entity "clockDivider" for hierarchy "manual:I3|clockDivider:C0" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 35
 Warning (12125): Using design file blink.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: blink File: /home/matt/Documents/Digital Logic/Project 3/blink.v Line: 1
-Info (12128): Elaborating entity "blink" for hierarchy "manual:I3|blink:B0" File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 40
-Warning (10235): Verilog HDL Always Construct warning at blink.v(20): variable "blink" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/blink.v Line: 20
-Warning (10235): Verilog HDL Always Construct warning at blink.v(22): variable "hazards" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/matt/Documents/Digital Logic/Project 3/blink.v Line: 22
-Warning (10230): Verilog HDL assignment warning at blink.v(27): truncated value with size 32 to match size of target (2) File: /home/matt/Documents/Digital Logic/Project 3/blink.v Line: 27
-Warning (12125): Using design file sevenSeg.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: sevenSeg File: /home/matt/Documents/Digital Logic/Project 3/sevenSeg.v Line: 1
-Info (12128): Elaborating entity "sevenSeg" for hierarchy "manual:I3|blink:B0|sevenSeg:H0" File: /home/matt/Documents/Digital Logic/Project 3/blink.v Line: 14
+    Info (12023): Found entity 1: blink File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/blink.v Line: 1
+Info (12128): Elaborating entity "blink" for hierarchy "manual:I3|blink:B0" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 40
+Warning (10235): Verilog HDL Always Construct warning at blink.v(20): variable "blink" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/blink.v Line: 20
+Warning (10235): Verilog HDL Always Construct warning at blink.v(22): variable "hazards" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/blink.v Line: 22
+Warning (10230): Verilog HDL assignment warning at blink.v(27): truncated value with size 32 to match size of target (2) File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/blink.v Line: 27
+Warning (12125): Using design file sevenseg.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: sevenSeg File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/sevenseg.v Line: 1
+Info (12128): Elaborating entity "sevenSeg" for hierarchy "manual:I3|blink:B0|sevenSeg:H0" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/blink.v Line: 14
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "memoryBlock:I2|altsyncram:altsyncram_component|altsyncram_nva1:auto_generated|q_a[4]" File: /home/matt/Documents/Digital Logic/Project 3/db/altsyncram_nva1.tdf Line: 122
-        Warning (14320): Synthesized away node "memoryBlock:I2|altsyncram:altsyncram_component|altsyncram_nva1:auto_generated|q_a[5]" File: /home/matt/Documents/Digital Logic/Project 3/db/altsyncram_nva1.tdf Line: 144
-        Warning (14320): Synthesized away node "memoryBlock:I2|altsyncram:altsyncram_component|altsyncram_nva1:auto_generated|q_a[6]" File: /home/matt/Documents/Digital Logic/Project 3/db/altsyncram_nva1.tdf Line: 166
-        Warning (14320): Synthesized away node "memoryBlock:I2|altsyncram:altsyncram_component|altsyncram_nva1:auto_generated|q_a[7]" File: /home/matt/Documents/Digital Logic/Project 3/db/altsyncram_nva1.tdf Line: 188
-Warning (14026): LATCH primitive "manual:I3|reset" is permanently enabled File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 8
-Warning (14026): LATCH primitive "manual:I3|reset" is permanently enabled File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 8
+        Warning (14320): Synthesized away node "memoryBlock:I2|altsyncram:altsyncram_component|altsyncram_nva1:auto_generated|q_a[4]" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/db/altsyncram_nva1.tdf Line: 122
+        Warning (14320): Synthesized away node "memoryBlock:I2|altsyncram:altsyncram_component|altsyncram_nva1:auto_generated|q_a[5]" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/db/altsyncram_nva1.tdf Line: 144
+        Warning (14320): Synthesized away node "memoryBlock:I2|altsyncram:altsyncram_component|altsyncram_nva1:auto_generated|q_a[6]" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/db/altsyncram_nva1.tdf Line: 166
+        Warning (14320): Synthesized away node "memoryBlock:I2|altsyncram:altsyncram_component|altsyncram_nva1:auto_generated|q_a[7]" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/db/altsyncram_nva1.tdf Line: 188
+Warning (14026): LATCH primitive "manual:I3|reset" is permanently enabled File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 8
+Warning (14026): LATCH primitive "manual:I3|reset" is permanently enabled File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 8
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 9
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 9
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 9
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 9
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 10
-    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 10
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 9
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 9
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 9
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 9
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 10
+    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 10
 Info (286030): Timing-Driven Synthesis is running
-Info (17036): Removed 5 MSB VCC or GND address nodes from RAM block "memoryBlock:I2|altsyncram:altsyncram_component|altsyncram_nva1:auto_generated|ALTSYNCRAM" File: /home/matt/Documents/Digital Logic/Project 3/db/altsyncram_nva1.tdf Line: 31
-Info (144001): Generated suppressed messages file /home/matt/Documents/Digital Logic/Project 3/top.map.smsg
+Info (17036): Removed 5 MSB VCC or GND address nodes from RAM block "memoryBlock:I2|altsyncram:altsyncram_component|altsyncram_nva1:auto_generated|ALTSYNCRAM" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/db/altsyncram_nva1.tdf Line: 31
+Info (144001): Generated suppressed messages file C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 6 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[3]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 4
-    Warning (15610): No output dependent on input pin "SW[4]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 4
-    Warning (15610): No output dependent on input pin "SW[5]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 4
-    Warning (15610): No output dependent on input pin "SW[6]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 4
-    Warning (15610): No output dependent on input pin "SW[7]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 4
-    Warning (15610): No output dependent on input pin "SW[8]" File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 4
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 4
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 4
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 4
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 4
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 4
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 4
 Info (21057): Implemented 167 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 18 output pins
     Info (21061): Implemented 132 logic cells
     Info (21064): Implemented 4 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 52 warnings
-    Info: Peak virtual memory: 1048 megabytes
-    Info: Processing ended: Thu Apr  9 09:02:54 2020
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:24
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 53 warnings
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Thu Apr 23 18:59:22 2020
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:20
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in /home/matt/Documents/Digital Logic/Project 3/top.map.smsg.
+The suppressed messages can be found in C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.map.smsg.
 
 

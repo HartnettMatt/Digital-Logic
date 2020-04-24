@@ -23,24 +23,24 @@ SW[9] => keyReg.OUTPUTSELECT
 SW[9] => always1.IN1
 KEY[0] => KEY[0].IN1
 KEY[1] => keyReg.DATAB
-LEDR[0] <= manual:I3.LEDR
-LEDR[1] <= manual:I3.LEDR
-LEDR[2] <= manual:I3.LEDR
-LEDR[3] <= manual:I3.LEDR
-LEDR[4] <= manual:I3.LEDR
-LEDR[5] <= manual:I3.LEDR
-LEDR[6] <= manual:I3.LEDR
-LEDR[7] <= manual:I3.LEDR
-LEDR[8] <= manual:I3.LEDR
-LEDR[9] <= manual:I3.LEDR
-HEX0[0] <= manual:I3.HEX0
-HEX0[1] <= manual:I3.HEX0
-HEX0[2] <= manual:I3.HEX0
-HEX0[3] <= manual:I3.HEX0
-HEX0[4] <= manual:I3.HEX0
-HEX0[5] <= manual:I3.HEX0
-HEX0[6] <= manual:I3.HEX0
-HEX0[7] <= manual:I3.HEX0
+LEDR[0] << manual:I3.LEDR
+LEDR[1] << manual:I3.LEDR
+LEDR[2] << manual:I3.LEDR
+LEDR[3] << manual:I3.LEDR
+LEDR[4] << manual:I3.LEDR
+LEDR[5] << manual:I3.LEDR
+LEDR[6] << manual:I3.LEDR
+LEDR[7] << manual:I3.LEDR
+LEDR[8] << manual:I3.LEDR
+LEDR[9] << manual:I3.LEDR
+HEX0[0] << manual:I3.HEX0
+HEX0[1] << manual:I3.HEX0
+HEX0[2] << manual:I3.HEX0
+HEX0[3] << manual:I3.HEX0
+HEX0[4] << manual:I3.HEX0
+HEX0[5] << manual:I3.HEX0
+HEX0[6] << manual:I3.HEX0
+HEX0[7] << manual:I3.HEX0
 
 
 |top|memoryBlock:I2
