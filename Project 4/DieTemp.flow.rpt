@@ -1,5 +1,5 @@
 Flow report for DieTemp
-Thu Apr 23 22:26:19 2020
+Fri Apr 24 19:55:53 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,20 +40,20 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Apr 23 22:26:00 2020       ;
+; Flow Status                        ; Successful - Fri Apr 24 19:55:48 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DieTemp                                     ;
 ; Top-level Entity Name              ; DieTemp                                     ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 43,011 / 49,760 ( 86 % )                    ;
-;     Total combinational functions  ; 42,992 / 49,760 ( 86 % )                    ;
-;     Dedicated logic registers      ; 32,159 / 49,760 ( 65 % )                    ;
-; Total registers                    ; 32159                                       ;
-; Total pins                         ; 62 / 360 ( 17 % )                           ;
+; Total logic elements               ; 461 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 426 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 233 / 49,760 ( < 1 % )                      ;
+; Total registers                    ; 233                                         ;
+; Total pins                         ; 72 / 360 ( 20 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 768 / 1,677,312 ( < 1 % )                   ;
+; Total memory bits                  ; 1,152 / 1,677,312 ( < 1 % )                 ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
 ; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/23/2020 22:18:45 ;
+; Start date & time ; 04/24/2020 19:55:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DieTemp             ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 247207024515366.158770192532044        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 247207024515366.158777970713220        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; fifo_inst.v                            ; --            ; --          ; --         ;
@@ -95,11 +95,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:03:58     ; 1.0                     ; 5398 MB             ; 00:04:18                           ;
-; Fitter               ; 00:02:32     ; 1.4                     ; 6428 MB             ; 00:05:33                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4915 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:15     ; 1.9                     ; 5234 MB             ; 00:00:22                           ;
-; Total                ; 00:06:51     ; --                      ; --                  ; 00:10:18                           ;
+; Analysis & Synthesis ; 00:00:24     ; 1.0                     ; 4808 MB             ; 00:00:48                           ;
+; Fitter               ; 00:00:11     ; 1.1                     ; 5781 MB             ; 00:00:16                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4687 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.2                     ; 4857 MB             ; 00:00:03                           ;
+; Total                ; 00:00:41     ; --                      ; --                  ; 00:01:10                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
