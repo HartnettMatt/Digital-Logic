@@ -56,7 +56,9 @@ reg [11:0] adc_sample_data /* synthesis noprune */;
 
 // This setups the sample rate
 clock_divider #(100000) U1 (.clock_in (MAX10_CLK1_50), .reset_n (KEY[0]), .clock_out(slow_clock));
-clock_divider #(1500000000) U6 (.clock_in (MAX10_CLK1_50), .reset_n (KEY[0]), .clock_out(slower_clock));
+// Two clock dividers, one for testing, one for the actual design specifications
+// clock_divider #(1500000000) U6 (.clock_in (MAX10_CLK1_50), .reset_n (KEY[0]), .clock_out(slower_clock));
+clock_divider #(5000000) U6 (.clock_in (MAX10_CLK1_50), .reset_n (KEY[0]), .clock_out(slower_clock));
 // I decided to display a smaller value, the temperature table explains this
 always @ (posedge slow_clock)
     begin
@@ -103,9 +105,7 @@ always @ (cur_adc_ch)
 
 // FIFO
 
-fifo F0 (.aclr(~KEY[0]), .data(bcd_hold), .rdclk(~KEY[1]), .rdreq(readOn), .wrclk(slower_clock), .wrreq(allow_write), .q(bcd_disp), .rdempty(empty), .wrfull(full), .wrusedw(fifo_size));
-//
-// assign LEDR[0] = empty;
+fifo F0 (.aclr(~KEY[0]), .data(bcd_hold), .rdclk(~KEY[1]), .rdreq(allow_read), .wrclk(slower_clock), .wrreq(allow_write), .q(bcd_disp), .rdempty(empty), .wrfull(full), .wrusedw(fifo_size));
 
 // Ensure the FIFO only fills up to 30 values instead of 32
 always @(posedge MAX10_CLK1_50)

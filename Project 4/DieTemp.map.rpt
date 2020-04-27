@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DieTemp
-Fri Apr 24 19:55:32 2020
+Mon Apr 27 16:20:13 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -103,15 +103,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 24 19:55:32 2020       ;
+; Analysis & Synthesis Status        ; Successful - Mon Apr 27 16:20:13 2020       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DieTemp                                     ;
 ; Top-level Entity Name              ; DieTemp                                     ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 465                                         ;
-;     Total combinational functions  ; 424                                         ;
-;     Dedicated logic registers      ; 233                                         ;
-; Total registers                    ; 233                                         ;
+; Total logic elements               ; 504                                         ;
+;     Total combinational functions  ; 434                                         ;
+;     Dedicated logic registers      ; 266                                         ;
+; Total registers                    ; 266                                         ;
 ; Total pins                         ; 72                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 1,152                                       ;
@@ -292,20 +292,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                           ;
 +---------------------------------------------+-------------------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 465                                                                                             ;
+; Estimated Total logic elements              ; 504                                                                                             ;
 ;                                             ;                                                                                                 ;
-; Total combinational functions               ; 424                                                                                             ;
+; Total combinational functions               ; 434                                                                                             ;
 ; Logic element usage by number of LUT inputs ;                                                                                                 ;
-;     -- 4 input functions                    ; 186                                                                                             ;
-;     -- 3 input functions                    ; 85                                                                                              ;
-;     -- <=2 input functions                  ; 153                                                                                             ;
+;     -- 4 input functions                    ; 198                                                                                             ;
+;     -- 3 input functions                    ; 82                                                                                              ;
+;     -- <=2 input functions                  ; 154                                                                                             ;
 ;                                             ;                                                                                                 ;
 ; Logic elements by mode                      ;                                                                                                 ;
-;     -- normal mode                          ; 292                                                                                             ;
+;     -- normal mode                          ; 302                                                                                             ;
 ;     -- arithmetic mode                      ; 132                                                                                             ;
 ;                                             ;                                                                                                 ;
-; Total registers                             ; 233                                                                                             ;
-;     -- Dedicated logic registers            ; 233                                                                                             ;
+; Total registers                             ; 266                                                                                             ;
+;     -- Dedicated logic registers            ; 266                                                                                             ;
 ;     -- I/O registers                        ; 0                                                                                               ;
 ;                                             ;                                                                                                 ;
 ; I/O pins                                    ; 72                                                                                              ;
@@ -318,8 +318,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                                                                                 ;
 ; Maximum fan-out node                        ; adc_qsys:U0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_6b92:sd1|wire_pll7_clk[0] ;
 ; Maximum fan-out                             ; 124                                                                                             ;
-; Total fan-out                               ; 2499                                                                                            ;
-; Average fan-out                             ; 3.02                                                                                            ;
+; Total fan-out                               ; 2723                                                                                            ;
+; Average fan-out                             ; 3.13                                                                                            ;
 +---------------------------------------------+-------------------------------------------------------------------------------------------------+
 
 
@@ -328,13 +328,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                       ; Entity Name                            ; Library Name ;
 +---------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
-; |DieTemp                                                                  ; 424 (26)            ; 233 (20)                  ; 1152        ; 0          ; 0            ; 0       ; 0         ; 72   ; 0            ; 0          ; |DieTemp                                                                                                                                                                                                                                                                                                                  ; DieTemp                                ; work         ;
-;    |adc_qsys:U0|                                                          ; 179 (0)             ; 108 (0)                   ; 768         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|adc_qsys:U0                                                                                                                                                                                                                                                                                                      ; adc_qsys                               ; adc_qsys     ;
+; |DieTemp                                                                  ; 434 (25)            ; 266 (20)                  ; 1152        ; 0          ; 0            ; 0       ; 0         ; 72   ; 0            ; 0          ; |DieTemp                                                                                                                                                                                                                                                                                                                  ; DieTemp                                ; work         ;
+;    |adc_qsys:U0|                                                          ; 183 (0)             ; 108 (0)                   ; 768         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|adc_qsys:U0                                                                                                                                                                                                                                                                                                      ; adc_qsys                               ; adc_qsys     ;
 ;       |adc_qsys_altpll_sys:altpll_sys|                                    ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|adc_qsys:U0|adc_qsys_altpll_sys:altpll_sys                                                                                                                                                                                                                                                                       ; adc_qsys_altpll_sys                    ; adc_qsys     ;
 ;          |adc_qsys_altpll_sys_altpll_6b92:sd1|                            ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|adc_qsys:U0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_6b92:sd1                                                                                                                                                                                                                                   ; adc_qsys_altpll_sys_altpll_6b92        ; adc_qsys     ;
-;       |adc_qsys_modular_adc_0:modular_adc_0|                              ; 179 (0)             ; 105 (0)                   ; 768         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0                                                                                                                                                                                                                                                                 ; adc_qsys_modular_adc_0                 ; adc_qsys     ;
-;          |altera_modular_adc_control:control_internal|                    ; 179 (0)             ; 105 (0)                   ; 768         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal                                                                                                                                                                                                                     ; altera_modular_adc_control             ; adc_qsys     ;
-;             |altera_modular_adc_control_fsm:u_control_fsm|                ; 178 (142)           ; 105 (81)                  ; 768         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm                                                                                                                                                                        ; altera_modular_adc_control_fsm         ; adc_qsys     ;
+;       |adc_qsys_modular_adc_0:modular_adc_0|                              ; 183 (0)             ; 105 (0)                   ; 768         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0                                                                                                                                                                                                                                                                 ; adc_qsys_modular_adc_0                 ; adc_qsys     ;
+;          |altera_modular_adc_control:control_internal|                    ; 183 (0)             ; 105 (0)                   ; 768         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal                                                                                                                                                                                                                     ; altera_modular_adc_control             ; adc_qsys     ;
+;             |altera_modular_adc_control_fsm:u_control_fsm|                ; 182 (146)           ; 105 (81)                  ; 768         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm                                                                                                                                                                        ; altera_modular_adc_control_fsm         ; adc_qsys     ;
 ;                |altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|        ; 36 (0)              ; 20 (0)                    ; 768         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo                                                                                                                      ; altera_modular_adc_control_avrg_fifo   ; adc_qsys     ;
 ;                   |scfifo:scfifo_component|                               ; 36 (0)              ; 20 (0)                    ; 768         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component                                                                                              ; scfifo                                 ; work         ;
 ;                      |scfifo_ds61:auto_generated|                         ; 36 (0)              ; 20 (0)                    ; 768         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated                                                                   ; scfifo_ds61                            ; work         ;
@@ -354,16 +354,20 @@ refer to the applicable agreement for further details.
 ;    |bin2bcd:T1|                                                           ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|bin2bcd:T1                                                                                                                                                                                                                                                                                                       ; bin2bcd                                ; work         ;
 ;    |bin2bcd:U2|                                                           ; 35 (35)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|bin2bcd:U2                                                                                                                                                                                                                                                                                                       ; bin2bcd                                ; work         ;
 ;    |clock_divider:U1|                                                     ; 50 (50)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|clock_divider:U1                                                                                                                                                                                                                                                                                                 ; clock_divider                          ; work         ;
-;    |clock_divider:U6|                                                     ; 56 (56)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|clock_divider:U6                                                                                                                                                                                                                                                                                                 ; clock_divider                          ; work         ;
-;    |fifo:F0|                                                              ; 40 (0)              ; 39 (0)                    ; 384         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0                                                                                                                                                                                                                                                                                                          ; fifo                                   ; work         ;
-;       |dcfifo:dcfifo_component|                                           ; 40 (0)              ; 39 (0)                    ; 384         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component                                                                                                                                                                                                                                                                                  ; dcfifo                                 ; work         ;
-;          |dcfifo_khj1:auto_generated|                                     ; 40 (9)              ; 39 (6)                    ; 384         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated                                                                                                                                                                                                                                                       ; dcfifo_khj1                            ; work         ;
+;    |clock_divider:U6|                                                     ; 52 (52)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|clock_divider:U6                                                                                                                                                                                                                                                                                                 ; clock_divider                          ; work         ;
+;    |fifo:F0|                                                              ; 51 (0)              ; 72 (0)                    ; 384         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0                                                                                                                                                                                                                                                                                                          ; fifo                                   ; work         ;
+;       |dcfifo:dcfifo_component|                                           ; 51 (0)              ; 72 (0)                    ; 384         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component                                                                                                                                                                                                                                                                                  ; dcfifo                                 ; work         ;
+;          |dcfifo_khj1:auto_generated|                                     ; 51 (12)             ; 72 (18)                   ; 384         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated                                                                                                                                                                                                                                                       ; dcfifo_khj1                            ; work         ;
 ;             |a_gray2bin_hra:wrptr_g_gray2bin|                             ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_gray2bin_hra:wrptr_g_gray2bin                                                                                                                                                                                                                       ; a_gray2bin_hra                         ; work         ;
 ;             |a_gray2bin_hra:ws_dgrp_gray2bin|                             ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_gray2bin_hra:ws_dgrp_gray2bin                                                                                                                                                                                                                       ; a_gray2bin_hra                         ; work         ;
 ;             |a_graycounter_cub:wrptr_g1p|                                 ; 13 (13)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_cub:wrptr_g1p                                                                                                                                                                                                                           ; a_graycounter_cub                      ; work         ;
-;             |alt_synch_pipe_unl:ws_dgrp|                                  ; 6 (0)               ; 12 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_unl:ws_dgrp                                                                                                                                                                                                                            ; alt_synch_pipe_unl                     ; work         ;
-;                |dffpipe_fd9:dffpipe18|                                    ; 6 (6)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_unl:ws_dgrp|dffpipe_fd9:dffpipe18                                                                                                                                                                                                      ; dffpipe_fd9                            ; work         ;
+;             |a_graycounter_gg6:rdptr_g1p|                                 ; 11 (11)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_gg6:rdptr_g1p                                                                                                                                                                                                                           ; a_graycounter_gg6                      ; work         ;
+;             |alt_synch_pipe_tnl:rs_dgwp|                                  ; 0 (0)               ; 12 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp                                                                                                                                                                                                                            ; alt_synch_pipe_tnl                     ; work         ;
+;                |dffpipe_ed9:dffpipe12|                                    ; 0 (0)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12                                                                                                                                                                                                      ; dffpipe_ed9                            ; work         ;
+;             |alt_synch_pipe_unl:ws_dgrp|                                  ; 0 (0)               ; 12 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_unl:ws_dgrp                                                                                                                                                                                                                            ; alt_synch_pipe_unl                     ; work         ;
+;                |dffpipe_fd9:dffpipe18|                                    ; 0 (0)               ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_unl:ws_dgrp|dffpipe_fd9:dffpipe18                                                                                                                                                                                                      ; dffpipe_fd9                            ; work         ;
 ;             |altsyncram_u961:fifo_ram|                                    ; 0 (0)               ; 0 (0)                     ; 384         ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|altsyncram_u961:fifo_ram                                                                                                                                                                                                                              ; altsyncram_u961                        ; work         ;
+;             |cmpr_2h5:rdempty_eq_comp|                                    ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|cmpr_2h5:rdempty_eq_comp                                                                                                                                                                                                                              ; cmpr_2h5                               ; work         ;
 ;             |cmpr_2h5:wrfull_eq_comp|                                     ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|cmpr_2h5:wrfull_eq_comp                                                                                                                                                                                                                               ; cmpr_2h5                               ; work         ;
 ;             |dffpipe_3dc:wraclr|                                          ; 0 (0)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|dffpipe_3dc:wraclr                                                                                                                                                                                                                                    ; dffpipe_3dc                            ; work         ;
 ;             |dffpipe_dd9:ws_brp|                                          ; 0 (0)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |DieTemp|fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|dffpipe_dd9:ws_brp                                                                                                                                                                                                                                    ; dffpipe_dd9                            ; work         ;
@@ -452,19 +456,31 @@ Encoding Type:  One-Hot
 ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_unl:ws_dgrp|dffpipe_fd9:dffpipe18|dffe20a[3]                                                                           ; yes                                                              ; yes                                        ;
 ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_unl:ws_dgrp|dffpipe_fd9:dffpipe18|dffe20a[0]                                                                           ; yes                                                              ; yes                                        ;
 ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_unl:ws_dgrp|dffpipe_fd9:dffpipe18|dffe20a[1]                                                                           ; yes                                                              ; yes                                        ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[4]                                                                           ; yes                                                              ; yes                                        ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[5]                                                                           ; yes                                                              ; yes                                        ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[2]                                                                           ; yes                                                              ; yes                                        ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[3]                                                                           ; yes                                                              ; yes                                        ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[0]                                                                           ; yes                                                              ; yes                                        ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[1]                                                                           ; yes                                                              ; yes                                        ;
 ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_unl:ws_dgrp|dffpipe_fd9:dffpipe18|dffe19a[4]                                                                           ; yes                                                              ; yes                                        ;
 ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_unl:ws_dgrp|dffpipe_fd9:dffpipe18|dffe19a[5]                                                                           ; yes                                                              ; yes                                        ;
 ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_unl:ws_dgrp|dffpipe_fd9:dffpipe18|dffe19a[2]                                                                           ; yes                                                              ; yes                                        ;
 ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_unl:ws_dgrp|dffpipe_fd9:dffpipe18|dffe19a[3]                                                                           ; yes                                                              ; yes                                        ;
 ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_unl:ws_dgrp|dffpipe_fd9:dffpipe18|dffe19a[0]                                                                           ; yes                                                              ; yes                                        ;
 ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_unl:ws_dgrp|dffpipe_fd9:dffpipe18|dffe19a[1]                                                                           ; yes                                                              ; yes                                        ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[4]                                                                           ; yes                                                              ; yes                                        ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[5]                                                                           ; yes                                                              ; yes                                        ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[2]                                                                           ; yes                                                              ; yes                                        ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[3]                                                                           ; yes                                                              ; yes                                        ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[0]                                                                           ; yes                                                              ; yes                                        ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[1]                                                                           ; yes                                                              ; yes                                        ;
 ; adc_qsys:U0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain[0]                                                         ; yes                                                              ; yes                                        ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer|dreg[0]     ; yes                                                              ; yes                                        ;
 ; adc_qsys:U0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain[1]                                                         ; yes                                                              ; yes                                        ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_eoc_synchronizer|din_s1      ; yes                                                              ; yes                                        ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer|dreg[0] ; yes                                                              ; yes                                        ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer|din_s1  ; yes                                                              ; yes                                        ;
-; Total number of protected registers is 27                                                                                                                                                        ;                                                                  ;                                            ;
+; Total number of protected registers is 39                                                                                                                                                        ;                                                                  ;                                            ;
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
 
 
@@ -473,44 +489,17 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Register name                                                                                                                                                   ; Reason for Removal                                                                                                                                                       ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[0]                                          ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[0]                                          ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|delayed_wrptr_g[0]                                                                                   ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[1]                                          ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[1]                                          ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|delayed_wrptr_g[1]                                                                                   ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[2]                                          ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[2]                                          ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|delayed_wrptr_g[2]                                                                                   ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[3]                                          ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[3]                                          ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|delayed_wrptr_g[3]                                                                                   ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[4]                                          ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[4]                                          ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|delayed_wrptr_g[4]                                                                                   ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[5]                                          ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[5]                                          ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|delayed_wrptr_g[5]                                                                                   ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|rdptr_g[0..5]                                                                                        ; Stuck at GND due to stuck port clock_enable                                                                                                                              ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|cmd_channel_dly[1..3] ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_channel[1..3]     ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
 ; adc_qsys:U0|adc_qsys_altpll_sys:altpll_sys|prev_reset                                                                                                           ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
 ; adc_qsys:U0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out                           ; Lost fanout                                                                                                                                                              ;
 ; adc_qsys:U0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain[0,1]                          ; Lost fanout                                                                                                                                                              ;
 ; adc_qsys:U0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_6b92:sd1|pll_lock_sync                                                                    ; Stuck at VCC due to stuck port data_in                                                                                                                                   ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_gg6:rdptr_g1p|parity6                                                                  ; Lost fanout                                                                                                                                                              ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_gg6:rdptr_g1p|sub_parity7a[0,1]                                                        ; Lost fanout                                                                                                                                                              ;
 ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|dffpipe_dd9:ws_bwp|dffe17a[5]                                                                        ; Lost fanout                                                                                                                                                              ;
 ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|dffpipe_dd9:ws_brp|dffe17a[5]                                                                        ; Lost fanout                                                                                                                                                              ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|cmd_channel_dly[0]    ; Merged with adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|cmd_channel_dly[4] ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_channel[4]        ; Merged with adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_channel[0]     ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[2,3]            ; Merged with adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[1]           ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_gg6:rdptr_g1p|counter5a0                                                               ; Stuck at VCC due to stuck port data_in                                                                                                                                   ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_gg6:rdptr_g1p|counter5a1                                                               ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_gg6:rdptr_g1p|counter5a2                                                               ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_gg6:rdptr_g1p|counter5a3                                                               ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_gg6:rdptr_g1p|counter5a4                                                               ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_gg6:rdptr_g1p|counter5a5                                                               ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|cmd_channel_dly[4]    ; Merged with adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|prev_cmd_is_ts     ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.WAIT       ; Lost fanout                                                                                                                                                              ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.GETCMD_W   ; Lost fanout                                                                                                                                                              ;
@@ -523,7 +512,7 @@ Encoding Type:  One-Hot
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.PUTRESP    ; Merged with adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|conv_dly1_s_flp    ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state.PRE_CONV   ; Stuck at GND due to stuck port data_in                                                                                                                                   ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[4]              ; Stuck at VCC due to stuck port data_in                                                                                                                                   ;
-; Total Number of Removed Registers = 62                                                                                                                          ;                                                                                                                                                                          ;
+; Total Number of Removed Registers = 29                                                                                                                          ;                                                                                                                                                                          ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -537,18 +526,6 @@ Encoding Type:  One-Hot
 ;                                                                                                                                                              ;                           ; adc_qsys:U0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain[1],                    ;
 ;                                                                                                                                                              ;                           ; adc_qsys:U0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_6b92:sd1|pll_lock_sync,                                                            ;
 ;                                                                                                                                                              ;                           ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[4]       ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[0]                                       ; Lost Fanouts              ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[0],                                  ;
-;                                                                                                                                                              ;                           ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|delayed_wrptr_g[0]                                                                            ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[1]                                       ; Lost Fanouts              ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[1],                                  ;
-;                                                                                                                                                              ;                           ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|delayed_wrptr_g[1]                                                                            ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[2]                                       ; Lost Fanouts              ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[2],                                  ;
-;                                                                                                                                                              ;                           ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|delayed_wrptr_g[2]                                                                            ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[3]                                       ; Lost Fanouts              ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[3],                                  ;
-;                                                                                                                                                              ;                           ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|delayed_wrptr_g[3]                                                                            ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[4]                                       ; Lost Fanouts              ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[4],                                  ;
-;                                                                                                                                                              ;                           ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|delayed_wrptr_g[4]                                                                            ;
-; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe14a[5]                                       ; Lost Fanouts              ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|alt_synch_pipe_tnl:rs_dgwp|dffpipe_ed9:dffpipe12|dffe13a[5],                                  ;
-;                                                                                                                                                              ;                           ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|delayed_wrptr_g[5]                                                                            ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|cmd_channel_dly[3] ; Stuck at GND              ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_channel[3] ;
 ;                                                                                                                                                              ; due to stuck port data_in ;                                                                                                                                                          ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|cmd_channel_dly[2] ; Stuck at GND              ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_channel[2] ;
@@ -563,12 +540,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 233   ;
+; Total registers                              ; 266   ;
 ; Number of registers using Synchronous Clear  ; 18    ;
 ; Number of registers using Synchronous Load   ; 18    ;
-; Number of registers using Asynchronous Clear ; 190   ;
+; Number of registers using Asynchronous Clear ; 223   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 83    ;
+; Number of registers using Clock Enable       ; 93    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -578,15 +555,17 @@ Encoding Type:  One-Hot
 +----------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                                                                                  ; Fan out ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; allow_write                                                                                                                                        ; 3       ;
+; allow_write                                                                                                                                        ; 4       ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_gg6:rdptr_g1p|counter5a0                                                  ; 7       ;
 ; adc_qsys:U0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out          ; 85      ;
 ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_cub:wrptr_g1p|counter8a0                                                  ; 8       ;
+; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_gg6:rdptr_g1p|parity6                                                     ; 4       ;
 ; adc_qsys:U0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain[0]           ; 1       ;
 ; fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|a_graycounter_cub:wrptr_g1p|parity9                                                     ; 6       ;
 ; adc_qsys:U0|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain[1]           ; 1       ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|usr_pwd  ; 2       ;
 ; adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|chsel[1] ; 3       ;
-; Total number of inverted registers = 8                                                                                                             ;         ;
+; Total number of inverted registers = 10                                                                                                            ;         ;
 +----------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -596,8 +575,8 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|rsp_data[0]  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[6] ;
-; 3:1                ; 18 bits   ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|avrg_sum[6]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[7] ;
+; 3:1                ; 18 bits   ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |DieTemp|adc_qsys:U0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|avrg_sum[7]  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1181,11 +1160,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +---------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: clock_divider:U6 ;
-+----------------+------------+---------------------------------+
-; Parameter Name ; Value      ; Type                            ;
-+----------------+------------+---------------------------------+
-; divider        ; 1500000000 ; Signed Integer                  ;
-+----------------+------------+---------------------------------+
++----------------+---------+------------------------------------+
+; Parameter Name ; Value   ; Type                               ;
++----------------+---------+------------------------------------+
+; divider        ; 5000000 ; Signed Integer                     ;
++----------------+---------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1258,7 +1237,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port    ; Type   ; Severity ; Details                                                                             ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
-; rdreq   ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; rdempty ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; wrfull  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
@@ -1444,29 +1422,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 72                          ;
-; cycloneiii_ff         ; 233                         ;
-;     CLR               ; 143                         ;
+; cycloneiii_ff         ; 266                         ;
+;     CLR               ; 166                         ;
 ;     ENA               ; 18                          ;
-;     ENA CLR           ; 29                          ;
+;     ENA CLR           ; 39                          ;
 ;     ENA CLR SCLR      ; 18                          ;
 ;     ENA SLD           ; 18                          ;
 ;     plain             ; 7                           ;
-; cycloneiii_lcell_comb ; 432                         ;
+; cycloneiii_lcell_comb ; 444                         ;
 ;     arith             ; 132                         ;
 ;         2 data inputs ; 98                          ;
 ;         3 data inputs ; 34                          ;
-;     normal            ; 300                         ;
-;         0 data inputs ; 11                          ;
-;         1 data inputs ; 21                          ;
-;         2 data inputs ; 31                          ;
-;         3 data inputs ; 51                          ;
-;         4 data inputs ; 186                         ;
+;     normal            ; 312                         ;
+;         0 data inputs ; 5                           ;
+;         1 data inputs ; 25                          ;
+;         2 data inputs ; 36                          ;
+;         3 data inputs ; 48                          ;
+;         4 data inputs ; 198                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 24                          ;
 ; fiftyfivenm_adcblock  ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.50                        ;
-; Average LUT depth     ; 3.24                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.09                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1485,25 +1463,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri Apr 24 19:55:07 2020
+    Info: Processing started: Mon Apr 27 16:19:49 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DieTemp -c DieTemp
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12248): Elaborating Platform Designer system entity "adc_qsys.qsys"
-Info (12250): 2020.04.24.19:55:20 Progress: Loading Project 4/adc_qsys.qsys
-Info (12250): 2020.04.24.19:55:20 Progress: Reading input file
-Info (12250): 2020.04.24.19:55:21 Progress: Adding altpll_sys [altpll 18.1]
-Info (12250): 2020.04.24.19:55:22 Progress: Parameterizing module altpll_sys
-Info (12250): 2020.04.24.19:55:22 Progress: Adding clk_50 [clock_source 18.1]
-Info (12250): 2020.04.24.19:55:22 Progress: Parameterizing module clk_50
-Info (12250): 2020.04.24.19:55:22 Progress: Adding clock_bridge_sys [altera_clock_bridge 18.1]
-Info (12250): 2020.04.24.19:55:22 Progress: Parameterizing module clock_bridge_sys
-Info (12250): 2020.04.24.19:55:22 Progress: Adding modular_adc_0 [altera_modular_adc 18.1]
-Info (12250): 2020.04.24.19:55:22 Progress: Parameterizing module modular_adc_0
-Info (12250): 2020.04.24.19:55:22 Progress: Building connections
-Info (12250): 2020.04.24.19:55:22 Progress: Parameterizing connections
-Info (12250): 2020.04.24.19:55:22 Progress: Validating
-Info (12250): 2020.04.24.19:55:23 Progress: Done reading input file
+Info (12250): 2020.04.27.16:20:02 Progress: Loading Project 4/adc_qsys.qsys
+Info (12250): 2020.04.27.16:20:02 Progress: Reading input file
+Info (12250): 2020.04.27.16:20:02 Progress: Adding altpll_sys [altpll 18.1]
+Info (12250): 2020.04.27.16:20:03 Progress: Parameterizing module altpll_sys
+Info (12250): 2020.04.27.16:20:03 Progress: Adding clk_50 [clock_source 18.1]
+Info (12250): 2020.04.27.16:20:03 Progress: Parameterizing module clk_50
+Info (12250): 2020.04.27.16:20:03 Progress: Adding clock_bridge_sys [altera_clock_bridge 18.1]
+Info (12250): 2020.04.27.16:20:03 Progress: Parameterizing module clock_bridge_sys
+Info (12250): 2020.04.27.16:20:03 Progress: Adding modular_adc_0 [altera_modular_adc 18.1]
+Info (12250): 2020.04.27.16:20:04 Progress: Parameterizing module modular_adc_0
+Info (12250): 2020.04.27.16:20:04 Progress: Building connections
+Info (12250): 2020.04.27.16:20:04 Progress: Parameterizing connections
+Info (12250): 2020.04.27.16:20:04 Progress: Validating
+Info (12250): 2020.04.27.16:20:04 Progress: Done reading input file
 Warning (12251): Adc_qsys.altpll_sys: altpll_sys.areset_conduit must be exported, or connected to a matching conduit.
 Warning (12251): Adc_qsys.altpll_sys: altpll_sys.pll_slave must be connected to an Avalon-MM master
 Info (12250): Adc_qsys: Generating adc_qsys "adc_qsys" for QUARTUS_SYNTH
@@ -1548,12 +1526,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/ip/a
     Info (12023): Found entity 1: fiftyfivenm_adcblock_top_wrapper File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/db/ip/adc_qsys/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 31
 Warning (12125): Using design file dietemp.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: DieTemp File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at dietemp.v(106): created implicit net for "readOn" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 106
 Info (12127): Elaborating entity "DieTemp" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at dietemp.v(16): object "HEX4val" assigned a value but never read File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 16
-Warning (10230): Verilog HDL assignment warning at dietemp.v(90): truncated value with size 5 to match size of target (4) File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 90
-Warning (10030): Net "readOn" at dietemp.v(106) has no driver or initial value, using a default initial value '0' File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 106
-Warning (10034): Output port "LEDR[8..0]" at dietemp.v(6) has no driver File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 6
+Warning (10230): Verilog HDL assignment warning at dietemp.v(91): truncated value with size 5 to match size of target (4) File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 91
+Warning (10034): Output port "LEDR[8..3]" at dietemp.v(6) has no driver File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 6
 Info (12128): Elaborating entity "adc_qsys" for hierarchy "adc_qsys:U0" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 55
 Info (12128): Elaborating entity "adc_qsys_altpll_sys" for hierarchy "adc_qsys:U0|adc_qsys_altpll_sys:altpll_sys" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/db/ip/adc_qsys/adc_qsys.v Line: 52
 Info (12128): Elaborating entity "adc_qsys_altpll_sys_stdsync_sv6" for hierarchy "adc_qsys:U0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/db/ip/adc_qsys/submodules/adc_qsys_altpll_sys.v Line: 288
@@ -1609,14 +1585,14 @@ Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "adc_
 Warning (12125): Using design file clock_divider.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: clock_divider File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/clock_divider.v Line: 3
 Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:U1" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 58
-Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:U6" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 59
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:U6" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 60
 Warning (12125): Using design file bin2bcd.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: bin2bcd File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/bin2bcd.v Line: 1
-Info (12128): Elaborating entity "bin2bcd" for hierarchy "bin2bcd:U2" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 74
+Info (12128): Elaborating entity "bin2bcd" for hierarchy "bin2bcd:U2" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 75
 Warning (12125): Using design file seg7.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: seg7 File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/seg7.v Line: 1
-Info (12128): Elaborating entity "seg7" for hierarchy "seg7:U3" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 77
-Info (12128): Elaborating entity "fifo" for hierarchy "fifo:F0" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 106
+Info (12128): Elaborating entity "seg7" for hierarchy "seg7:U3" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 78
+Info (12128): Elaborating entity "fifo" for hierarchy "fifo:F0" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 107
 Info (12128): Elaborating entity "dcfifo" for hierarchy "fifo:F0|dcfifo:dcfifo_component" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/fifo.v Line: 92
 Info (12130): Elaborated megafunction instantiation "fifo:F0|dcfifo:dcfifo_component" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/fifo.v Line: 92
 Info (12133): Instantiated megafunction "fifo:F0|dcfifo:dcfifo_component" with the following parameter: File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/fifo.v Line: 92
@@ -1669,12 +1645,9 @@ Info (12128): Elaborating entity "dffpipe_fd9" for hierarchy "fifo:F0|dcfifo:dcf
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_2h5.tdf
     Info (12023): Found entity 1: cmpr_2h5 File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/db/cmpr_2h5.tdf Line: 22
 Info (12128): Elaborating entity "cmpr_2h5" for hierarchy "fifo:F0|dcfifo:dcfifo_component|dcfifo_khj1:auto_generated|cmpr_2h5:rdempty_eq_comp" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/db/dcfifo_khj1.tdf Line: 75
-Info (13000): Registers with preset signals will power-up high File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/db/a_graycounter_cub.tdf Line: 32
+Info (13000): Registers with preset signals will power-up high File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/db/a_graycounter_gg6.tdf Line: 32
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 6
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 6
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 6
     Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 6
     Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 6
     Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 6
@@ -1696,7 +1669,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 8
     Warning (13410): Pin "HEX5[7]" is stuck at VCC File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 8
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 34 registers lost all their fanouts during netlist optimizations.
+Info (17049): 13 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "response_valid" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 33
 Info (144001): Generated suppressed messages file C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/DieTemp.map.smsg
@@ -1714,17 +1687,17 @@ Warning (21074): Design contains 11 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 5
     Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 5
     Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v Line: 5
-Info (21057): Implemented 579 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 619 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 58 output pins
-    Info (21061): Implemented 481 logic cells
+    Info (21061): Implemented 521 logic cells
     Info (21064): Implemented 24 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 55 warnings
-    Info: Peak virtual memory: 4808 megabytes
-    Info: Processing ended: Fri Apr 24 19:55:32 2020
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:49
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
+    Info: Peak virtual memory: 4809 megabytes
+    Info: Processing ended: Mon Apr 27 16:20:13 2020
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:46
 
 
 +------------------------------------------+

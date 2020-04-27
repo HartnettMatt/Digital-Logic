@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Fri Apr 24 19:55:32 2020
+Analysis & Synthesis Status : Successful - Mon Apr 27 16:20:13 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : DieTemp
 Top-level Entity Name : DieTemp
 Family : MAX 10
-Total logic elements : 465
-    Total combinational functions : 424
-    Dedicated logic registers : 233
-Total registers : 233
+Total logic elements : 504
+    Total combinational functions : 434
+    Dedicated logic registers : 266
+Total registers : 266
 Total pins : 72
 Total virtual pins : 0
 Total memory bits : 1,152
