@@ -79,7 +79,9 @@ bin2bcd T1 (.binary_in(fifo_test), .bcd_out(fifo_dec));
 seg7 U3 (.oSEG(HEX2), .iDIG(bcd_disp[11:8]));
 seg7 U4 (.oSEG(HEX1), .iDIG(bcd_disp[7:4]));
 seg7 U5 (.oSEG(HEX0), .iDIG(bcd_disp[3:0]));
-
+// TODO
+// TODO: Get rid of this test shit and switch the crap back
+// TODO
 seg7 T2 (.oSEG(HEX4), .iDIG(fifo_dec[3:0]));
 seg7 T3 (.oSEG(HEX5), .iDIG(fifo_dec[7:4]));
 assign HEX3 = 8'hff;
@@ -93,7 +95,7 @@ always @ (cur_adc_ch)
 
 // Add power //
 
-// assign LEDR[0] = 1'b0;
+assign LEDR[0] = 1'b0;
 // power U7 (.clock(MAX10_CLK1_50), .powerout(LEDR[8]));
 // power U8 (.clock(MAX10_CLK1_50), .powerout(LEDR[7]));
 // power U9 (.clock(MAX10_CLK1_50), .powerout(LEDR[6]));
