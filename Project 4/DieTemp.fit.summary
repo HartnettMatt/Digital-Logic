@@ -1,14 +1,14 @@
-Fitter Status : Successful - Wed Apr 29 15:32:41 2020
+Fitter Status : Successful - Thu Apr 30 15:20:25 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : DieTemp
 Top-level Entity Name : DieTemp
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 487 / 49,760 ( < 1 % )
-    Total combinational functions : 441 / 49,760 ( < 1 % )
-    Dedicated logic registers : 266 / 49,760 ( < 1 % )
-Total registers : 266
+Total logic elements : 43,160 / 49,760 ( 87 % )
+    Total combinational functions : 43,115 / 49,760 ( 87 % )
+    Dedicated logic registers : 32,266 / 49,760 ( 65 % )
+Total registers : 32266
 Total pins : 72 / 360 ( 20 % )
 Total virtual pins : 0
 Total memory bits : 1,152 / 1,677,312 ( < 1 % )

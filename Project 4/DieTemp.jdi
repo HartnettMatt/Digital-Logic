@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="b87f8a83417162ec09bb"/>
+    <hash md5_digest_80b="86183ff0c6f8321c52bf"/>
   </project>
   <file_info>
     <file device="10M50DAF484C7G" path="DieTemp.sof" usercode="0xFFFFFFFF"/>
@@ -8,7 +8,7 @@
   <sld_infos>
     <sld_info hpath="adc_qsys:U0" name="U0">
       <assignment_values>
-        <assignment_value text="QSYS_NAME adc_qsys HAS_SOPCINFO 1 GENERATION_ID 1588195937"/>
+        <assignment_value text="QSYS_NAME adc_qsys HAS_SOPCINFO 1 GENERATION_ID 1588281258"/>
       </assignment_values>
       <parameters/>
     </sld_info>
