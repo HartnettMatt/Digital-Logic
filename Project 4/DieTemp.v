@@ -95,19 +95,19 @@ always @ (cur_adc_ch)
 
 // Add power //
 
-power U7 (.clock(MAX10_CLK1_50), .powerout(LEDR[8]));
-power U8 (.clock(MAX10_CLK1_50), .powerout(LEDR[7]));
-power U9 (.clock(MAX10_CLK1_50), .powerout(LEDR[6]));
-power U10 (.clock(MAX10_CLK1_50), .powerout(LEDR[5]));
-power U11 (.clock(MAX10_CLK2_50), .powerout(LEDR[4]));
-power U12 (.clock(MAX10_CLK2_50), .powerout(LEDR[3]));
-power U13 (.clock(MAX10_CLK2_50), .powerout(LEDR[2]));
-power U14 (.clock(MAX10_CLK2_50), .powerout(LEDR[1]));
+// power U7 (.clock(MAX10_CLK1_50), .powerout(LEDR[8]));
+// power U8 (.clock(MAX10_CLK1_50), .powerout(LEDR[7]));
+// power U9 (.clock(MAX10_CLK1_50), .powerout(LEDR[6]));
+// power U10 (.clock(MAX10_CLK1_50), .powerout(LEDR[5]));
+// power U11 (.clock(MAX10_CLK2_50), .powerout(LEDR[4]));
+// power U12 (.clock(MAX10_CLK2_50), .powerout(LEDR[3]));
+// power U13 (.clock(MAX10_CLK2_50), .powerout(LEDR[2]));
+// power U14 (.clock(MAX10_CLK2_50), .powerout(LEDR[1]));
 
 // FIFO
 
 fifo F0 (.aclr(~KEY[0]), .data(bcd_hold), .rdclk(~KEY[1]), .rdreq(allow_read), .wrclk(slower_clock), .wrreq(allow_write), .q(bcd_disp), .rdempty(empty), .wrfull(full), .wrusedw(fifo_size));
-// 
+//
 // assign LEDR[0] = allow_write;
 // assign LEDR[1] = slower_clock;
 // Ensure the FIFO only fills up to 30 values instead of 32
