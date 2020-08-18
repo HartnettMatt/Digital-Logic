@@ -1,0 +1,75 @@
+Quartus Prime Archive log --	/home/matt/Documents/Digital Logic/Project 4/DieTemp_Hartnett.qarlog
+
+Archive:	/home/matt/Documents/Digital Logic/Project 4/DieTemp_Hartnett.qar
+Date:		Thu Apr 30 16:39:18 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+/home/matt/Documents/Digital Logic/Project 4/DieTemp.qpf
+/home/matt/Documents/Digital Logic/Project 4/DieTemp.qsf
+/home/matt/Documents/Digital Logic/Project 4/DieTemp.sdc
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys.qsys
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys.sopcinfo
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/adc_qsys.bsf
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/adc_qsys.cmp
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/adc_qsys.csv
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/adc_qsys.html
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/adc_qsys.spd
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/adc_qsys.xml
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/adc_qsys_bb.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/adc_qsys_generation.rpt
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/adc_qsys_generation_previous.rpt
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/adc_qsys_inst.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/adc_qsys_inst.vhd
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/adc_qsys.sip
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/adc_qsys.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/aldec/rivierapro_setup.tcl
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/cadence/cds.lib
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/cadence/cds_libs/altpll_sys.cds.lib
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/cadence/cds_libs/control_internal.cds.lib
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/cadence/cds_libs/modular_adc_0.cds.lib
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/cadence/cds_libs/rst_controller.cds.lib
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/cadence/hdl.var
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/cadence/ncsim_setup.sh
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/mentor/msim_setup.tcl
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/submodules/adc_qsys_altpll_sys.vo
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/submodules/adc_qsys_modular_adc_0.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/submodules/altera_modular_adc_control.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/submodules/altera_modular_adc_control_avrg_fifo.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/submodules/altera_modular_adc_control_fsm.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/submodules/altera_reset_controller.sdc
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/submodules/altera_reset_controller.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/submodules/altera_reset_synchronizer.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/submodules/chsel_code_converter_sw_to_hw.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/submodules/fiftyfivenm_adcblock_top_wrapper.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/synopsys/vcs/vcs_setup.sh
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/synopsys/vcsmx/synopsys_sim.setup
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/simulation/synopsys/vcsmx/vcsmx_setup.sh
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/adc_qsys.debuginfo
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/adc_qsys.qip
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/adc_qsys.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/submodules/altera_modular_adc_control.sdc
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/submodules/altera_modular_adc_control.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/submodules/altera_reset_controller.sdc
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/submodules/altera_reset_controller.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/submodules/altera_reset_synchronizer.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
+/home/matt/Documents/Digital Logic/Project 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v
+/home/matt/Documents/Digital Logic/Project 4/assignment_defaults.qdf
+/home/matt/Documents/Digital Logic/Project 4/bin2bcd.v
+/home/matt/Documents/Digital Logic/Project 4/clock_divider.v
+/home/matt/Documents/Digital Logic/Project 4/fifo.qip
+/home/matt/Documents/Digital Logic/Project 4/fifo.v
+/home/matt/Documents/Digital Logic/Project 4/fifo_bb.v
+/home/matt/Documents/Digital Logic/Project 4/fifo_inst.v
+/home/matt/Documents/Digital Logic/Project 4/seg7.v
+	======= Total: 64 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

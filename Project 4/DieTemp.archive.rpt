@@ -1,0 +1,139 @@
+Archive Project report for DieTemp
+Thu Apr 30 16:39:18 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Thu Apr 30 16:39:18 2020 ;
+; Revision Name          ; DieTemp                               ;
+; Top-level Entity Name  ; DieTemp                               ;
+; Family                 ; MAX 10                                ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory /home/matt/Documents/Digital Logic/Project 4/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive '/home/matt/Documents/Digital Logic/Project 4/DieTemp_Hartnett.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'DieTemp.archive.rpt'
+Info (23030): Evaluation of Tcl script /home/matt/intelFPGA_lite/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 1072 megabytes
+    Info: Processing ended: Thu Apr 30 16:39:18 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-------------------------------------------------------------------------+
+; Files Archived                                                          ;
++-------------------------------------------------------------------------+
+; File Name                                                               ;
++-------------------------------------------------------------------------+
+; adc_qsys.qsys                                                           ;
+; adc_qsys.sopcinfo                                                       ;
+; adc_qsys/adc_qsys.bsf                                                   ;
+; adc_qsys/adc_qsys.cmp                                                   ;
+; adc_qsys/adc_qsys.csv                                                   ;
+; adc_qsys/adc_qsys.html                                                  ;
+; adc_qsys/adc_qsys.spd                                                   ;
+; adc_qsys/adc_qsys.xml                                                   ;
+; adc_qsys/adc_qsys_bb.v                                                  ;
+; adc_qsys/adc_qsys_generation.rpt                                        ;
+; adc_qsys/adc_qsys_generation_previous.rpt                               ;
+; adc_qsys/adc_qsys_inst.v                                                ;
+; adc_qsys/adc_qsys_inst.vhd                                              ;
+; adc_qsys/simulation/adc_qsys.sip                                        ;
+; adc_qsys/simulation/adc_qsys.v                                          ;
+; adc_qsys/simulation/aldec/rivierapro_setup.tcl                          ;
+; adc_qsys/simulation/cadence/cds.lib                                     ;
+; adc_qsys/simulation/cadence/cds_libs/altpll_sys.cds.lib                 ;
+; adc_qsys/simulation/cadence/cds_libs/control_internal.cds.lib           ;
+; adc_qsys/simulation/cadence/cds_libs/modular_adc_0.cds.lib              ;
+; adc_qsys/simulation/cadence/cds_libs/rst_controller.cds.lib             ;
+; adc_qsys/simulation/cadence/hdl.var                                     ;
+; adc_qsys/simulation/cadence/ncsim_setup.sh                              ;
+; adc_qsys/simulation/mentor/msim_setup.tcl                               ;
+; adc_qsys/simulation/submodules/adc_qsys_altpll_sys.vo                   ;
+; adc_qsys/simulation/submodules/adc_qsys_modular_adc_0.v                 ;
+; adc_qsys/simulation/submodules/altera_modular_adc_control.v             ;
+; adc_qsys/simulation/submodules/altera_modular_adc_control_avrg_fifo.v   ;
+; adc_qsys/simulation/submodules/altera_modular_adc_control_fsm.v         ;
+; adc_qsys/simulation/submodules/altera_reset_controller.sdc              ;
+; adc_qsys/simulation/submodules/altera_reset_controller.v                ;
+; adc_qsys/simulation/submodules/altera_reset_synchronizer.v              ;
+; adc_qsys/simulation/submodules/chsel_code_converter_sw_to_hw.v          ;
+; adc_qsys/simulation/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ;
+; adc_qsys/simulation/submodules/fiftyfivenm_adcblock_top_wrapper.v       ;
+; adc_qsys/simulation/synopsys/vcs/vcs_setup.sh                           ;
+; adc_qsys/simulation/synopsys/vcsmx/synopsys_sim.setup                   ;
+; adc_qsys/simulation/synopsys/vcsmx/vcsmx_setup.sh                       ;
+; adc_qsys/synthesis/adc_qsys.debuginfo                                   ;
+; adc_qsys/synthesis/adc_qsys.qip                                         ;
+; adc_qsys/synthesis/adc_qsys.v                                           ;
+; adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v                     ;
+; adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v                  ;
+; adc_qsys/synthesis/submodules/altera_modular_adc_control.sdc            ;
+; adc_qsys/synthesis/submodules/altera_modular_adc_control.v              ;
+; adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v    ;
+; adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v          ;
+; adc_qsys/synthesis/submodules/altera_reset_controller.sdc               ;
+; adc_qsys/synthesis/submodules/altera_reset_controller.v                 ;
+; adc_qsys/synthesis/submodules/altera_reset_synchronizer.v               ;
+; adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v           ;
+; adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v  ;
+; adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v        ;
+; assignment_defaults.qdf                                                 ;
+; bin2bcd.v                                                               ;
+; clock_divider.v                                                         ;
+; DieTemp.qpf                                                             ;
+; DieTemp.qsf                                                             ;
+; DieTemp.sdc                                                             ;
+; fifo.qip                                                                ;
+; fifo.v                                                                  ;
+; fifo_bb.v                                                               ;
+; fifo_inst.v                                                             ;
+; seg7.v                                                                  ;
++-------------------------------------------------------------------------+
+
+

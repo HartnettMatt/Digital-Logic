@@ -1,6 +1,6 @@
 Timing Analyzer report for top
-Sun Apr 26 16:33:16 2020
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Tue Aug 18 14:29:56 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
 
 
 ---------------------
@@ -55,9 +55,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -67,22 +67,23 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Timing Analyzer Summary                                                     ;
-+-----------------------+-----------------------------------------------------+
-; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Timing Analyzer       ; Legacy Timing Analyzer                              ;
-; Revision Name         ; top                                                 ;
-; Device Family         ; MAX 10                                              ;
-; Device Name           ; 10M50DAF484C7G                                      ;
-; Timing Models         ; Final                                               ;
-; Delay Model           ; Combined                                            ;
-; Rise/Fall Delays      ; Enabled                                             ;
-+-----------------------+-----------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                         ;
++-----------------------+---------------------------------------------------------+
+; Quartus Prime Version ; Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                                  ;
+; Revision Name         ; top                                                     ;
+; Device Family         ; MAX 10                                                  ;
+; Device Name           ; 10M50DAF484C7G                                          ;
+; Timing Models         ; Final                                                   ;
+; Delay Model           ; Combined                                                ;
+; Rise/Fall Delays      ; Enabled                                                 ;
++-----------------------+---------------------------------------------------------+
 
 
 +------------------------------------------+
@@ -90,16 +91,17 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 6           ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.06        ;
-; Maximum used               ; 6           ;
+; Average used               ; 1.03        ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.3%      ;
-;     Processors 3-6         ;   1.2%      ;
+;     Processor 2            ;   1.1%      ;
+;     Processor 3            ;   1.1%      ;
+;     Processor 4            ;   1.1%      ;
 +----------------------------+-------------+
 
 
@@ -131,7 +133,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------+--------+---------------+
 ; Clock                               ; Slack  ; End Point TNS ;
 +-------------------------------------+--------+---------------+
-; ADC_CLK_10                          ; -4.459 ; -152.103      ;
+; ADC_CLK_10                          ; -4.459 ; -152.313      ;
 ; clockDivider:C0|clock_out           ; -0.209 ; -0.555        ;
 ; manual:I3|clockDivider:C0|clock_out ; 0.134  ; 0.000         ;
 +-------------------------------------+--------+---------------+
@@ -154,7 +156,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; Clock                               ; Slack  ; End Point TNS ;
 +-------------------------------------+--------+---------------+
 ; ADC_CLK_10                          ; -2.545 ; -79.273       ;
-; manual:I3|clockDivider:C0|clock_out ; -2.162 ; -4.324        ;
+; manual:I3|clockDivider:C0|clock_out ; -2.161 ; -4.322        ;
 +-------------------------------------+--------+---------------+
 
 
@@ -163,7 +165,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------+-------+---------------+
 ; Clock                               ; Slack ; End Point TNS ;
 +-------------------------------------+-------+---------------+
-; manual:I3|clockDivider:C0|clock_out ; 2.124 ; 0.000         ;
+; manual:I3|clockDivider:C0|clock_out ; 2.123 ; 0.000         ;
 ; ADC_CLK_10                          ; 2.245 ; 0.000         ;
 +-------------------------------------+-------+---------------+
 
@@ -202,7 +204,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------------------------------+--------+---------------+
 ; Clock                               ; Slack  ; End Point TNS ;
 +-------------------------------------+--------+---------------+
-; ADC_CLK_10                          ; -4.117 ; -131.879      ;
+; ADC_CLK_10                          ; -4.117 ; -132.181      ;
 ; clockDivider:C0|clock_out           ; -0.107 ; -0.246        ;
 ; manual:I3|clockDivider:C0|clock_out ; 0.206  ; 0.000         ;
 +-------------------------------------+--------+---------------+
@@ -261,7 +263,7 @@ No synchronizer chains to report.
 +-------------------------------------+--------+---------------+
 ; Clock                               ; Slack  ; End Point TNS ;
 +-------------------------------------+--------+---------------+
-; ADC_CLK_10                          ; -1.481 ; -25.869       ;
+; ADC_CLK_10                          ; -1.481 ; -25.940       ;
 ; clockDivider:C0|clock_out           ; 0.483  ; 0.000         ;
 ; manual:I3|clockDivider:C0|clock_out ; 0.631  ; 0.000         ;
 +-------------------------------------+--------+---------------+
@@ -323,11 +325,11 @@ No synchronizer chains to report.
 ; Worst-case Slack                     ; -4.459   ; 0.152 ; -2.545   ; 0.889   ; -3.000              ;
 ;  ADC_CLK_10                          ; -4.459   ; 0.250 ; -2.545   ; 1.009   ; -3.000              ;
 ;  clockDivider:C0|clock_out           ; -0.209   ; 0.152 ; N/A      ; N/A     ; -1.403              ;
-;  manual:I3|clockDivider:C0|clock_out ; 0.134    ; 0.152 ; -2.162   ; 0.889   ; -1.403              ;
-; Design-wide TNS                      ; -152.658 ; 0.0   ; -83.597  ; 0.0     ; -114.723            ;
-;  ADC_CLK_10                          ; -152.103 ; 0.000 ; -79.273  ; 0.000   ; -107.708            ;
+;  manual:I3|clockDivider:C0|clock_out ; 0.134    ; 0.152 ; -2.161   ; 0.889   ; -1.403              ;
+; Design-wide TNS                      ; -152.868 ; 0.0   ; -83.595  ; 0.0     ; -114.723            ;
+;  ADC_CLK_10                          ; -152.313 ; 0.000 ; -79.273  ; 0.000   ; -107.708            ;
 ;  clockDivider:C0|clock_out           ; -0.555   ; 0.000 ; N/A      ; N/A     ; -4.209              ;
-;  manual:I3|clockDivider:C0|clock_out ; 0.000    ; 0.000 ; -4.324   ; 0.000   ; -2.806              ;
+;  manual:I3|clockDivider:C0|clock_out ; 0.000    ; 0.000 ; -4.322   ; 0.000   ; -2.806              ;
 +--------------------------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -627,12 +629,12 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Apr 26 16:33:13 2020
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Standard Edition
+    Info: Processing started: Tue Aug 18 14:29:53 2020
 Info: Command: quartus_sta top -c top
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
 Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'top.SDC'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -650,7 +652,7 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case setup slack is -4.459
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.459            -152.103 ADC_CLK_10 
+    Info (332119):    -4.459            -152.313 ADC_CLK_10 
     Info (332119):    -0.209              -0.555 clockDivider:C0|clock_out 
     Info (332119):     0.134               0.000 manual:I3|clockDivider:C0|clock_out 
 Info (332146): Worst-case hold slack is 0.347
@@ -663,11 +665,11 @@ Info (332146): Worst-case recovery slack is -2.545
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -2.545             -79.273 ADC_CLK_10 
-    Info (332119):    -2.162              -4.324 manual:I3|clockDivider:C0|clock_out 
-Info (332146): Worst-case removal slack is 2.124
+    Info (332119):    -2.161              -4.322 manual:I3|clockDivider:C0|clock_out 
+Info (332146): Worst-case removal slack is 2.123
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     2.124               0.000 manual:I3|clockDivider:C0|clock_out 
+    Info (332119):     2.123               0.000 manual:I3|clockDivider:C0|clock_out 
     Info (332119):     2.245               0.000 ADC_CLK_10 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
@@ -683,7 +685,7 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case setup slack is -4.117
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -4.117            -131.879 ADC_CLK_10 
+    Info (332119):    -4.117            -132.181 ADC_CLK_10 
     Info (332119):    -0.107              -0.246 clockDivider:C0|clock_out 
     Info (332119):     0.206               0.000 manual:I3|clockDivider:C0|clock_out 
 Info (332146): Worst-case hold slack is 0.311
@@ -714,7 +716,7 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case setup slack is -1.481
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.481             -25.869 ADC_CLK_10 
+    Info (332119):    -1.481             -25.940 ADC_CLK_10 
     Info (332119):     0.483               0.000 clockDivider:C0|clock_out 
     Info (332119):     0.631               0.000 manual:I3|clockDivider:C0|clock_out 
 Info (332146): Worst-case hold slack is 0.152
@@ -742,9 +744,9 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4849 megabytes
-    Info: Processing ended: Sun Apr 26 16:33:16 2020
+    Info: Peak virtual memory: 526 megabytes
+    Info: Processing ended: Tue Aug 18 14:29:56 2020
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:04
 
 

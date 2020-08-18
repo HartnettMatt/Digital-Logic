@@ -1,3 +1,3 @@
-Warning (10268): Verilog HDL information at top.v(53): always construct contains both blocking and non-blocking assignments File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/top.v Line: 53
-Warning (10268): Verilog HDL information at manual.v(48): always construct contains both blocking and non-blocking assignments File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/manual.v Line: 48
-Warning (10268): Verilog HDL information at clockdivider.v(13): always construct contains both blocking and non-blocking assignments File: C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 3/clockdivider.v Line: 13
+Warning (10268): Verilog HDL information at top.v(53): always construct contains both blocking and non-blocking assignments File: /home/matt/Documents/Digital Logic/Project 3/top.v Line: 53
+Warning (10268): Verilog HDL information at manual.v(48): always construct contains both blocking and non-blocking assignments File: /home/matt/Documents/Digital Logic/Project 3/manual.v Line: 48
+Warning (10268): Verilog HDL information at clockDivider.v(13): always construct contains both blocking and non-blocking assignments File: /home/matt/Documents/Digital Logic/Project 3/clockDivider.v Line: 13
