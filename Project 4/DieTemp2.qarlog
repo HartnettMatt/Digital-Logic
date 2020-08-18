@@ -1,0 +1,83 @@
+Quartus Prime Archive log --	C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/DieTemp2.qarlog
+
+Archive:	C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/DieTemp2.qar
+Date:		Sun May 03 13:24:33 2020
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/DieTemp.qpf
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/DieTemp.qsf
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/DieTemp.sdc
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys.qsys
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys.sopcinfo
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/adc_qsys.bsf
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/adc_qsys.cmp
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/adc_qsys.csv
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/adc_qsys.html
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/adc_qsys.spd
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/adc_qsys.xml
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/adc_qsys_bb.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/adc_qsys_generation.rpt
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/adc_qsys_generation_previous.rpt
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/adc_qsys_inst.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/adc_qsys_inst.vhd
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/adc_qsys.sip
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/adc_qsys.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/aldec/rivierapro_setup.tcl
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/cadence/cds.lib
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/cadence/cds_libs/altpll_sys.cds.lib
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/cadence/cds_libs/control_internal.cds.lib
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/cadence/cds_libs/modular_adc_0.cds.lib
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/cadence/cds_libs/rst_controller.cds.lib
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/cadence/hdl.var
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/cadence/ncsim_setup.sh
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/mentor/msim_setup.tcl
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/submodules/adc_qsys_altpll_sys.vo
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/submodules/adc_qsys_modular_adc_0.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/submodules/altera_modular_adc_control.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/submodules/altera_modular_adc_control_avrg_fifo.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/submodules/altera_modular_adc_control_fsm.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/submodules/altera_reset_controller.sdc
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/submodules/altera_reset_controller.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/submodules/altera_reset_synchronizer.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/submodules/chsel_code_converter_sw_to_hw.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/submodules/fiftyfivenm_adcblock_top_wrapper.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/synopsys/vcs/vcs_setup.sh
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/synopsys/vcsmx/synopsys_sim.setup
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/simulation/synopsys/vcsmx/vcsmx_setup.sh
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/adc_qsys.debuginfo
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/adc_qsys.qip
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/adc_qsys.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/submodules/altera_modular_adc_control.sdc
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/submodules/altera_modular_adc_control.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/submodules/altera_reset_controller.sdc
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/submodules/altera_reset_controller.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/submodules/altera_reset_synchronizer.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/assignment_defaults.qdf
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/bin2bcd.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/clock_divider.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/dietemp.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/fifo.qip
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/fifo.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/fifo_bb.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/fifo_inst.v
+C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/seg7.v
+d:/intelfpga_lite/18.1/quartus/Readme.txt
+	======= Total: 66 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun May 03 13:26:44 2020
+Source archive file:	C:/Users/Matt Hartnett/Documents/Digital-Logic/Project 4/DieTemp2.qar
+Archive was extracted into	C:/Users/Matt Hartnett/Documents/test/
+		 - successfully.

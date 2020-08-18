@@ -107,9 +107,9 @@ always @ (cur_adc_ch)
 // FIFO
 
 fifo F0 (.aclr(~KEY[0]), .data(bcd_hold), .rdclk(~KEY[1]), .rdreq(allow_read), .wrclk(slower_clock), .wrreq(allow_write), .q(bcd_disp), .rdempty(empty), .wrfull(full), .wrusedw(fifo_size));
-
-assign LEDR[0] = allow_write;
-assign LEDR[1] = slower_clock;
+//
+// assign LEDR[0] = allow_write;
+// assign LEDR[1] = slower_clock;
 // Ensure the FIFO only fills up to 30 values instead of 32
 always @(posedge MAX10_CLK1_50)
   begin
